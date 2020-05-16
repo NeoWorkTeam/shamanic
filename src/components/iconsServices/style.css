@@ -1,0 +1,33 @@
+
+
+.IconsServices img{
+    margin: auto;
+    display: block;
+    max-width: 120px;
+}
+
+.IconsServices .title{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+.IconsServices icon {
+    border: 3px solid red;
+}
+
+.IconsServices .wrapper{
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.videoYoutube{
+    width:100%; height: 250px; margin-bottom:30px
+}
