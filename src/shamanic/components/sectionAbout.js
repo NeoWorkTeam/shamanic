@@ -5,6 +5,10 @@ import ContactForm from './contactForm'
 import Storage from './storage'
 const storage = Storage()
 
+const divForm = {
+   backgroundColor : storage.ctaColor
+}   
+
 const SectionAbout = (props) => {
 
     const [interesting,setInteresting] = useState(false)
@@ -43,7 +47,7 @@ const SectionAbout = (props) => {
                     ?
                     <ContactForm ></ContactForm>
                     :
-                    <a href="#!" className="btn btn-primary cta-primary" onClick={ () => setInteresting(true)  }> 
+                    <a href="#!" style={divForm} className="btn btn-primary cta-primary" onClick={ () => setInteresting(true)  }> 
                      { storage.cta02 }
                     </a>
                 }

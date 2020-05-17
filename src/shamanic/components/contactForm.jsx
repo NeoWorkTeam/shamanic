@@ -1,26 +1,31 @@
-import React, { useEffect, navig } from 'react';
+import React from 'react';
 import { withRouter } from "react-router-dom";
-import { Spinner,Button ,InputGroup, FormControl } from 'react-bootstrap'
+import { Spinner,Button ,InputGroup } from 'react-bootstrap'
 
 import { firebase } from './firebase'
 import swal from 'sweetalert';
 import SimpleReactValidator from 'simple-react-validator';
-import {  FcCheckmark } from 'react-icons/fc';
 import {  AiOutlineMail,AiOutlineUser } from 'react-icons/ai';
+import { useCookies } from 'react-cookie';
 
 
 import Storage from './storage'
 
+const storage = Storage()
 
 
+
+const divForm = {
+  backgroundColor : storage.ctaColor
+}
 
 
 const ContactForm = (props) => {
 
+    const [cookies, setCookie] = useCookies(['idSession']);
+
 
     const validator = new SimpleReactValidator()
-
-    const storage = Storage()
 
     const [name,setName] = React.useState("")
     const [email,setEmail] = React.useState("")
@@ -51,6 +56,10 @@ const ContactForm = (props) => {
                 setMode(true)
 
                 const db = firebase.firestore()
+
+                sessionStorage.removeItem('session')
+                sessionStorage.clear()
+
                 
                 const newContact = {
                     name:  name,
@@ -60,8 +69,10 @@ const ContactForm = (props) => {
                 }
             
                 const data = await db.collection('Contacts').add(newContact)
-                localStorage.setItem('session', JSON.stringify({...newContact,id: data.id }));
-                props.history.push('/ShamanicJourneying/'+data.id)
+                setCookie('idSession',  data.id , { path: '/' });
+
+                sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }));
+                props.history.push('/ShamanicJourneying/'+data.id+"/")
     
             }catch(error){
 
@@ -167,7 +178,7 @@ const ContactForm = (props) => {
                     { storage.cta02_loading_message }
                 </Button>
                 :
-                <button type="submit" className="btn btn-primary cta-primary btn-block"> { storage.cta02 } </button>
+                <button style={ divForm } type="submit" className="btn btn-primary cta-primary btn-block"> { storage.cta02 } </button>
 
 
                 }

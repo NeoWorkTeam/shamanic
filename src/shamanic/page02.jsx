@@ -1,28 +1,24 @@
-import React ,{ Component } from 'react'
+import React  from 'react'
 import SectionBanner from './components/sectionBanner'
-import SectionCta from './components/sectionCta'
 import SectionAbout2 from './components/sectionAbout2'
 import SectionGraduates from './components/sectionGraduates'
 import SectionProgramBonuses from './components/sectionBonuses'
 import SectionWhatsIncluded from './components/sectionWhatsIncluded'
 import Footer from './components/footer'
 import Header from './components/header'
-import { withRouter } from "react-router-dom";
-
-
+import { withRouter } from "react-router-dom"
 
 import './style.css'
 
-
 function Page01( props ) {
+
+  
 
      const get =  props.location.pathname.split('/')
      const sessionID = get[2] 
 
-     if(localStorage.getItem('session')==null){
-
+     if(sessionStorage.getItem('session')==null){
           props.history.push('/')
-
      }
 
 
@@ -58,7 +54,6 @@ function Page01( props ) {
         
         <section className="section06">
              <SectionWhatsIncluded />
-             <SectionCta />
         </section>
        
         <section className="Footer">

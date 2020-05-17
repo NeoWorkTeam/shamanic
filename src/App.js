@@ -12,19 +12,19 @@ import Team from './pages/Team'
 import Suscribe from './pages/Suscribe'
 import shamanic01 from './shamanic/page01'
 import shamanic02 from './shamanic/page02'
+import { CookiesProvider } from 'react-cookie';
 
 import Formulario from './components/formulario/Formulario'
-
-
 
 const App = () => (
        
         <BrowserRouter>
          <Provider store={store}>
+         <CookiesProvider>
             <Switch>
             <Route exact  path="/Home" component={Home} />
             <Route exact path="/" component={shamanic01} />
-            <Route exact path="/ShamanicJourneying/:id" component={shamanic02} />
+            <Route exact path="/ShamanicJourneying/:id/" component={shamanic02} />
 
             <Route exact path="/Contact" component={Contact} />
             <Route exact path="/Contacts" component={Contacts} />
@@ -35,6 +35,7 @@ const App = () => (
             <Route exact path="/Formulario" component={Formulario} />
             <Route  component={shamanic01} />
             </Switch>
+            </CookiesProvider>
             </Provider>
         </BrowserRouter>
         

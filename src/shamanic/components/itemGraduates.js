@@ -17,9 +17,9 @@ const ItemGraduates = ( props ) => {
 
                      <Row>
 
-                        <Col xs={12} md={8} >
+                       <Col xs={12} md={8} >
                             <h3> { props.title } </h3>
-                            <p>   { props.description } </p>
+                           {/* <p>   { props.description } </p>*/}
                         </Col>
                     
                         <Col xs={12} md={4} >

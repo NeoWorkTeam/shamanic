@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
+import Cta01 from "./cta/cta01"
 
 import Storage from './storage'
 const storage = Storage()
@@ -20,7 +21,7 @@ const SectionBanner = () => {
             </Row>
             <Row>
             <Col xs={12} md={12} >
-                <a className="cta" href={ storage.url_start_program }>{ storage.cta01 }</a>
+                <Cta01></Cta01>
             </Col>
             </Row>
         </Container>)

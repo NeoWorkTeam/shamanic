@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 import ItemIncluded from "./itemIncluded"
-
-import Storage from './storage'
+import Cta01 from "./cta/cta01"
+import Storage from '../components/storage'
 const storage = Storage()
 
 const SectionWhatsIncluded = () => {
@@ -18,8 +18,9 @@ const SectionWhatsIncluded = () => {
             </Col>
             </Row>
             <Row>
-
+           
             {
+                
                 storage.includes.map( ( item ) => (
 
                     <Col xs={12} md={12} >
@@ -28,8 +29,9 @@ const SectionWhatsIncluded = () => {
 
                  ) )
             }    
-
-          
+   <Col xs={12} md={12} >
+                            <Cta01 />
+                    </Col>
             
             </Row>
         </Container>)

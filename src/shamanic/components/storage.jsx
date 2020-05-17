@@ -1,15 +1,25 @@
+
+import module1 from '../img/module1.jpg';
+import module2 from '../img/moduel2.jpg';
+import module3 from '../img/module3.jpg';
+import module4 from '../img/module4.jpg';
+
+
 function Storage(){
 
+    
     const data = 
     {
+        ctaColor:"#DA5E11",
         cta01:"Start Program",
+        cta01_loading_message:"Redirigiendo",
         cta02:"Start Free Course",
         cta02_loading_message:"Loading",
         video:"http://neowork.co/Banner.mp4",
         facebook:"http://facebook.co/",
         youtube:"http://neowork.co/",
         instagram:"http://neowork.co/",
-        url_start_program:"http://neowork.co/",
+        url_start_program:"https://shiftnetwork.infusionsoft.app/app/orderForms/01ShamanicPractices01_20?_ga=2.156084539.1228671055.1589702179-1213824032.1589566547&cookieUUID=ae8b33a2-b771-470c-aa54-e2369c6f37cd",
         contactForm:{
             field01 : "Full Name",
             field01_message_null:"hey se te olvido el nombre",
@@ -38,29 +48,29 @@ function Storage(){
         {
             id:1,
             module:"Module 01",
-            title: "Strengthen Your Heart 1",
+            title: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
             description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
-            avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
+            avatar:module1
         },
         {
             id:2,
             module:"Module 02",
-            title: "Strengthen Your Heart 2",
+            title: "Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos.",
             description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
-            avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
+            avatar:module2
         },
         {
             id:3,
             module:"Module 03",
-            title: "Strengthen Your Heart 3",
+            title: "Explora las muchas razones por las que las prácticas chamánicas pueden darte sabiduría esencial para navegar y afrontar distintas crisis.",
             description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
-            avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
+            avatar:module3
        },{
             id:4,
             module:"Module 04",
-            title: "Strengthen Your Heart 4",
-            description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
-            avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
+            title: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
+            description: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
+            avatar:module4
        },
        
         ],
@@ -116,10 +126,9 @@ function Storage(){
                 ]
 
    }   
-   // localStorage.setItem('data', JSON.stringify(data));
-   //JSON.parse(localStorage.getItem('data'))
 
-    return  data
+
+    return   data 
 
 }
      
