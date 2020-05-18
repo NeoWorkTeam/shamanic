@@ -1,18 +1,20 @@
 import React  from 'react'
-import SectionBanner from './components/sectionBanner'
-import SectionAbout2 from './components/sectionAbout2'
-import SectionGraduates from './components/sectionGraduates'
-import SectionProgramBonuses from './components/sectionBonuses'
-import SectionWhatsIncluded from './components/sectionWhatsIncluded'
+import CubeBanner from './components/cubeBanner/cubeBanner'
+import CubeAbout2 from './components/cubeAbout2/cubeAbout2'
+import CubeBonuses from './components/cubeBonuses/cubeBonuses'
+import CubeIncludes from './components/cubeIncludes/cubeIncludes'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
+import Storage from './components/storage'
 
 import './style.css'
+import CubeCourses from './components/cubeCourses/cubeCourses'
+
+const storage = Storage()
+
 
 function Page01( props ) {
-
-  
 
      const get =  props.location.pathname.split('/')
      const sessionID = get[2] 
@@ -22,38 +24,31 @@ function Page01( props ) {
      }
 
 
-
-
      return ( 
 
-
       <React.Fragment>
-
         <section className="Header">
              <Header />
         </section>
        
-        <section className="section01">
-             <SectionBanner />
+        <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
+             <CubeBanner />
         </section>
 
-    
-        <section className="section03">
-             <SectionAbout2 />
+        <section  style={ {  background:'#fff', padding:'50px', height:'1200px'  } } id='sectionA'>
+             <CubeAbout2 />
         </section>
 
-
-        <section className="section04">
-             <SectionGraduates />
+        <section  style={ {  background:'#fff', padding:'50px 0px'  } } id='sectionA'>
+             <CubeCourses />
         </section>
 
-      
-        <section className="section05">
-             <SectionProgramBonuses />
+        <section  style={ {  background:'#fff', padding:'50px'  } } id='sectionA'>
+             <CubeBonuses />
         </section>
         
         <section className="section06">
-             <SectionWhatsIncluded />
+             <CubeIncludes />
         </section>
        
         <section className="Footer">
@@ -61,8 +56,7 @@ function Page01( props ) {
         </section>
 
         </React.Fragment> 
-         
-     
+
      )
         
 }

@@ -1,0 +1,245 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="ks_MembersDirectoryController"
+           applyBodyTag="true" applyHtmlTag="true" docType="html-5.0" cache="false">
+<html>
+    <head>
+        <title>Komet Sales Company Directory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <c:ks_MembersDirectoryStyles />
+        <c:ks_ActionStatus />
+    </head>
+    <body>
+        <div class="header__wrapper" >
+            <div class="contacts_header"  style="display:none">
+                <div class="custom_row">
+                    <div class="contacts-left">
+                   
+                        <span class="header-separator">|</span>
+                        <a href="mailto:sales@kometsales.com">sales@kometsales.com</a>
+                    </div>
+                    <div class="contacts-right">
+                        <ul class="contacts-menu">
+                            <li class="contacts-menu-item">
+                                <a href="https://app.kometsales.com">
+                                    <span class="contacts-menu-item-text">Login</span>
+                                </a>
+                            </li>
+                            <li class="contacts-menu-item">
+                                <a href="http://learn.kometsales.com">
+                                    <span class="contacts-menu-item-text">Knowledge Base</span>
+                                </a>
+                            </li>
+                            <li class="contacts-menu-item">
+                                <a href="http://kometsales.staging.wpengine.com/contact-us/">
+                                    <span class="contacts-menu-item-text">Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header" style="background-image:url(https://cdn.shopify.com/s/files/1/0021/9591/4822/files/activeDirectory.jpeg?v=1589816754); background-size:cover; height:450px">
+                <div class="custom_row" id="toggledSection">
+                    <div class="ks-logo" style="margin-top: 0px" >
+                         <!--  
+                         <a class="ks-logo-link" href="#">
+                            <apex:image url="{!URLFOR($Resource.ks_MemberDirectoryImages,'komet_logo_rgb_retina.png')}" alt="Flower System for Growers, Importers and Wholesales | Komet Sales"/>
+                        </a>
+                        -->
+                        <img style="width:160px" src="https://kometsales--c.visualforce.com/resource/1589509473000/LogoACtiveDirectory" />
+                        <h2 style="color:#fff; font-size:32px; font-weight:bold">Building a connected industry.</h2>    
+                        <p style="color: #fff; font-size:28px;"> Find companies offering Komet network services.</p>
+                        <p style="color: #fff; font-size:18px;"> (You must sign in to view the directory)</p>
+                    </div>
+                   <div class="ks-main-menu">
+                     <!--   <a class="members-directory-demo-button" href="http://www2.kometsales.com/demo-request">Request A Demo</a> -->
+                        <apex:form id="singInButton">
+                            <apex:actionFunction name="setCurrentURL" action="{!checkCurrentPageURL}" reRender="displayedData,singInButton">
+                                <apex:param name="currentUrl" assignTo="{!currentUrl}" value="" />
+                            </apex:actionFunction>
+                            <apex:outputPanel rendered="{!not(loginUser)}">
+                                <apex:commandButton styleClass="members-directory-demo-button" value="Sign In" action="{!openLoginPage}" rerender="popup"/>
+                            </apex:outputPanel>
+                        </apex:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__wrapper">
+            <div class="custom_row">
+                <apex:outputPanel id="displayedData" styleClass="companies_panel">
+                    <apex:form styleClass="members-directory-form" rendered="{!loginUser}">
+                        <div class="formWrapper">
+                            <apex:outputPanel >
+                                <div class="accountsInputFields" style="background:transparent;margin-top: -40px;">
+                                    <div class="companyNameInput">
+                                      <span class="members-directory-text" style="color:#fff; font-weight:bold">Company</span>
+                                        <apex:inputText value="{! filteredName}"  styleClass="members-directory-input" onkeypress="return performSearch(event);"/>
+                                    </div>
+                                    <span class="industry-selection">
+                                   <span class="members-directory-text" style="color:#fff; font-weight:bold" >Industry</span> 
+                                    <div class="select-industry"> 
+                                        <apex:selectList styleClass="members-directory-select" style="background:#fff"  value="{! filteredIndustry}" size="1" multiselect="false">
+                                            <apex:selectOptions value="{! industries}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </span>
+                                    <span class="features-selection">
+                                      <span class="members-directory-text" style="color:#fff; font-weight:bold">Features</span> 
+                                <div class="select-industry">
+                                        <apex:selectList style="background:#fff" styleClass="members-directory-select features-select" value="{! filteredFeature}" size="1" multiselect="false">
+                                            <apex:selectOptions value="{! features}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </span>
+                                    <apex:commandButton style="font-weight:bold" value="Search" action="{!initProperties}" reRender="accountsPanel, paginationPanel" status="fullPageBlock" styleClass="members-directory-button"/>
+                                </div>
+                            </apex:outputPanel>
+                                <apex:outputPanel id="accountsPanelLabel" style="position:relative; top:-20px; text-align:center">
+                                <div class="select-industry" >
+                                           <span style="font-size: 18px;font-weight: bold">
+                                          <img width="30px" style="margin-top: -10px;" src="https://kometsales--c.visualforce.com/resource/1589511997000/iconoEcommerce" /> Offers Komet E-commerce 
+                                            </span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           <span style="font-size: 18px;font-weight: bold">
+                                            <img width="30px"  style="margin-top: -10px;" src="https://kometsales--c.visualforce.com/resource/1589511933000/iconoK2k" />
+                                           Offers Komet to Komet
+                                            </span>
+                                 </div>
+                                
+                                 </apex:outputPanel>
+                            <apex:outputPanel id="accountsPanel">
+                                <table id="accountsTable">
+                                    <thead>
+                                    <tr>
+                                        <th class="nonWebsite">Company Name</th>
+                                        <th class="website"/>
+                                        <th class="nonWebsite">Country</th>
+                                        <th class="nonWebsite">Industry</th>
+                                        <th class="features">Features</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <apex:repeat value="{!displayedAccounts}" var="account">
+                                        <tr>
+                                            <td>
+                                                <div class="nameContainer">
+                                                    <div class="companyName">
+                                                        <apex:outputField value="{!account.Directory_Account_Name__c}" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="nameContainer">
+                                                    <div style="display: {! IF(account.Correct_Website__c == null, 'none', '')}" class="feautureImages">
+                                                        <a href="{!account.Correct_Website__c}" target="_blank">
+                                                            <apex:image styleClass="ks-web" url="{!URLFOR($Resource.ks_MemberDirectoryImages,'web.png')}" alt="Website"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><apex:outputField styleClass="companyName" value="{!account.BillingCountry}" /></td>
+                                            <td><apex:outputField styleClass="companyName" value="{!account.Industry}" /></td>
+                                            <!-- <td><apex:outputField value="{!account.Website}" /></td> -->
+                                            <td>
+                                                <div class="imagesContainer">
+                                                    <div class="feautureImages">
+                                                        <apex:image styleClass="ks-k2k" rendered="{! account.K2K__c}" url="{!URLFOR('https://kometsales--c.visualforce.com/resource/1589512430000/iconok2kSvg')}" alt="K2K"/>
+                                                    </div>
+                                                    <div class="feautureImages">
+                                                        <apex:image styleClass="ks-truck" rendered="{! account.Komet_E_commerce__c}" url="{!URLFOR('https://kometsales--c.visualforce.com/resource/1589512595000/iconoEcommerceSvg')}" alt="E-commerce"/>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                    </tbody>
+                                </table>
+                            </apex:outputPanel>
+                        </div>
+                        <div class="members-directory-pagination">
+                            <apex:outputPanel id="paginationPanel">
+                                <apex:commandLink action="{!prevPage}" value="Prev" rendered="{!currentPage > 0}" reRender="accountsPanel, paginationPanel" styleClass="members-directory-page-button"/>
+                                <apex:commandLink action="{!nextPage}" value="Next" rendered="{!currentPage < maxPage}" reRender="accountsPanel, paginationPanel" styleClass="members-directory-page-button"/>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:form>
+                </apex:outputPanel>
+            </div>
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer" style="background-image:url(https://cdn.shopify.com/s/files/1/0021/9591/4822/files/Background-1-Footer-January.png) !important">
+                <!-- <div class="custom_row"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="binding-row">
+                            <!-- <div class="column"> -->
+                            <div class="ourCompany">
+                                <div class="footer-menu">
+                                    <h4 class="footer-menu-title">Our Company</h4>
+                                    <ul class="footer-menu-list">
+                                        <li class="footer-menu-list-item">
+                                            <a href="https://www.kometsales.com/#home">Home</a>
+                                        </li>
+                                        <li class="footer-menu-list-item">
+                                            <a href="https://www.kometsales.com/#how">How</a>
+                                        </li>
+                                        <li class="footer-menu-list-item">
+                                            <a href="https://www.kometsales.com/#about-us">About us</a>
+                                        </li>
+                                        <li class="footer-menu-list-item" >
+                                            <a href="https://www.kometsales.com/#customers">Customers</a>
+                                        </li>
+                                        <li class="footer-menu-list-item" >
+                                            <a href="https://www.kometsales.com/team/">Team</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="column"> -->
+                            <div class="thePlatform">
+                                <div class="footer-menu">
+                                    <h4 class="footer-menu-title">Support</h4>
+                                    <ul class="footer-menu-list">
+                                                                
+                                             <li class="footer-menu-list-item"><a  href="https://www.kometsales.com/pages/contact-us"> Contact Us </a></li>
+                                             <li class="footer-menu-list-item"><a href="https://www.kometsales.com/pages/privacy-policy"> Privacy Policy </a></li>
+                                             <li class="footer-menu-list-item"><a href="https://www.kometsales.com/pages/terms-of-services"> Terms of Service </a></li>
+                                             <li class="footer-menu-list-item"><a href="http://status.kometsales.com/" aria-describedby="a11y-external-message">Service Status </a></li>
+                                        
+                                                                                
+                                 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="column"> -->
+                        <div class="support">
+                            <div class="footer-menu">
+                                <h4 class="footer-menu-title">Services</h4>
+                                <ul class="footer-menu-list">
+                                   
+                 <li  class="footer-menu-list-item" ><a  href="https://www.kometsales.com/pages/implementation"> Implementation </a></li>
+                 <li  class="footer-menu-list-item"><a href="https://www.kometsales.com/collections/training"> Training </a></li>
+                 <li  class="footer-menu-list-item"><a href="https://feedback.kometsales.com/" > Feedback Comunity </a></li>
+                 <li  class="footer-menu-list-item"><a href="https://www.kometsales.com/pages/Komet-to-Komet"> K2K Sales Network </a></li>
+                 <li  class="footer-menu-list-item"><a href="https://www.kometsales.com/pages/support-page"> Customer Support  </a></li>
+                                   
+                                   
+                                </ul>
+                                <ul class="social-media-container">
+                                    <li><a href="https://twitter.com/kometsales"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/kometsales"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://instagram.com/kometsales"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/groups/6677564"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.youtube.com/user/vtmed2010"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+</html>
+</apex:page>

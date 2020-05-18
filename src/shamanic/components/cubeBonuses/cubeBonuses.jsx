@@ -1,19 +1,17 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
-import ItemBonuses from "./itemBonuses"
-
-import Storage from './storage'
+import ItemBonuses from "../itemBonuses/itemBonuses"
+import "./cubeBonusesStyles.css"
+import Storage from '../storage'
 const storage = Storage()
 
-const SectionProgramBonuses = () => {
+const CubeBonuses = () => {
 
-
-     
-        return (<Container id="SectionProgramBonuses" className="section">
+        return (<Container className="CubeBonuses">
             <Row>
                     <Col xs={12} md={12} >
                         <h2 className="text-center">
-                        <span className="title"> { storage.bonusesSection.title } </span>
+                         { storage.bonusesSection.title }
                         </h2>
                     </Col>
                     </Row>
@@ -24,17 +22,12 @@ const SectionProgramBonuses = () => {
                             <ItemBonuses { ...item } />
                     </Col>
                     ))}  
-
-
-
-
             </Row>
         </Container>)
-
 }
 
 
-export default SectionProgramBonuses
+export default CubeBonuses
 
 
 

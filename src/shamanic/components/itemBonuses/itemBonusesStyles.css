@@ -1,0 +1,14 @@
+.ItemBonuses img {
+    width: 160px;
+    padding-bottom: 20px;
+}
+
+.ItemBonuses p {
+   text-align: center;
+}
+
+
+.ItemBonuses .wrapper{
+    margin-bottom: 30px;
+    padding: 10px;
+}

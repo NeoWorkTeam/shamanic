@@ -1,16 +1,13 @@
 import React ,{ Component } from 'react'
-import SectionForm from './components/sectionForm'
-import SectionAbout from './components/sectionAbout'
-import SectionModule01 from './components/sectionModule01'
+import CubeForm from './components/cubeForm/cubeForm'
+import CubeAbout from './components/cubeAbout/cubeAbout'
+import CubeModule from './components/cubeModule/cubeModule'
 import Footer from './components/footer'
 import Header from './components/header'
 import './style.css'
 import Storage from './components/storage'
 
 const storage = Storage()
-
-
-
 
 class Page02 extends Component {
 
@@ -22,22 +19,18 @@ class Page02 extends Component {
              <Header />
         </section>
 
-        <section className="section01">
-             <SectionForm />
+        <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
+             <CubeForm   />
         </section>
 
-
-        <section className="section05">
-                  { storage.modules.map
-                  ( ( item , index ) => 
-                    <SectionModule01 title={ item.title } avatar={item.avatar } key={ index } />  )
+        <section  style={ {  background:'#fff', padding:'50px'  } } id='sectionB'>
+                  { storage.modules.map((item,index) => 
+                    <CubeModule title={ item.title } avatar={item.avatar } key={ index } />  )
                   }  
         </section>
-
-
     
-        <section className="section03">
-             <SectionAbout />
+        <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionB'>
+             <CubeAbout />
         </section>
 
         <section className="Footer">

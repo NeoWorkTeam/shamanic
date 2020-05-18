@@ -1,81 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-
 html{
     font-size: 32px;
     font-family: 'Montserrat', sans-serif !important;
 }
 
-h1{
+h1, .h1  {
     padding: 10px;
-    font-size: 1.4rem !important;
-    font-weight: 600;
-}
-
-h2{
-    padding: 10px;
-    font-size: 1.2rem !important;
-    font-weight: bold;
-}
-
-h3{
-    padding: 10px;
-    font-size: 1rem !important;
-}
-
-h4{
-    padding: 10px;
-    font-size: .7rem !important;
-}
-
-
-p{
-    line-height: 1.2rem;
-    font-size: .7rem !important;
-    font-weight: 400;
-}
-
-
-a{
-    cursor: pointer;
-}
-
-
-a:hover{
-    transform: scale(1.01);
-}
-
-.titlePrincipal{
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-     display: block;
-}
-
-.subtitle{
-    font-size: 1.4rem;
-    font-weight: bold;
-    display: block;
-    font-family: 'EB Garamond', serif;
-}
-
-.title{
     font-size: 1.7rem;
     font-weight: bold;
     display: block;
     font-family: 'EB Garamond', serif;
 }
 
+h2,.h2{
+    padding: 10px;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    display: block;
+    font-family: 'EB Garamond', serif;
+}
+
+h3, .h3 {
+    padding: 10px;
+    font-size: 1rem !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+h4, .h4 {
+    padding: 10px;
+    font-size: .7rem !important;
+}
+
+p{
+    line-height: 1.2rem;
+    font-size: .7rem !important;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    transform: scale(1.01);
+}
+
 .section{
     padding: 20px;
-}
-
-.section01{
-    background-color: #f5f5f5;
-    padding: 100px 20px;
-}
-
-.section03{
-    background-color: rgb(255, 255, 224);
 }
 
 .cta{
@@ -99,6 +74,17 @@ a:hover{
     margin-bottom: 30px;
 }
 
+img{
+    display: block;
+    margin: auto;
+}
+
+.header img,
+.footer img{
+    float:left
+}
+
+/*
 #sectionBanner{
     max-width: 1200px;
 }
@@ -286,12 +272,10 @@ max-width: 100%;
     background:rgb(237, 238, 214);
     border-radius:10px
 
-}
-
+} */
 
 .footer{
     padding:100px 10px 40px;
-
 }
 
 .footer p{

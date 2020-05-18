@@ -2,14 +2,14 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import { Spinner,Button ,InputGroup } from 'react-bootstrap'
 
-import { firebase } from './firebase'
+import { firebase } from '../firebase'
 import swal from 'sweetalert';
 import SimpleReactValidator from 'simple-react-validator';
 import {  AiOutlineMail,AiOutlineUser } from 'react-icons/ai';
 import { useCookies } from 'react-cookie';
 
 
-import Storage from './storage'
+import Storage from '../storage'
 
 const storage = Storage()
 
