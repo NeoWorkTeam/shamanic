@@ -7,7 +7,7 @@ html{
 
 h1, .h1  {
     padding: 10px;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     display: block;
     font-family: 'EB Garamond', serif;
@@ -15,7 +15,7 @@ h1, .h1  {
 
 h2,.h2{
     padding: 10px;
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
     font-weight: bold;
     display: block;
     font-family: 'EB Garamond', serif;
@@ -35,7 +35,7 @@ h4, .h4 {
 }
 
 p{
-    line-height: 1.2rem;
+    line-height: 1.6rem;
     font-size: 1rem !important;
     font-weight: 400;
     padding: 5px 0px;

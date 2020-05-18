@@ -10,6 +10,7 @@ const ItemBonuses = ( props ) => {
                 <div className="wrapper">
                     <img alt={ props.title } src={ props.avatar }></img>
                      <p>{ props.title }</p>
+                     <p class='subtitle'>{ props.subtitle }</p>
                  </div>
             </div>
         )
