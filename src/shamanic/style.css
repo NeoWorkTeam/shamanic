@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 html{
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -36,7 +36,7 @@ h4, .h4 {
 
 p{
     line-height: 1.2rem;
-    font-size: .7rem !important;
+    font-size: 1rem !important;
     font-weight: 400;
     padding: 5px 0px;
 }
@@ -289,4 +289,80 @@ max-width: 100%;
 
 .header p{
    padding: 10px 0px 
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #DB5E13;
+    border-color: #DB5E13;
+}
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #DB5E13;
+    border-color: #DB5E13;
+}
+
+
+.CubeForm {
+    max-width: 500px;
+}
+
+
+.CubeAbout .btn-primary{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    float:right
+}
+
+.CubeAbout form{
+    max-width: 600px;
+    float: right;
+    width: 500px;
+}
+
+.CubeBanner .btn-primary,
+.CubeForm .btn-primary,
+.CubeIncludes .btn-primary{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active,
+ .btn-primary:not(:disabled):not(.disabled):active, 
+ .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #94908e;
+    border-color: #d2d2d2;
+}
+
+.CubeIncludes svg{
+    color: #db5d13;
+    font-size: 36px;
+}
+
+.CubeCourses .background{
+    padding: 100px 10px;
+}
+
+.CubeCourses .background p{
+    margin-top: 40px;
+}
+
+.CubeCourses h3{
+    padding: 30px;
+}
+
+.footer svg{
+    font-size: 40px;
+    color: #db5d13;
+}
+
+.footer svg:hover{
+    transform: scale(1.1);
 }

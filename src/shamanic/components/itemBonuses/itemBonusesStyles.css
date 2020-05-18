@@ -1,6 +1,7 @@
 .ItemBonuses img {
-    width: 160px;
+    width: 250px;
     padding-bottom: 20px;
+    border-radius: 50%;
 }
 
 .ItemBonuses p {
@@ -12,3 +13,4 @@
     margin-bottom: 30px;
     padding: 10px;
 }
+

@@ -134,7 +134,7 @@ const ContactForm = (props) => {
  
                  {
                     mode ? 
-                    <Button variant="primary "  className='cta-primary' disabled>
+                    <Button variant="primary "  className=' btn btn-primary btn-block' disabled>
                     <Spinner
                     as="span"
                     animation="grow"
