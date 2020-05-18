@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    
   </link>
   
     <!--
@@ -33,6 +34,47 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '558643735082044');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=558643735082044&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 640361169 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-640361169"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-640361169');
+</script>
+
+
+<!-- Event snippet for Compra curso chamanico conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-640361169/cGrPCO_9sNABENHFrLEC',
+      'value': {{ checkout.total_price | money_without_currency }},
+      'currency': 'USD',
+      'transaction_id': '{{ order.order_number  }}'
+  });
+</script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
