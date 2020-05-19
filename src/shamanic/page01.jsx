@@ -19,6 +19,7 @@ class Page02 extends Component {
          
 
         <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
+             
              <Header />
 
              <CubeForm   />
