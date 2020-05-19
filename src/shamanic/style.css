@@ -10,15 +10,23 @@ h1, .h1  {
     font-size: 2rem;
     font-weight: bold;
     display: block;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Merriweather', serif;
+    line-height: 2rem;
+}
+
+h1 .especial{
+    font-family: 'Merriweather', serif;    
+    font-size: 1.6rem;
+    position: relative;
+    top: -20px;
 }
 
 h2,.h2{
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 1.5rem !important;
     font-weight: bold;
     display: block;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Merriweather', serif;
 }
 
 h3, .h3 {
@@ -307,7 +315,12 @@ max-width: 100%;
 
 
 .CubeForm {
+    max-width: 800px;
+}
+
+.CubeForm form{
     max-width: 500px;
+    margin: auto;
 }
 
 
@@ -365,4 +378,28 @@ max-width: 100%;
 
 .footer svg:hover{
     transform: scale(1.1);
+}
+
+.CubeBanner .btn {
+    max-width: 500px;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#sectionC{
+    background-image: url('./img/background.jpg') !important;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 1600px;
+    background-size: cover !important;
+}
+
+#Page01 #sectionA{
+    background-image: url('./img/banner.png') !important;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 900px;
+    background-size: cover !important;
+    
 }

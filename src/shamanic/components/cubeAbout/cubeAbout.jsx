@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
-
 import ItemForm from '../itemForm/itemForm'
-
 import Storage from '../storage'
+import "./cubeAboutStyle.css"
 
 const storage = Storage()
 
@@ -12,11 +11,11 @@ const CubeAbout = (props) => {
     const [interesting,setInteresting] = useState(false)
 
         return (<Container className="CubeAbout">
-            <Row>
+            <Row className="wrapper" >
           
                 <Col xs={12} md={12} >
                 <h2 className="text-center">
-                <span> { storage.about.title } </span>
+                <span> { storage.curso.title } </span>
                 </h2>
                 </Col>
         
@@ -27,9 +26,9 @@ const CubeAbout = (props) => {
            
                 <Col xs={12} md={8} >
                         <p>
-                        { storage.about.text1 }<br/>
-                        { storage.about.text2 }<br/>
-                        { storage.about.text3 }
+                        { storage.curso.text1 }<br/><br/>
+                        { storage.curso.text2 }<br/>
+                        <br/>
                         </p>
 
                         {

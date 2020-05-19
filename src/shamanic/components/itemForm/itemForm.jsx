@@ -99,7 +99,7 @@ const ContactForm = (props) => {
                     <input 
                 className="form-control" 
                 name="name" 
-                placeholder="Full Name"
+                placeholder={ storage.contactForm.field01 }
                 value={name}
                 onChange={ (e) => setName(e.target.value) } />
                 </InputGroup>
@@ -124,7 +124,7 @@ const ContactForm = (props) => {
                     <input 
                     className="form-control" 
                     name="email" 
-                    placeholder="Email Address"
+                    placeholder={ storage.contactForm.field02 }
                     onChange={ (e) => setEmail(e.target.value) }
                     value={email} 
 

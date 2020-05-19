@@ -11,9 +11,11 @@ const CubeForm = () => {
             
             <Col xs={12} md={12} >
                <h1 className="text-center">
-                        <span className="h1"> { storage.banner.title01 } </span>
-                        <span className="h2"> { storage.banner.title02 } </span> 
-                        <span className="h3"> { storage.banner.title03 } </span> 
+                        <span className="h1">
+                                 { storage.banner.title01 }
+                                  <br></br>
+                  { storage.banner.title02 } </span> 
+                        <span className="especial" > { storage.banner.title03 } </span> 
                </h1>
             </Col>
 

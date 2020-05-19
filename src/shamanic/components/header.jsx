@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
-import logo from '../img/footer_logo_white.jpg';
+import logo from '../img/logo.png';
 
 
 
@@ -13,7 +13,7 @@ const Header = () => (
     <Container className="header">
     <Row>
         <Col xs={12} md={6} >
-            <img alt="title"  src={ logo }/>
+            <img alt="title"  src={ logo } style={ { maxWidth:'200px' } }/>
         </Col>    
         <Col xs={12} md={6} >
 

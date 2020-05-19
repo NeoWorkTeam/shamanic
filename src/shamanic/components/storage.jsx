@@ -7,6 +7,11 @@ import module2 from '../img/moduel2.jpg'
 import module3 from '../img/module3.jpg'
 import module4 from '../img/module4.jpg'
 
+import feature1 from '../img/feature1.png'
+import feature2 from '../img/feature2.png'
+import feature3 from '../img/feature3.png'
+
+
 import bonus1 from '../img/bonus1.png'
 import bonus2 from '../img/bonus1.png'
 import bonus3 from '../img/bonus1.png'
@@ -53,7 +58,7 @@ React.useEffect(() => {
         ctaColor:"#DA5E11",
         cta01:"Comenzar Programa",
         cta01_loading_message:"Redirigiendo",
-        cta02:"Ingresar al Curso Gratuito",
+        cta02:"Presentación del Curso",
         cta02_loading_message:"Cargando",
         video:"https://player.vimeo.com/video/402745799",
         facebook:"http://facebook.co/",
@@ -61,7 +66,7 @@ React.useEffect(() => {
         instagram:"http://neowork.co/",
         url_start_program:"https://shiftnetwork.infusionsoft.app/app/orderForms/01ShamanicPractices01_20?_ga=2.156084539.1228671055.1589702179-1213824032.1589566547&cookieUUID=ae8b33a2-b771-470c-aa54-e2369c6f37cd",
         contactForm:{
-            field01 : "Nombre Completo",
+            field01 : "Nombre ",
             field01_message_null:"Por favor ingrese el Nombre Completo",
             field02 : "Correo Electrónino",
             field02_message_null:"Disculpe el Correo Electrónino no es valido",
@@ -71,8 +76,8 @@ React.useEffect(() => {
             background:""
         },
         banner:{
-            title01:"Shamanic Journeying",
-            title02:"Con",
+            title01:"Prácticas Shamánicas",
+            title02:"con",
             title03:"Sandra Ingerman",
             background:""
         },
@@ -116,19 +121,43 @@ React.useEffect(() => {
             avatar:module4
        },
        
-        ],
+        ], features:[
+         
+            {
+                id:1,
+                title: "Fortalece tu Corazón",
+                description: "Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos.",
+                avatar:feature1
+            },
+            {
+                id:2,
+                description: "Explora las muchas razones por las que las prácticas chamánicas pueden darte sabiduría esencial para navegar y afrontar distintas crisis.",
+                title: "Cambia tu Mentalidad",
+                avatar:feature2
+           },
+           {
+               id:3,
+               title: "Consolida tu Comunidad",
+               description: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
+               avatar:feature3
+          }, 
+            ],
         about:{
-            title:"Acerca de Sandra y su curso",
+            title:"Acerca de Sandra Ingerman",
             text1:"Sandra tiene una trayectoria de más de 20 años impartiendo las prácticas chamánicas a un público global, entrenando a decenas de miles alrededor del mundo…",
             text2:"Debido a que el alcance de la crisis actual es cada vez más evidente, Sandra ha ofrecido compartir algunas de las más valiosas herramientas de las prácticas chamánicas…",
             text3:"Es hora de aprovechar toda la sabiduría más allá de lo físico, para guiarnos hacia nuestro bienestar personal, para navegar a través de tormentas de emociones, y para fortalecer energéticamente los lazos desgastados de la comunidad.",
             avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png",
             background:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
+        }, curso:{
+            title:"Nuestro Curso",
+            text1:"Despierte a una vida plena de alegría y servicio con la guía experta del maestro transformador más importante del mundo.",
+            text2:"A través de nuestro curso, tiene acceso a capacitaciones poderosas para ayudarlo a alcanzar su máximo potencial y llevar todos los aspectos de su vida al siguiente nivel.",
+            avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png",
+            background:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
         },
         bonuses:[
             {
-                
-
                 id:1,
                 title: "Introduction to Shamanic Journeying",
                 subtitle: "Audio Teaching From Sandra Ingerman",

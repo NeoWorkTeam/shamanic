@@ -1,0 +1,24 @@
+.CubeModule img{
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.CubeModule h2{
+    text-align: left;
+    max-width: 500px;
+    margin-top: 15px;
+
+ }
+
+.CubeModule p{
+   text-align: left;
+   max-width: 500px;
+
+}
+
+.CubeModule {
+    margin-bottom: 30px;
+}
+

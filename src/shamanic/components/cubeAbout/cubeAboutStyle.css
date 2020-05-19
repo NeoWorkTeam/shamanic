@@ -1,0 +1,24 @@
+
+
+.CubeAbout h2{
+    text-align: right !important;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+.CubeAbout p{
+text-align: right;
+    
+}
+
+.CubeAbout{
+    max-width: 100%;
+    background: #d2b86982;
+    padding: 40px 0px;
+    color: #fff;
+}
+
+.CubeAbout .wrapper{
+    max-width: 1200px;
+}

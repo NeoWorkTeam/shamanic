@@ -31,18 +31,7 @@ const Footer = () => (
            </a>
 
             </Col>
-            <Col xs={4} md={4} >
-            <a href={storage.instagram}  target="blank">
-
-                    <FaInstagram />
-                    </a>
-            </Col>
-            <Col xs={4} md={4} >
-            <a href={storage.youtube}  target="blank">
-
-                      < RiYoutubeLine />
-                      </a>
-            </Col>
+      
          </Row>
          
          <Row>
