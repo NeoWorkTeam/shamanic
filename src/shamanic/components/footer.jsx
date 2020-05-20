@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import logo from '../img/logo.png';
-import {  AiOutlineFacebook } from 'react-icons/ai';
+import {  FaFacebookSquare } from 'react-icons/fa';
 
 
 
@@ -22,7 +22,7 @@ const Footer = () => (
                <Row>
                <Col xs={12} md={12} >
                          <a href={storage.facebook}  target="blank">
-                         <AiOutlineFacebook />
+                         <FaFacebookSquare />
                          </a>
                </Col>
                          </Row>
