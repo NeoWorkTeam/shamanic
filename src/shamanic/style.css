@@ -302,15 +302,15 @@ max-width: 100%;
 
 .btn-primary {
     color: #fff;
-    background-color: #DB5E13;
-    border-color: #DB5E13;
+    background-color:#A76A25;
+    border-color: #A76A25;
 }
 
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #DB5E13;
-    border-color: #DB5E13;
+    background-color: #A76A25;
+    border-color: #A76A25;
 }
 
 
@@ -355,35 +355,18 @@ max-width: 100%;
 }
 
 .CubeIncludes svg{
-    color: #db5d13;
+    color: #A76A25;
     font-size: 36px;
 }
 
-.CubeCourses .background{
-    padding: 100px 10px;
-}
 
-.CubeCourses .background p{
-    margin-top: 40px;
-}
 
-.CubeCourses h3{
-    padding: 30px;
-}
 
-.footer svg{
-    font-size: 40px;
-    color: #db5d13;
-}
-
-.footer svg:hover{
-    transform: scale(1.1);
-}
 
 .CubeBanner .btn {
     max-width: 500px;
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 1.5rem;
 }
 
@@ -402,4 +385,39 @@ max-width: 100%;
     min-height: 800px;
     background-size: cover !important;
     
+}
+
+
+#page02 #sectionB{
+ 
+}
+
+
+.footer svg{
+    font-size: 60px;
+    color: #fff;
+    text-align: right;
+    float: right;
+}
+
+
+.footer p{
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+
+.footer svg:hover{
+    transform: scale(1.1);
+}
+
+
+.footer{
+padding-top:300px;
+color: #fff;
+}
+
+.footer .logo{
+    max-width: 200px;
 }
