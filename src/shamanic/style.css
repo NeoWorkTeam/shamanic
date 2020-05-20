@@ -314,28 +314,6 @@ max-width: 100%;
 }
 
 
-.CubeForm {
-    max-width: 800px;
-}
-
-.CubeForm form{
-    max-width: 500px;
-    margin: auto;
-}
-
-
-.CubeAbout .btn-primary{
-    max-width: 350px;
-    display: block;
-    margin: auto;
-    float:right
-}
-
-.CubeAbout form{
-    max-width: 600px;
-    float: right;
-    width: 500px;
-}
 
 .CubeBanner .btn-primary,
 .CubeForm .btn-primary,
@@ -353,14 +331,6 @@ max-width: 100%;
     background-color: #94908e;
     border-color: #d2d2d2;
 }
-
-.CubeIncludes svg{
-    color: #A76A25;
-    font-size: 36px;
-}
-
-
-
 
 
 .CubeBanner .btn {
@@ -391,6 +361,7 @@ max-width: 100%;
 #page02 #sectionB{
  
 }
+
 
 
 .footer svg{

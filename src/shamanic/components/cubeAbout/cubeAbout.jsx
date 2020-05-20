@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 import ItemForm from '../itemForm/itemForm'
 import Storage from '../storage'
+import Footer from '../footer'
 import "./cubeAboutStyle.css"
 
 const storage = Storage()
@@ -42,7 +43,11 @@ const CubeAbout = (props) => {
                         }  
                 </Col>
             </Row>
+            
+         
+
         </Container>)
+        
 
 }
 

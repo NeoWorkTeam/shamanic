@@ -5,6 +5,18 @@ padding-bottom: 60px;
 }
 
 .CubeCourses .background{
-    background-color: #FDF7EB;
+    background-color: rgba(231, 208, 168, 0.58);
+}
+
+.CubeCourses .background{
+    padding: 10px 10px;
+}
+
+.CubeCourses .background p{
+    margin-top: 40px;
+}
+
+.CubeCourses h3{
+    padding: 30px;
 }
 

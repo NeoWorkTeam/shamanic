@@ -27,6 +27,7 @@ function Page01( props ) {
      return ( 
 
       <React.Fragment>
+     <div id="page02">
         <section className="Header">
              <Header />
         </section>
@@ -35,7 +36,7 @@ function Page01( props ) {
              <CubeBanner />
         </section>
 
-        <section  style={ {  background:'#fff', padding:'50px', height:'1200px'  } } id='sectionA'>
+        <section  style={ {  background:'#fff', padding:'50px', height:'1200px'  } } id='sectionB'>
              <CubeAbout2 />
         </section>
 
@@ -54,7 +55,7 @@ function Page01( props ) {
         <section className="Footer">
              <Footer />
         </section>
-
+        </div>
         </React.Fragment> 
 
      )

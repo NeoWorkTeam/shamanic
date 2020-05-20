@@ -6,16 +6,20 @@ import module1 from '../img/module1.jpg'
 import module2 from '../img/moduel2.jpg'
 import module3 from '../img/module3.jpg'
 import module4 from '../img/module4.jpg'
+import module5 from '../img/module5.jpg'
+import module6 from '../img/module6.jpg'
+import module7 from '../img/module7.jpg'
+
 
 import feature1 from '../img/feature1.png'
 import feature2 from '../img/feature2.png'
 import feature3 from '../img/feature3.png'
 
 
-import bonus1 from '../img/bonus1.png'
-import bonus2 from '../img/bonus1.png'
-import bonus3 from '../img/bonus1.png'
-import bonus4 from '../img/bonus1.png'
+import bonus1 from '../img/bonus1.jpg'
+import bonus2 from '../img/bonus2.jpg'
+import bonus3 from '../img/bonus3.jpg'
+import bonus4 from '../img/bonus4.jpg'
 
 function Storage(){
 
@@ -76,7 +80,7 @@ React.useEffect(() => {
             background:""
         },
         banner:{
-            title01:"Prácticas Shamánicas",
+            title01:"Prácticas Chamánicas",
             title02:"con",
             title03:"Sandra Ingerman",
             background:""
@@ -95,32 +99,50 @@ React.useEffect(() => {
         modules:[
         {
             id:1,
-            module:"Modulo 01",
-            title: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
-            description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
+            module:"Módulo 01",
+            title: " Re-tejiendo la historia de tu creación para la salud",
+            description: "Explora cómo los chamanes interactúan directamente con los espíritus para abordar los aspectos espirituales de la enfermedad, realizar recuperaciones de almas, información divina y mucho más.",
             avatar:module1
         },
         {
             id:2,
-            module:"Modulo 02",
-            title: "Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos.",
-            description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
+            module:"Módulo 02",
+            title: "Transfiguración y viendo el mundo a través de los ojos del espíritu",
+            description: "Conocerás al espíritu de la tierra donde vives, para que puedas construir una relación sólida con él.",
             avatar:module2
         },
         {
             id:3,
-            module:"Modulo 03",
-            title: "Explora las muchas razones por las que las prácticas chamánicas pueden darte sabiduría esencial para navegar y afrontar distintas crisis.",
+            module:"Módulo 03",
+            title: "Viaje de varios pasos para identificar el espíritu que se ofrece como voluntario para trabajar contigo y discernir qué tipo de poder tienen.",
             description: "Fortalece tu corazón/Cambia tu mentalidad/Empodera a tu comunidad.",
             avatar:module3
        },{
             id:4,
-            module:"Modulo 04",
-            title: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
-            description: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
+            module:"Módulo 04",
+            title: "Sanando pensamientos tóxicos: cómo transmutar y desmembrar el miedo, la ira, el dolor y la traición.",
+            description: "Sandra compartirá cómo tus emociones se convierten en formas de energía, lo que ella llama dardos psíquicos ... y cómo terminas enviando estas emociones al colectivo sin saberlo.",
             avatar:module4
-       },
-       
+       },{
+        id:5,
+        module:"Módulo 05",
+        title: "Trabajando con la luna y los cristales: como transmitir energías sanadoras en la ceremonia",
+        description: "Explora cómo los chamanes establecieron fuertes relaciones con todos los seres de la naturaleza en su paisaje.",
+        avatar:module5
+        },{
+            id:6,
+            module:"Módulo 06",
+            title: "Aprovechando los elementos: Fusión y construcción de conecciones.",
+            description: "Accede a viajes chamánicos que te guiarán para que veas al mundo de una mejor manera.",
+            avatar:module6
+        },
+        {
+            id:7,
+            module:"Módulo 07",
+            title: "Viajando al futuro y de vuelta a los ancestros: Accediendo a la sabiduría para sobrevivir a la crisis actual. ",
+            description: "Sandra explicará las formas únicas en que los chamanes perciben las enfermedades físicas y emocionales. También compartirá un método de curación simple pero poderoso para el que te sentirás completamente preparado.",
+            avatar:module7
+        }
         ], features:[
          
             {
@@ -159,70 +181,42 @@ React.useEffect(() => {
         bonuses:[
             {
                 id:1,
-                title: "Introduction to Shamanic Journeying",
-                subtitle: "Audio Teaching From Sandra Ingerman",
-                description: "This foundational recording gives you full instructions into shamanic journeying, sharing about the practice and helping you find your own doorway into the invisible realms. It also gives you suggestions that can deepen your work, and covers some of the finer points of journeying to help you fine-tune your own practice. You’ll also receive a Drumming Track for Journeying to assist you with your practice. ",
-                avatar:"https://theshiftnetwork.com/sites/all/modules/page_files/2020/258254.01ShamanicPractices01_20/images/bonus_Introduction.jpg",
+                title: "¿Puedes practicar chamanismo y conservar tu fe cristiana?",
+                avatar:bonus1,
                 author:"NOTE: Please listen to this bonus teaching before attending the first course session so you can dive right into the journeying work and make the best use of your time in class with Sandra."
             },
             {
                 id:2,
-                title: "Honoring the Elements & Recapitulation",
-                subtitle: "Video Dialogue With Sandra Ingerman and HeatherAsh Amara; Includes PDF Companion",
-                description: "Receive beautiful elemental prayers that HeatherAsh Amara created, which you can use as part of a powerful morning practice. Sandra and HeatherAsh also discuss the importance of staying connected and communicating with the elements. And HeatherAsh weaves in a form of recapitulation using the elements. As you’ll explore, recapitulation is a shamanic practice to reclaim energy from the past so you have more energy for the present.",
-                avatar:"https://theshiftnetwork.com/sites/all/modules/page_files/2020/258254.01ShamanicPractices01_20/images/bonus_HeatherAshAmara.jpg",
+                title: "Ceremonia de fuego virtual y liberar el dolor",
+                avatar:bonus2,
                 author:"HeatherAsh Amara is the author of Warrior Goddess Training: Become the Woman You Are Meant to Be... The Seven Secrets to Healthy, Happy Relationships with don Miguel Ruiz... and The Warrior Heart Practice: A Simple Process to Transform Confusion Into Clarity and Pain Into Peace. The heart of her teachings stems from her long Toltec apprenticeship and teaching partnership with don Miguel Ruiz. She’s the founder of Toci, The Toltec Center of Creative Intent."
             },
             {
                 id:3,
-                title: "The Emergence of Western Shamanism ",
-                subtitle: "Audio Dialogue With Sandra Ingerman and Hank Wesselman",
-                description: "Shamanism is a living, breathing spiritual tradition that has evolved through tens of thousands of years so that it remains relevant to the times in which we live. In this special bonus, Sandra and Hank Wesselman discuss how the practice of shamanism is evolving, and the revival of interest in the practice.",
+                title: "Medicina para la tierra ",
                 author:"Hank Wesselman, PhD, is an anthropologist and evolutionary biologist who has conducted fieldwork with international research teams investigating the mystery of human origins in the fossil beds of eastern Africa’s Great Rift Valley. In addition to his scientific publications, he’s the author of several books on shamanism, including his Spiritwalker Trilogy, the award-winning Awakening to the Spirit World (with Sandra Ingerman), and The Bowl of Light: Ancestral Wisdom From a Hawaiian Shaman. ",
-                avatar:"https://theshiftnetwork.com/sites/all/modules/page_files/2020/258254.01ShamanicPractices01_20/images/bonus_HankWesselman.jpg"
+                avatar:bonus3
            },{
                 id:4,
-                title: "Shamanism in Ordinary Landscapes",
-                subtitle: "Audio Dialogue With Sandra Ingerman and Cecile Carson",
-                description: "Curious how shamanism can emerge in everyday circumstances? Cecile Carson speaks about her research into how people today are bridging shamanism into the work they do. You’ll hear about some of the people Cecile has written about, including a high school cook, a mall Santa Claus, a theater director, and a neurobiology grad student working in an animal lab.    ",
+                title: "Naturaleza, herramientas sagradas y llevando el poder. ",
                 author: "Cecile Carson, MD, has been conducting interviews for a forthcoming book on shamanic practitioners who integrate shamanism into Western culture in interesting and unusual ways — ways that open our hearts and minds to what’s possible for healing our troubled world. She’s an internist also trained in psychiatry, who for 30 years focused much of her work on helping people deal with life-threatening illnesses such as HIV and cancer. Recognizing that illness often requires soul-level work, she expanded her focus to spiritual coaching and healing. ",
-                avatar:"https://theshiftnetwork.com/sites/all/modules/page_files/2020/258254.01ShamanicPractices01_20/images/bonus_CecileCarson.jpg"
-           },{
-            id:4,
-            title: "Excerpts From The Book of Ceremony",
-            subtitle: "2 Short PDF Excerpts From Sandra Ingerman",
-            description: "The magic of ceremony is leaving your ordinary life behind and stepping into a sacred space. You can truly participate with others who are opening their hearts along with you to create positive change.",
-            author: "In these excerpts, Sandra will show you how to design healing ceremonies and create intentions for them that carry the energy of love, light, support, honor, and respect. ",
-            avatar:"https://theshiftnetwork.com/sites/all/modules/page_files/2020/258254.01ShamanicPractices01_20/images/bonus_Ceremony.jpg"
-           }
-            ],
+                avatar:bonus4
+           }],
         includes:[
                 {
                     id:1,
-                    title: "Seven 120-Minute Class Sessions With Sandra Ingerman",
+                    title: "Siete sesiones de clases grabadas de 90 minutos",
                 },
                 {
                     id:2,
-                    title: "Seven Video Recordings of Class Sessions",
+                    title: "Siete transcritos de las sesiones de clase en PDF",
               },
                 {
                     id:3,
-                    title: "Seven Audio Recordings of Class Sessions",
+                    title: "Bunus: Extractos del libro de ceremonia",
                },{
                     id:4,
-                    title: "Seven PDF Transcripts of Class Sessions",
-               },{
-                id:5,
-                title: "Seven 30-Minute Interactive Group Practice Sessions",
-               },{
-                id:6,
-                title: "Online Community With Sandra and Assistants",
-               },{
-                id:7,
-                title: "Interactive Exercises and Questions for Each Lessons",
-               },{
-                id:8,
-                title: "The Shamanic Practices Bonus Collection",
+                    title: "Bonus: Introducción al viaje chamánico",
                }]
 
    }   

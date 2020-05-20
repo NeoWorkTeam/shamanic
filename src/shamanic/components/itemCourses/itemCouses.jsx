@@ -18,11 +18,12 @@ const ItemCourses = ( props ) => {
 
                      <Row>
 
-                       <Col xs={12} md={8} >
-                            <p> { props.title } </p>
+                       <Col xs={12} md={7} >
+                            <h2> { props.title } </h2>
+                            <p> { props.description } </p>
                         </Col>
                     
-                        <Col xs={12} md={4} >
+                        <Col xs={12} md={5} >
                                 <img src={ props.avatar } alt={ props.title } ></img>
                         </Col>
 

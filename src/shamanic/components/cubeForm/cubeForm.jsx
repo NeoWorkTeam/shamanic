@@ -2,6 +2,8 @@ import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 import ItemForm from '../itemForm/itemForm'
 import Storage from '../storage'
+import './cubeFormStyle.css'
+
 
 const storage = Storage()
 

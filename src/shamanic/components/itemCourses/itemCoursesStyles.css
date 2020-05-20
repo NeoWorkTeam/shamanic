@@ -1,13 +1,41 @@
 
 
 .ItemCourses {
-    max-width:600px;
+    max-width:800px;
     padding: 10px 30px;
 }
 
 .ItemCourses h3 {
     text-align: center;
+    font-size: 1.7rem !important;
+    padding-bottom: 50px; 
 }
+
+.ItemCourses h2 {
+   background-color: transparent !important;
+   text-align: left;
+   padding-bottom: 0px !important;
+   font-size: 1rem !important;
+   line-height: 1.5rem;
+   margin-top: -20px;
+   color:#565454 !important
+
+}
+
+
+.ItemCourses img {
+    width: 100% !important;
+    border-radius: 5px;
+}
+
+
+.ItemCourses p {
+    background-color: transparent !important;
+    text-align: left;
+    font-size: 20px !important;
+    margin-top: 0px !important;
+    line-height: 1.3rem !important;
+ }
 
 
 

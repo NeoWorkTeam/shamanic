@@ -31,15 +31,12 @@ class Page02 extends Component {
                   }  
         </section>
      
-        <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'200px'  } } id='sectionC'>
+        <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'100px'  } } id='sectionC'>
              <CubeAbout />
-        </section>
-
-                  {/*
-        <section className="Footer">
              <Footer />
         </section>
-                  */}
+          
+                  
 </div>
         </React.Fragment>
        )  

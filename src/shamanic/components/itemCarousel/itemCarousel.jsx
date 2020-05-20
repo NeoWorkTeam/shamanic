@@ -3,6 +3,7 @@ import Carousel from 'nuka-carousel';
 import ItemCourses from "../itemCourses/itemCouses"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft,faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import './itemCarouselStyles.css'
 
 import Storage from '../storage'
 const storage = Storage()

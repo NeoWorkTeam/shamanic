@@ -1,5 +1,3 @@
-
-
 .CubeAbout h2{
     text-align: right !important;
     font-weight: bold;
@@ -20,5 +18,19 @@ text-align: right;
 }
 
 .CubeAbout .wrapper{
-    max-width: 1200px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.CubeAbout .btn-primary{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    float:right
+}
+
+.CubeAbout form{
+    max-width: 600px;
+    float: right;
+    width: 500px;
 }
