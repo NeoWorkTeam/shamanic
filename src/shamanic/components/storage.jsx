@@ -23,8 +23,7 @@ import bonus4 from '../img/bonus4.jpg'
 
 function Storage(){
 
-    const data = 
-    {
+    const data =  {
         ctaColor:"#DA5E11",
         cta01:"Comenzar Programa",
         cta01_loading_message:"Redirigiendo",
