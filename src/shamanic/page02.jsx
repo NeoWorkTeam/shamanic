@@ -36,7 +36,7 @@ function Page01( props ) {
              <CubeBanner />
         </section>
 
-        <section  style={ {  background:'#fff', padding:'50px', height:'1200px'  } } id='sectionB'>
+        <section  style={ {  background:'#fff', height:'1200px'  } } id='sectionB'>
              <CubeAbout2 />
         </section>
 
