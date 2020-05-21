@@ -2,6 +2,8 @@ import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 
 import sandra from '../../img/sandra.svg'
+import fondo from '../../img/AboutBackground.svg'
+
 
 import './cubeAbout2Style.css'
 
@@ -13,6 +15,7 @@ const CubeAbout2 = (props) => {
 
         return (<Container  className="CubeAbout2">
             <Row>
+
             <Col xs={12} md={12} >
                <h2>
                {  storage.about.title } 
@@ -20,6 +23,9 @@ const CubeAbout2 = (props) => {
             </Col>
         
             <Col xs={12} md={8} >
+             
+             <img className='fondo' src={fondo} alt={ storage.about.title }   />
+
                 <p>
                 {  storage.about.text1 }<br/>
                 {  storage.about.text2 } <br/>

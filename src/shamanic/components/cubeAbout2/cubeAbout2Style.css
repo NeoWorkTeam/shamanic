@@ -3,11 +3,15 @@
     max-width: 500px;
     padding-top: 40px;
     padding-left: 20px;
+    z-index: 999999 !important;
+    position: relative;
 }
 
 .CubeAbout2 h2{
     text-align: right;
     padding-bottom: 100px;
+    z-index: 999999 !important;
+    position: relative;
 }
 
 
@@ -18,15 +22,21 @@
     width: 500px;
 }
 
+.CubeAbout2 {
 
-
-.CubeAbout2.container{
-    background-image: url('../../img/AboutBackground.svg') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
     min-height: 1200px !important;
 
 }
+
+.CubeAbout2 .vector{
+    position: absolute;
+    z-index: 0;
+    top: -200px;
+    width: 1000px;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
     
@@ -36,12 +46,6 @@
         width: 350px;
     }
 
-    .CubeBonuses .simbol {
-        position: absolute;
-        width: 500px !important;
-        opacity: .2;
-        top: -150px;
-        left: -200px;
-    }
+
 
 }
