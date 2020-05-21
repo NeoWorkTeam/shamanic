@@ -17,21 +17,21 @@ const storage = Storage()
 function Page01( props ) {
 
      const get =  props.location.pathname.split('/')
-     const sessionID = get[2] 
+     const sessionID = get[2]
 
      if(sessionStorage.getItem('session')==null){
           props.history.push('/')
      }
 
 
-     return ( 
+     return (
 
       <React.Fragment>
-     <div id="page02">
+     <div style={ {  overflow:'hidden' } } id="page02">
         <section className="Header">
              <Header />
         </section>
-       
+
         <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
              <CubeBanner />
         </section>
@@ -47,19 +47,19 @@ function Page01( props ) {
         <section  style={ {  background:'#fff', padding:'50px'  } } id='sectionA'>
              <CubeBonuses />
         </section>
-        
+
         <section className="section06">
              <CubeIncludes />
         </section>
-       
+
         <section className="Footer">
              <Footer />
         </section>
         </div>
-        </React.Fragment> 
+        </React.Fragment>
 
      )
-        
+
 }
 
 export default withRouter(Page01)

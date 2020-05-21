@@ -1,29 +1,50 @@
-
-.CubeAbout2 p{
-    max-width: 500px;
-    padding-top: 40px;
-    padding-left: 20px;
+.CubeAbout2 {
+  min-height: 120vw;
 }
 
-.CubeAbout2 h2{
+.CubeAbout2 h2 {
+    margin-top: 12vw;
+    margin-right: 19vw;
     text-align: right;
-    padding-bottom: 100px;
 }
 
-
-
-.CubeAbout2 .avatar{
-    position: relative;
-    bottom: -450px;
-    width: 500px;
+.CubeAbout2 .shamanicBlob {
+  background-image: url('../../img/AboutBackground.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 92vw;
+  display: flex;
+  align-items: center;
 }
 
+.CubeAbout2 .shamanicText {
+  width: 40vw;
+}
 
+.CubeAbout2 .shamanicText p {
+  padding-left: 2vw;
+  font-size: 2.5vw !important;
+}
+
+/* To avoid clipping the blob's border at medium screen sizes */
+@media only screen and (max-width: 1035px) {
+  .CubeAbout2 .shamanicText p {
+    font-size: 1.8vw !important;
+  }
+}
 
 .CubeAbout2.container{
-    background-image: url('../../img/AboutBackground.svg') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    min-height: 1200px !important;
+    /* min-height: 1200px; */
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
 
+
+.CubeAbout2 .avatar {
+    position: relative;
+    width: 50vw;
+    margin: 0;
+    margin-top: -44vw;
+    float: right;
 }
