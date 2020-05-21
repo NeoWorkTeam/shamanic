@@ -13,26 +13,20 @@ const CubeAbout2 = (props) => {
 
         return (<Container  className="CubeAbout2">
             <Row>
-            <Col xs={12} md={12} >
                <h2>
                {  storage.about.title } 
                </h2>
-            </Col>
-        
-            <Col xs={12} md={8} >
-                <p>
-                {  storage.about.text1 }<br/>
-                {  storage.about.text2 } <br/>
-                {  storage.about.text3 }
-                </p>
-                    
-            </Col>
-           
-            <Col xs={12} md={4} >
+                
+                <section className="shamanicBlob">
+                        <p>
+                        {  storage.about.text1 }<br/>
+                        {  storage.about.text2 } <br/>
+                        {  storage.about.text3 }
+                        </p>
+                </section>
 
                 <img src={ sandra } alt='sandra' className='avatar' />
             
-            </Col>
             </Row>
         </Container>)
 }
