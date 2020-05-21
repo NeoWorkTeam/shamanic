@@ -36,7 +36,9 @@
 }
 
 
-
+#page02 .Header{
+    background: #fdf7eb;
+} 
 
 @media only screen and (max-width: 600px) {
     
