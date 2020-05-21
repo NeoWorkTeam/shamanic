@@ -18,7 +18,7 @@ class Page02 extends Component {
              <div id="Page01">
          
 
-        <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
+        <section  style={ {  background:'#FDF7EB', padding:'0px'  } } id='sectionA'>
              
              <Header />
 

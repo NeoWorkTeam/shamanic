@@ -5,6 +5,12 @@ html{
     font-family: 'Montserrat', sans-serif !important;
 }
 
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 16px;
+    }
+}
+
 h1, .h1  {
     padding: 10px;
     font-size: 2rem;
@@ -340,22 +346,36 @@ max-width: 100%;
 }
 
 #sectionC{
-    background-image: url('./img/background.jpg') !important;
+    background-image: url(/static/media/background.609c54bd.jpg) !important;
     padding-top: 200px;
     padding-bottom: 200px;
     min-height: auto;
-    background-size: contain !important;
-}
-
-#Page01 #sectionA{
-    background-image: url('./img/banner.png') !important;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    min-height: 800px;
     background-size: cover !important;
-    
+    background-repeat: no-repeat !important;
 }
 
+
+    #Page01 #sectionA{
+        background-image: url('./img/banner.png') !important;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        min-height: 900px;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+
+@media only screen and (max-width: 1000px) {
+    #Page01 #sectionA {
+        background-image: url('./img/banner.png') !important;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        min-height: 500px;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+}
 
 
 #Page01 #sectionB{
