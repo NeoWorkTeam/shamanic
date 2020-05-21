@@ -85,17 +85,8 @@ const ContactForm = (props) => {
             <form onSubmit={handlerAddUser}>
                
                 <InputGroup className="mb-3">
-                    <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1"> 
-             
-                    {
-                    emailValid ?  <AiOutlineUser color="green" /> :  <AiOutlineUser color="gray" />            
-                    }
-
-                    </InputGroup.Text>
-                    </InputGroup.Prepend>
-                    
-
+                
+                
                     <input 
                 className="form-control" 
                 name="name" 
@@ -110,16 +101,7 @@ const ContactForm = (props) => {
 
 
                     <InputGroup className="mb-3">
-                    <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1"> 
-                    
-                    {
-                    emailValid ?  <AiOutlineMail color="green" /> :  <AiOutlineMail color="gray" />
-                    }
-                   
-                    
-                    </InputGroup.Text>
-                    </InputGroup.Prepend>
+                 
                     
                     <input 
                     className="form-control" 

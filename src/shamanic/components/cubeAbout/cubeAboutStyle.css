@@ -12,7 +12,7 @@ text-align: right;
 
 .CubeAbout{
     max-width: 100%;
-    background: #67666282;
+    background: rgba(159, 106, 16, 0.23);
     padding: 40px 0px;
     color: #fff;
 }

@@ -318,7 +318,6 @@ max-width: 100%;
 .CubeBanner .btn-primary,
 .CubeForm .btn-primary,
 .CubeIncludes .btn-primary{
-    max-width: 350px;
     display: block;
     margin: auto;
 }

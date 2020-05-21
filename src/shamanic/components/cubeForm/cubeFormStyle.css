@@ -6,3 +6,15 @@
     max-width: 500px;
     margin: auto;
 }
+
+.CubeForm form input{
+    background-color:#ECE2C2;
+    border: 2px solid #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.CubeForm form .btn{
+    border: 2px solid #fff !important;
+    border-radius: 10px !important;
+}
