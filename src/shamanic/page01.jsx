@@ -33,9 +33,11 @@ class Page02 extends Component {
      
         <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'0px'  } } id='sectionC'>
              <CubeAbout />
-             <Footer />
         </section>
           
+        <section className="Footer">
+             <Footer />
+        </section>
                   
 </div>
         </React.Fragment>

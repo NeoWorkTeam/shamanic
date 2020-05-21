@@ -41,7 +41,9 @@ function Page01( props ) {
         </section>
 
         <section  style={ {  background:'#fff', padding:'50px 0px'  } } id='sectionA'>
+             <div className='wrapper'>
              <CubeCourses />
+             </div>
         </section>
 
         <section  style={ {  background:'#fff', padding:'50px'  } } id='sectionA'>

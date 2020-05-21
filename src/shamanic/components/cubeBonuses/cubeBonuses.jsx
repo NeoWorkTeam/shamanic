@@ -2,6 +2,9 @@ import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 import ItemBonuses from "../itemBonuses/itemBonuses"
 import "./cubeBonusesStyles.css"
+
+import vector from '../../img/horizontal.svg';
+ 
 import Storage from '../storage'
 const storage = Storage()
 
@@ -10,6 +13,7 @@ const CubeBonuses = () => {
         return (<Container className="CubeBonuses">
             <Row>
                     <Col xs={12} md={12} >
+                        <img className='simbol' src={vector} alt='vector' />
                         <h2 className="text-center">
                          { storage.bonusesSection.title }
                         </h2>

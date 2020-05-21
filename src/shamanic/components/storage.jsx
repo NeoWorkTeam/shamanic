@@ -38,7 +38,7 @@ function Storage(){
             field02_message_null:"Disculpe el Correo Electrónico no es válido",
         },
         bonusesSection:{
-            title : "The Shamanic Practices Bonus Collection",
+            title : "Bonus del Programa",
             background:""
         },
         banner:{
