@@ -27,3 +27,21 @@
     min-height: 1200px !important;
 
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .CubeAbout2 .avatar {
+        position: initial;
+        bottom: -450px;
+        width: 350px;
+    }
+
+    .CubeBonuses .simbol {
+        position: absolute;
+        width: 500px !important;
+        opacity: .2;
+        top: -150px;
+        left: -200px;
+    }
+
+}
