@@ -25,13 +25,13 @@ class Page02 extends Component {
              <CubeForm   />
         </section>
 
-        <section  style={ {  background:'#FDF7EB', paddingTop:'100px', paddingBottom:'40px'  } } id='sectionB'>
+        <section  style={ { paddingTop:'100px', paddingBottom:'40px'  } } id='sectionB'>
                   { storage.features.map((item,index) => 
                     <CubeModule {...item } key={ index } />  )
                   }  
         </section>
      
-        <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'100px'  } } id='sectionC'>
+        <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'0px'  } } id='sectionC'>
              <CubeAbout />
              <Footer />
         </section>

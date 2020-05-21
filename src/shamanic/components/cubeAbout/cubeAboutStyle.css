@@ -12,7 +12,7 @@ text-align: right;
 
 .CubeAbout{
     max-width: 100%;
-    background: rgba(159, 106, 16, 0.23);
+    background: rgba(159, 106, 16, 0.74);
     padding: 40px 0px;
     color: #fff;
 }
@@ -26,7 +26,9 @@ text-align: right;
     max-width: 350px;
     display: block;
     margin: auto;
-    float:right
+    float: right;
+    background: transparent;
+    border: 3px solid white;
 }
 
 .CubeAbout form{

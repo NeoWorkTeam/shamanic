@@ -25,9 +25,9 @@ function Storage(){
 
     const data =  {
         ctaColor:"#DA5E11",
-        cta01:"Comenzar Programa",
+        cta01: "Regístrate Ahora",
         cta01_loading_message:"Redirigiendo",
-        cta02:"Presentación del Curso",
+        cta02:"Empieza tu Experiencia Sanadora",
         cta02_loading_message:"Cargando",
         video:"https://player.vimeo.com/video/402745799",    facebook:"https://www.facebook.com/The-Shift-Network-Espa%C3%B1ol-104481994597834/",
         url_start_program:"https://shiftnetwork.infusionsoft.app/app/orderForms/210d9539-00d2-452a-b204-9cc7f7a53487?cookieUUID=ddcd50bd-7fdd-47cb-b354-4bd720157b3a",

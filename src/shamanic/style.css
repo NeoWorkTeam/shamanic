@@ -343,8 +343,8 @@ max-width: 100%;
     background-image: url('./img/background.jpg') !important;
     padding-top: 200px;
     padding-bottom: 200px;
-    min-height: 1600px;
-    background-size: cover !important;
+    min-height: auto;
+    background-size: contain !important;
 }
 
 #Page01 #sectionA{
@@ -356,6 +356,19 @@ max-width: 100%;
     
 }
 
+
+
+#Page01 #sectionB{
+
+    background: rgba(253,247,235,1);
+    background: -moz-linear-gradient(top, rgba(253,247,235,1) 0%, rgba(253,247,235,1) 81%, rgba(250,250,250,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(253,247,235,1) 0%, rgba(253,247,235,1) 81%, rgba(250,250,250,1) 100%);
+    background: -o-linear-gradient(top, rgba(253,247,235,1) 0%, rgba(253,247,235,1) 81%, rgba(250,250,250,1) 100%);
+    background: -ms-linear-gradient(top, rgba(253,247,235,1) 0%, rgba(253,247,235,1) 81%, rgba(250,250,250,1) 100%);
+    background: linear-gradient(to bottom, rgba(253,247,235,1) 0%, rgba(253,247,235,1) 81%, rgba(250,250,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf7eb', endColorstr='#fafafa', GradientType=0 );
+
+}
 
 #page02 #sectionB{
  
