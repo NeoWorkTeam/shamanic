@@ -346,7 +346,7 @@ max-width: 100%;
 }
 
 #sectionC{
-    background-image: url(/static/media/background.609c54bd.jpg) !important;
+    background-image: url('./img/background.jpg') !important;
     padding-top: 200px;
     padding-bottom: 200px;
     min-height: auto;
