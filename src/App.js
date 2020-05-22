@@ -13,12 +13,9 @@ const App = () => (
          <Provider store={store}>
          <CookiesProvider>
             <Switch>
-          
-                        <Route exact path="/" component={shamanic01} />
-                        <Route exact path="/ShamanicJourneying" component={shamanic02} />
-                        <Route  component={shamanic01} />       
-            
-         }   
+                <Route exact path="/" component={shamanic01} />
+                <Route exact path="/ShamanicJourneying" component={shamanic02} />
+                <Route component={shamanic01} />            
             </Switch>
             </CookiesProvider>
             </Provider>
