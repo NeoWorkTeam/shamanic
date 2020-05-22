@@ -3,3 +3,23 @@
 .CubeBanner iframe{
     height: 600px;
 }
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    .CubeBanner iframe {
+        height: 500px !important;
+    }
+    
+    }
+
+    
+@media only screen and (max-width: 600px) {
+
+.CubeBanner iframe {
+    height: 400px !important;
+}
+
+}
+
