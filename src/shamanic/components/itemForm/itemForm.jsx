@@ -3,7 +3,6 @@ import { withRouter } from "react-router-dom";
 import { Spinner,Button ,InputGroup } from 'react-bootstrap'
 import SimpleReactValidator from 'simple-react-validator';
 import {  AiOutlineMail,AiOutlineUser } from 'react-icons/ai';
-import { useCookies } from 'react-cookie';
 import swal from 'sweetalert'
 
 import { firebase } from '../firebase'
@@ -13,7 +12,6 @@ const storage = Storage()
 
 const ContactForm = (props) => {
 
-    const [cookies, setCookie] = useCookies(['idSession'])
     const validator = new SimpleReactValidator()
     const [name,setName] = React.useState('')
     const [email,setEmail] = React.useState('')
@@ -42,8 +40,8 @@ const ContactForm = (props) => {
 
                 const db = firebase.firestore()
 
-                sessionStorage.removeItem('session')
-                sessionStorage.clear()
+                //sessionStorage.removeItem('session')
+                //sessionStorage.clear()
 
                 
                 const newContact = {
@@ -54,7 +52,7 @@ const ContactForm = (props) => {
                 }
             
                 const data = await db.collection('Contacts').add(newContact)
-                setCookie('idSession',  data.id , { path: '/' });
+               // setCookie('idSession',  data.id , { path: '/' });
 
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
                 props.history.push('/practicas-chamanicas/intro01')

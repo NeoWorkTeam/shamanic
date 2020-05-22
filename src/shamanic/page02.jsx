@@ -30,13 +30,7 @@ function getCookie(cname) {
 function Page02( props ) {
      
 
-     if(getCookie('idSession')){
-           
-     }else{
-       props.history.push('/')
-     }
 
-     
      return ( 
       <React.Fragment>
      <div id="page02">

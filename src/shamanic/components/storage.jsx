@@ -136,12 +136,11 @@ function Storage(){
             background:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
         }, curso:{
             title:"Nuestro Curso",
-            text1:"Despierte a una vida plena de alegría y servicio con la guía experta del maestro transformador más importante del mundo.",
-            text2:"A través de nuestro curso, ten acceso a capacitaciones poderosas para ayudarlo a alcanzar su máximo potencial y llevar todos los aspectos de su vida al siguiente nivel.",
+            text1:"Despierta a una vida plena de alegría y servicio con la orientación de la mejor maestra transformadora del mundo.",
+            text2:"A través de nuestro curso, tienes acceso a poderosos entrenamientos para ayudarte a alcanzar tu máximo potencial y llevar todos los aspectos de tu vida al siguiente nivel.",
             avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png",
             background:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
-        },
-        bonuses:[
+        },bonuses:[
             {
                 id:1,
                 title: "¿Puedes practicar chamanismo y conservar tu fe cristiana?",
