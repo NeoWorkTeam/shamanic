@@ -43,7 +43,9 @@ padding-bottom: 60px;
     }
     
     .CubeCourses .slider svg{
-       width: 30px;
+        position: relative;
+        top: 200px !important;
+        width: 20px;
     }
     
     .CubeCourses .slider img{
