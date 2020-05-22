@@ -6,24 +6,38 @@ import CubeIncludes from './components/cubeIncludes/cubeIncludes'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
-import Storage from './components/storage'
 
 import './style.css'
 import CubeCourses from './components/cubeCourses/cubeCourses'
 
-const storage = Storage()
 
+function getCookie(cname) {
+     var name = cname + "=";
+     var decodedCookie = decodeURIComponent(document.cookie);
+     var ca = decodedCookie.split(';');
+     for(var i = 0; i <ca.length; i++) {
+       var c = ca[i];
+       while (c.charAt(0) == ' ') {
+         c = c.substring(1);
+       }
+       if (c.indexOf(name) == 0) {
+         return c.substring(name.length, c.length);
+       }
+     }
+     return "";
+   }
 
-function Page01( props ) {
+function Page02( props ) {
      
 
-    // if(sessionStorage.getItem('session')==null){
-        //  props.history.push('/')
-    // }
+     if(getCookie('idSession')){
+           
+     }else{
+       props.history.push('/')
+     }
 
-
+     
      return ( 
-
       <React.Fragment>
      <div id="page02">
         <section className="Header">
@@ -62,4 +76,4 @@ function Page01( props ) {
         
 }
 
-export default withRouter(Page01)
+export default withRouter(Page02)

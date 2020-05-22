@@ -57,7 +57,7 @@ const ContactForm = (props) => {
                 setCookie('idSession',  data.id , { path: '/' });
 
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
-                props.history.push('/ShamanicJourneying')
+                props.history.push('/practicas-chamanicas/intro01')
     
             }catch(error){
 
