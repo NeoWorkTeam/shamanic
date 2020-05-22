@@ -15,9 +15,7 @@ const storage = Storage()
 
 
 function Page01( props ) {
-
-     const get =  props.location.pathname.split('/')
-     const sessionID = get[2] 
+     
 
      if(sessionStorage.getItem('session')==null){
           props.history.push('/')

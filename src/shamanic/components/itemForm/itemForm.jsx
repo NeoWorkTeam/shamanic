@@ -56,8 +56,8 @@ const ContactForm = (props) => {
                 const data = await db.collection('Contacts').add(newContact)
                 setCookie('idSession',  data.id , { path: '/' });
 
-                sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }));
-                props.history.push('/ShamanicJourneying/'+data.id+"/")
+                sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
+                props.history.push('/ShamanicJourneying')
     
             }catch(error){
 

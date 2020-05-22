@@ -15,7 +15,7 @@ const App = () => (
             <Switch>
           
                         <Route exact path="/" component={shamanic01} />
-                        <Route exact path="/ShamanicJourneying/:id/" component={shamanic02} />
+                        <Route exact path="/ShamanicJourneying" component={shamanic02} />
                         <Route  component={shamanic01} />       
             
          }   
