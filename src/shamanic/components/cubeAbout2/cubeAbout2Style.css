@@ -18,8 +18,9 @@
 
 .CubeAbout2 .avatar{
     position: relative;
-    bottom: -450px;
+    bottom: -350px;
     width: 500px;
+    left: -200px;
 }
 
 .CubeAbout2 {
@@ -62,7 +63,9 @@
     .CubeAbout2 .avatar {
         position: initial;
         bottom: -450px;
-        width: 350px;
+        width: 100%;
+        max-width: 100%;
+
     }
 
     .CubeAbout2 h2 {
