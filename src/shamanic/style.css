@@ -376,9 +376,14 @@ max-width: 100%;
         background-position: center !important;
     }
 
-    #page2 #sectionB{
-        height: 1000px !important;   
+    #page02 #sectionB{
+        height: 1200px !important;   
     }
+
+    #page02 #sectionA{
+        padding: 50px 10px !important;  
+    }
+   
 }
 
 

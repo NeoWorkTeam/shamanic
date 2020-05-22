@@ -33,6 +33,10 @@ padding-bottom: 60px;
 @media only screen and (max-width: 600px) {
 
  
+    .CubeCourses .background {
+        padding: 10px 10px;
+        height: 800px;
+    }
 
     .CubeCourses .slider{
         height: 700px;
@@ -45,6 +49,11 @@ padding-bottom: 60px;
     .CubeCourses .slider img{
         width: 250px !important;
         padding-top: 50px;
+     }
+
+     .slider-control-bottomcenter
+     {
+         display: none
      }
 
 
