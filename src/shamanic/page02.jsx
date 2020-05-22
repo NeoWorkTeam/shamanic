@@ -17,9 +17,9 @@ const storage = Storage()
 function Page01( props ) {
      
 
-     if(sessionStorage.getItem('session')==null){
-          props.history.push('/')
-     }
+    // if(sessionStorage.getItem('session')==null){
+        //  props.history.push('/')
+    // }
 
 
      return ( 
