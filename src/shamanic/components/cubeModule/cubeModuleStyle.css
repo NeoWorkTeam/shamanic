@@ -28,4 +28,11 @@
 max-width: 300px;
 }
 
+.CubeModule p {
+    text-align: center;
+}
+
+.CubeModule h2{
+    text-align: center;
+ }
 }
