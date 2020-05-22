@@ -22,3 +22,10 @@
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+
+.CubeModule img{
+max-width: 300px;
+}
+
+}
