@@ -375,6 +375,10 @@ max-width: 100%;
         background-repeat: no-repeat !important;
         background-position: center !important;
     }
+
+    #page2 #sectionB{
+        height: 1000px !important;   
+    }
 }
 
 

@@ -38,4 +38,12 @@
  }
 
 
+ @media only screen and (max-width: 600px) {
 
+ .ItemCourses img {
+    width: 100% !important;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+ }

@@ -33,3 +33,14 @@
 }
 
 
+
+@media only screen and (max-width: 600px) {
+
+    .ItemIncluded img{
+        width: 30px !important;
+        position: relative;
+        left: -20px;
+        top: 10px;
+    }
+
+}

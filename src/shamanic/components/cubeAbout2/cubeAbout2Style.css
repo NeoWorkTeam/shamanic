@@ -40,7 +40,24 @@
     background: #fdf7eb;
 } 
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 800px) {
+
+
+    #page02 .Header{
+        width: 100%;
+        max-width: 100%;
+    } 
+
+    .CubeAbout2 .fondo {
+        display: none !important;
+    }
+
+    
+    .CubeAbout2 {
+        min-height: 700px !important;
+    }
     
     .CubeAbout2 .avatar {
         position: initial;

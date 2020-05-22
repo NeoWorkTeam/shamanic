@@ -26,3 +26,27 @@ padding-bottom: 60px;
 }
 
 
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+
+    .CubeCourses .slider{
+        height: 700px;
+    }
+    
+    .CubeCourses .slider svg{
+       width: 30px;
+    }
+    
+    .CubeCourses .slider img{
+        width: 250px !important;
+        padding-top: 50px;
+     }
+
+
+
+}
