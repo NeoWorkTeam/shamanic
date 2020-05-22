@@ -10,10 +10,10 @@ import check from '../../img/check.svg'
 const ItemIncluded = ( props ) => {
         return (
             <Row className="ItemIncluded">
-                 <Col xs={1} md={1} >
+                 <Col xs={2} md={1} >
                     <img src={check}  alt={ props.title } style={{ width:'50px'} } />
                 </Col>
-                <Col xs={11} md={11} >
+                <Col xs={10} md={11} >
                      <p>{ props.title }</p>
                 </Col>
             </Row>
