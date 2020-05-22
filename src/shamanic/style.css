@@ -377,7 +377,9 @@ max-width: 100%;
     }
 
     #page02 #sectionB{
-        height: 1200px !important;   
+        height: 1000px !important;   
+        padding: 10px !important;
+        padding-top: 100px;
     }
 
     #page02 #sectionA{
