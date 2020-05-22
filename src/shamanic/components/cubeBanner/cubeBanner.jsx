@@ -3,7 +3,6 @@ import { Container,Row,Col } from 'react-bootstrap'
 import Cta01 from "../itemCta/itemCta"
 import './cubeBannerStyle.css'
 
-
 const CubeBanner = () => {
 
         return (<Container  className="CubeBanner">
@@ -20,5 +19,4 @@ const CubeBanner = () => {
         </Container>)
 
 }
-
 export default CubeBanner
