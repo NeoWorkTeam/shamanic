@@ -137,7 +137,7 @@ function Storage(){
         }, curso:{
             title:"Nuestro Curso",
             text1:"Despierte a una vida plena de alegría y servicio con la guía experta del maestro transformador más importante del mundo.",
-            text2:"A través de nuestro curso, tiene acceso a capacitaciones poderosas para ayudarlo a alcanzar su máximo potencial y llevar todos los aspectos de su vida al siguiente nivel.",
+            text2:"A través de nuestro curso, ten acceso a capacitaciones poderosas para ayudarlo a alcanzar su máximo potencial y llevar todos los aspectos de su vida al siguiente nivel.",
             avatar:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png",
             background:"https://img.pngio.com/vector-hand-drawn-black-and-white-earth-vector-earth-hand-png-earth-black-and-white-595_595.png"
         },
