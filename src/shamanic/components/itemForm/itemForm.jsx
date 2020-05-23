@@ -4,7 +4,7 @@ import { Spinner,Button ,InputGroup } from 'react-bootstrap'
 import SimpleReactValidator from 'simple-react-validator';
 import {  AiOutlineMail,AiOutlineUser } from 'react-icons/ai';
 import swal from 'sweetalert'
-
+import { useCookies } from 'react-cookie';
 import { firebase } from '../firebase'
 import Storage from '../storage'
 
@@ -12,11 +12,13 @@ const storage = Storage()
 
 const ContactForm = (props) => {
 
+    const [cookies, setCookie] = useCookies(['idSession'])
     const validator = new SimpleReactValidator()
     const [name,setName] = React.useState('')
     const [email,setEmail] = React.useState('')
     const [mode,setMode] = React.useState(false)
     const [emailValid,setEmailValid] = React.useState(false)
+    
 
     const handlerAddUser = async (e) => {
 
@@ -52,7 +54,7 @@ const ContactForm = (props) => {
                 }
             
                 const data = await db.collection('Contacts').add(newContact)
-               // setCookie('idSession',  data.id , { path: '/' });
+                setCookie('idSession',  data.id , { path: '/' });
 
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
                 props.history.push('/practicas-chamanicas/intro01')
