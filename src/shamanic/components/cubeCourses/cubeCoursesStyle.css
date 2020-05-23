@@ -26,9 +26,11 @@ padding-bottom: 60px;
 }
 
 
-
-
-
+@media only screen and (max-width: 1000px) {
+    .CubeCourses .slider svg{
+    width: 40px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 

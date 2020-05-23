@@ -13,33 +13,30 @@ const storage = Storage()
 
 const CubeAbout2 = (props) => {
 
-        return (<Container  className="CubeAbout2">
-            <Row>
+        return (<Container  className="CubeAbout2 ">
+       
 
-            <Col xs={12} md={12} >
                <h2>
                {  storage.about.title } 
                </h2>
-            </Col>
-        
-            <Col xs={12} md={8} >
-             
-             <img className='fondo' src={fondo} alt={ storage.about.title }   />
+          
+               <section className="shamanicBlob">
+                     <div className="shamanicText">
+                                <p>
+                                {  storage.about.text1 }
+                                <br/><br/>
+                                {  storage.about.text2 }
+                                <br/><br/>
+                                {  storage.about.text3 }
+                                </p>
+                          </div>        
+                </section>
 
-                <p>
-                {  storage.about.text1 }<br/>
-                {  storage.about.text2 } <br/>
-                {  storage.about.text3 }
-                </p>
-                    
-            </Col>
-           
-            <Col xs={12} md={4} >
 
                 <img src={ sandra } alt='sandra' className='avatar' />
             
-            </Col>
-            </Row>
+            
+   
         </Container>)
 }
 

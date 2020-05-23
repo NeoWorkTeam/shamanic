@@ -1,19 +1,25 @@
 import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import logo from '../img/logo.png';
+import logoBlanco from '../img/logo_blanco.png';
+
 import {  FaFacebookSquare } from 'react-icons/fa';
+
 
 
 
 import Storage from './storage'
 const storage = Storage()
 
-const Footer = () => (
+const Footer = (props) => {
 
-    <Container className="footer">
+     
+    return ( <Container className="footer">
     <Row>
     <Col xs={12} md={6} >
-         <img alt="title"   className="logo" src={ logo }/>
+          {
+          props.pages === '2' ?  <img alt="title"   className="logo" src={ logo }/> : <img alt="title"   className="logo" src={ logoBlanco }/>
+          }         
     </Col>
    
   
@@ -36,8 +42,8 @@ const Footer = () => (
     </Col>
 
     </Row>
-    </Container>
+    </Container>)
 
-)
+}
 
 export default Footer

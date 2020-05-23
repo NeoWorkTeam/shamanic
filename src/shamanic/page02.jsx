@@ -35,17 +35,18 @@ function Page02( props ) {
 
      return ( 
       <React.Fragment>
-     <div id="page02">
+     <div style={ {  overflow:'hidden' } } id="page02">
+
         <section className="Header">
              <Header />
         </section>
        
-        <section  style={ {  background:'#FDF7EB', padding:'50px'  } } id='sectionA'>
+        <section  style={ {  background:'#FDF7EB', padding:'10px'  } } id='sectionD'>
              <CubeBanner />
         </section>
 
-        <section  style={ {  background:'#fff', padding:'50px', height:'1200px'  } } id='sectionB'>
-             <CubeAbout2 />
+        <section id='sectionB'>
+                 <CubeAbout2 />
         </section>
 
         <section  style={ {  background:'#fff', padding:'50px 0px'  } } id='sectionA'>
@@ -54,7 +55,7 @@ function Page02( props ) {
              </div>
         </section>
 
-        <section  style={ {  background:'#fff', padding:'50px'  } } id='sectionA'>
+        <section  >
              <CubeBonuses />
         </section>
         
@@ -62,8 +63,11 @@ function Page02( props ) {
              <CubeIncludes />
         </section>
        
+
+     
+
         <section className="Footer">
-             <Footer />
+             <Footer pages='2'   />
         </section>
         </div>
         </React.Fragment> 

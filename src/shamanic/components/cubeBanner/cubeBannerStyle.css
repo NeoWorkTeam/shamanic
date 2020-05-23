@@ -23,3 +23,10 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+
+.CubeBanner iframe {
+    height: 200px !important;
+}
+
+}

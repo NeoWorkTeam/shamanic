@@ -377,16 +377,29 @@ max-width: 100%;
     }
 
     #page02 #sectionB{
-        height: 1000px !important;   
+        height: 300px !important;
         padding: 10px !important;
         padding-top: 100px;
     }
 
     #page02 #sectionA{
         padding: 50px 10px !important;  
+        margin-top: 600px;
     }
    
 }
+
+
+@media only screen and (max-width: 600px) {
+  
+    #page02 #sectionA{
+        padding: 50px 10px !important;  
+        margin-top: 300px;
+    }
+   
+}
+
+
 
 
 
@@ -404,7 +417,8 @@ max-width: 100%;
 }
 
 #page02 #sectionB{
- 
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -412,11 +426,7 @@ max-width: 100%;
     background: #fdf7eb;
 }
 
-#page02 #sectionA .wrapper{
 
-  
-
-}
 
 
 .footer svg{
