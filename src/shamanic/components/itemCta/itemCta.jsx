@@ -43,8 +43,21 @@ function Cta001(props){
           SaveFirebase(query);
         
           setTimeout(() => {
-            window.location.href = storage.url_start_program
+          
+            if(document.location.pathname==='/gabriel-intro'){
+                window.location.href = storage.gabriel.url_start_program         
+            }else{
+                window.location.href = storage.url_start_program
+            }
+
           }, 3000)
+
+
+
+         
+
+
+          
            
     }
 

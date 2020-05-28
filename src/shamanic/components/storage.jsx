@@ -24,6 +24,10 @@ import bonus4 from '../img/bonus4.jpg'
 function Storage(){
 
     const data =  {
+        gabriel:{  
+                url_start_program:"https://shiftnetwork.infusionsoft.com/app/orderForms/f4bfe6f9-7f14-4bb7-80ed-f36157171439",
+                url_sales_pages:"/gabriel-intro",
+            },
         ctaColor:"#DA5E11",
         cta01: "Regístrate Ahora",
         cta01_loading_message:"Redirigiendo",

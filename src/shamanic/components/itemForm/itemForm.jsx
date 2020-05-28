@@ -55,9 +55,13 @@ const ContactForm = (props) => {
             
                 const data = await db.collection('Contacts').add(newContact)
                 setCookie('idSession',  data.id , { path: '/' });
-
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
-                props.history.push('/practicas-chamanicas/intro01')
+               
+                  if(document.location.pathname==='/gabriel'){
+                    props.history.push(storage.gabriel.url_sales_pages)
+                  }else{
+                    props.history.push('/practicas-chamanicas/intro01')
+                  }
     
             }catch(error){
 
