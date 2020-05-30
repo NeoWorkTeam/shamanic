@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { useEffect }  from 'react'
 import CubeBanner from './components/cubeBanner/cubeBanner'
 import CubeAbout2 from './components/cubeAbout2/cubeAbout2'
 import CubeBonuses from './components/cubeBonuses/cubeBonuses'
@@ -6,6 +6,7 @@ import CubeIncludes from './components/cubeIncludes/cubeIncludes'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
+import ReactGA from 'react-ga'
 
 import './style.css'
 import CubeCourses from './components/cubeCourses/cubeCourses'
@@ -28,13 +29,38 @@ function getCookie(cname) {
    }
 
 
+   
 
 function Page02( props ) {
      
+     React.useEffect(() => {
+          ReactGA.initialize('UA-154561398-2');
+       
+     
+      if(document.location.pathname==='/gabriel-intro'){
 
+      }else{
+           
+          ReactGA.pageview(window.location.pathname + window.location.search)
+          ReactGA.event({
+               category: 'conversion',
+               action: 'AW-640361169/2wqsCMW9-dEBENHFrLEC',
+               label: 'conversion',
+             });
+
+
+        
+
+      }
+
+         
+     
+     },[]);
 
      return ( 
       <React.Fragment>
+
+
      <div style={ {  overflow:'hidden' } } id="page02">
 
         <section className="Header">

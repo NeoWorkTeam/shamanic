@@ -8,7 +8,7 @@ const ItemCourses = ( props ) => {
   
         return (
          
-            <Container className="ItemCourses">
+            <Container  className="ItemCourses">
 
                     <Row>
                         <Col xs={12} md={12} >

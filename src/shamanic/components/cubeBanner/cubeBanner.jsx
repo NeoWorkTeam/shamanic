@@ -9,7 +9,7 @@ const CubeBanner = () => {
         return (<Container  className="CubeBanner">
             <Row>
             <Col xs={12} md={12} className="video">
-            <iframe title="banner" width="100%" src="https://player.vimeo.com/video/421621071" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="banner" width="100%" src="https://player.vimeo.com/video/421621071" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </Col>
             </Row>
             <Row>

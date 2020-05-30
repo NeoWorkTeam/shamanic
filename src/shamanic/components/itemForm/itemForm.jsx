@@ -24,17 +24,20 @@ const ContactForm = (props) => {
 
           e.preventDefault();
 
-          if (!validator.fieldValid('email')) {
+        /* 
+         if (!validator.fieldValid('email')) {
             swal( storage.contactForm.field02 , storage.contactForm.field02_message_null, "error");
             return 
+         
           }
 
           if (!validator.fieldValid('name')) {
           swal( storage.contactForm.field01 , storage.contactForm.field01_message_null, "error");
             return 
           }
-
-          if (validator.allValid()) {
+          */
+        
+         // if (validator.allValid()) {
         
             try{
 
@@ -65,19 +68,8 @@ const ContactForm = (props) => {
     
             }catch(error){
 
-                
-            }
-
-
-          } else {
-
             
-
-           
-          
-          }
-          
-
+            }          
         }
 
 

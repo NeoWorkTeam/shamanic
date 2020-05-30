@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 import { withRouter } from "react-router-dom";
 import { useCookies } from 'react-cookie'
 import { Spinner,Button  } from 'react-bootstrap'
+import ReactGA from 'react-ga'
 
 import SaveFirebase  from "../firebase/save"
 import Storage from '../storage'
@@ -30,6 +31,9 @@ function Cta001(props){
 
     const goOut = (props)=>  {
 
+
+    
+
          setState(true)
 
          const query = {
@@ -47,6 +51,12 @@ function Cta001(props){
             if(document.location.pathname==='/gabriel-intro'){
                 window.location.href = storage.gabriel.url_start_program         
             }else{
+              ReactGA.initialize('UA-154561398-2')
+              ReactGA.event({
+                   category: 'Call To Action',
+                   action: 'onClick',
+                   label: 'Registrate Ahora',
+                 })
                 window.location.href = storage.url_start_program
             }
 
