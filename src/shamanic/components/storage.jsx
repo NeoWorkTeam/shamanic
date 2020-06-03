@@ -24,9 +24,39 @@ import bonus4 from '../img/bonus4.jpg'
 function Storage(){
 
     const data =  {
+
+        version01:{
+            cta01: "Empieza tu Experiencia Sanadora",
+            cta01_loading_message:"Redirigiendo",
+            cta02:"Empieza tu Experiencia Sanadora",
+            cta02_loading_message:"Cargando",
+            oferta_url: "/practicas-chamanicas/oferta01",
+            intro_url: "/practicas-chamanicas/intro01"
+        },
+        version02:{
+                cta01: "Empieza tu Experiencia Sanadora Gratis",
+                cta01_loading_message:"Redirigiendo",
+                cta02:"Registrate por sólo $147",
+                cta02_loading_message:"Cargando",
+                descuento: '$297',
+                oferta_url: "/practicas-chamanicas/oferta02",
+                intro_url: "/practicas-chamanicas/intro02"
+        },
+         version11:{
+                cta01: "Empieza tu Experiencia Sanadora Gratis",
+                cta01_loading_message:"Redirigiendo",
+                cta02:"Registrate por sólo $147",
+                cta02_loading_message:"Cargando",
+                descuento: '$297',
+                oferta_url: "/practicas-chamanicas/oferta02",
+                intro_url: "/practicas-chamanicas/intro02"
+        },
         gabriel:{  
                 url_start_program:"https://shiftnetwork.infusionsoft.com/app/orderForms/f4bfe6f9-7f14-4bb7-80ed-f36157171439",
                 url_sales_pages:"/gabriel-intro",
+                oferta_url: "/gabriel",
+                intro_url: "/gabriel-intro"
+
             },
         ctaColor:"#DA5E11",
         cta01: "Regístrate Ahora",
@@ -183,9 +213,7 @@ function Storage(){
 
    }   
 
-
-
-    return   data 
+   return data
 
 }
      

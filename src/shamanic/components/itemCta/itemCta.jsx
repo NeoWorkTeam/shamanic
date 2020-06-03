@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import { withRouter } from "react-router-dom";
 import { useCookies } from 'react-cookie'
 import { Spinner,Button  } from 'react-bootstrap'
-import ReactGA from 'react-ga'
+import { GoogleAnalyticsEvent }  from '../../analytics'
 
 import SaveFirebase  from "../firebase/save"
 import Storage from '../storage'
@@ -32,8 +32,6 @@ function Cta001(props){
     const goOut = (props)=>  {
 
 
-    
-
          setState(true)
 
          const query = {
@@ -45,18 +43,22 @@ function Cta001(props){
          }
     
           SaveFirebase(query);
+
+          //Registro de Eventos en Google Analytics
+          if(document.location.pathname===storage.version01.intro_url){  
+            GoogleAnalyticsEvent('Start Program  Oferta01')
+          }else if(document.location.pathname===storage.version02.intro_url){ 
+            GoogleAnalyticsEvent('Start Program  Oferta02')
+          }else if(document.location.pathname===storage.gabriel.intro_url){
+            GoogleAnalyticsEvent('Start Program Gabriel')
+          }
         
+
           setTimeout(() => {
-          
-            if(document.location.pathname==='/gabriel-intro'){
+
+            if(document.location.pathname===storage.gabriel.intro_url){
                 window.location.href = storage.gabriel.url_start_program         
             }else{
-              ReactGA.initialize('UA-154561398-2')
-              ReactGA.event({
-                   category: 'Call To Action',
-                   action: 'onClick',
-                   label: 'Registrate Ahora',
-                 })
                 window.location.href = storage.url_start_program
             }
 
@@ -71,9 +73,24 @@ function Cta001(props){
            
     }
 
+    const  [cta,setCta] = React.useState(storage.cta01)
+
+    React.useEffect(() => {
+          
+          if(document.location.pathname===storage.version01.intro_url){
+            setCta(storage.version01.cta02)
+          }else if(document.location.pathname===storage.version02.intro_url){
+            setCta(storage.version02.cta02)
+          }else if(document.location.pathname===storage.version11.intro_url){
+            setCta(storage.version11.cta02)
+          }
+
+     },[props]);
+
+
    const [cookies, setCookie] = useCookies(['idSession']);
 
-    if(!state)   return ( <Button className="btn btn-primary btn-block"  onClick={ () => goOut(props) } href="#!">{ storage.cta01 }</Button> )
+    if(!state)   return ( <Button className="btn btn-primary btn-block"  onClick={ () => goOut(props) } href="#!">{ cta }</Button> )
     if(state)  return ( 
 
         <Button variant="primary " className="btn-block btn btn-primary"  disabled>

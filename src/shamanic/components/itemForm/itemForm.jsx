@@ -7,6 +7,7 @@ import swal from 'sweetalert'
 import { useCookies } from 'react-cookie';
 import { firebase } from '../firebase'
 import Storage from '../storage'
+import { GoogleAnalyticsEvent }  from '../../analytics'
 
 const storage = Storage()
 
@@ -19,36 +20,37 @@ const ContactForm = (props) => {
     const [mode,setMode] = React.useState(false)
     const [emailValid,setEmailValid] = React.useState(false)
     
+    const  [cta,setCta] = React.useState(storage.cta02)
+
+
+    React.useEffect(() => {
+          
+       
+      if(document.location.pathname==='/practicas-chamanicas/oferta01'){
+        
+        setCta(storage.version01.cta01);
+        
+        
+      }else  if(document.location.pathname==='/practicas-chamanicas/oferta02'){
+        
+        setCta(storage.version02.cta01);
+
+      }
+
+     },[props]);
 
     const handlerAddUser = async (e) => {
 
           e.preventDefault();
 
-        /* 
-         if (!validator.fieldValid('email')) {
-            swal( storage.contactForm.field02 , storage.contactForm.field02_message_null, "error");
-            return 
-         
-          }
-
-          if (!validator.fieldValid('name')) {
-          swal( storage.contactForm.field01 , storage.contactForm.field01_message_null, "error");
-            return 
-          }
-          */
-        
-         // if (validator.allValid()) {
-        
             try{
 
                 setMode(true)
 
                 const db = firebase.firestore()
+  
+                GoogleAnalyticsEvent('Register Contact')
 
-                //sessionStorage.removeItem('session')
-                //sessionStorage.clear()
-
-                
                 const newContact = {
                     name:  name,
                     email: email,
@@ -60,12 +62,18 @@ const ContactForm = (props) => {
                 setCookie('idSession',  data.id , { path: '/' });
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
                
-                  if(document.location.pathname==='/gabriel'){
-                    props.history.push(storage.gabriel.url_sales_pages)
-                  }else{
-                    props.history.push('/practicas-chamanicas/intro01')
+                  if(document.location.pathname===storage.version01.oferta_url){  
+                      GoogleAnalyticsEvent('Register Contact Oferta01')
+                      props.history.push(storage.version01.intro_url)
+                  }else if(document.location.pathname===storage.version02.oferta_url){ 
+                      GoogleAnalyticsEvent('Register Contact Oferta02') 
+                      props.history.push(storage.version02.intro_url)
+                  }else if(document.location.pathname===storage.gabriel.oferta_url){
+                      GoogleAnalyticsEvent('Register Contact Gabriel') 
+                      props.history.push(storage.gabriel.url_sales_pages)
                   }
-    
+
+
             }catch(error){
 
             
@@ -73,16 +81,10 @@ const ContactForm = (props) => {
         }
 
 
-    
-  
-
-
     return (
             <form onSubmit={handlerAddUser}>
                
                 <InputGroup className="mb-3">
-                
-                
                     <input 
                 className="form-control" 
                 name="name" 
@@ -91,14 +93,10 @@ const ContactForm = (props) => {
                 onChange={ (e) => setName(e.target.value) } />
                 </InputGroup>
 
-
                 { validator.message('name', name, 'required|max:100') }
 
-
-
                     <InputGroup className="mb-3">
-                 
-                    
+                                     
                     <input 
                     className="form-control" 
                     name="email" 
@@ -123,7 +121,7 @@ const ContactForm = (props) => {
                     { storage.cta02_loading_message }
                 </Button>
                 :
-                <button type="submit" className="btn btn-primary btn-block"> { storage.cta02 } </button>
+                <button type="submit" className="btn btn-primary btn-block"> { cta }</button>
 
                 }
             </form>

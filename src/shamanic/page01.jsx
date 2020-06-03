@@ -6,43 +6,47 @@ import Footer from './components/footer'
 import Header from './components/header'
 import './style.css'
 import Storage from './components/storage'
+import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 
 const storage = Storage()
 
-class Page02 extends Component {
+function Page01 ( props ) {
 
-  render(){
+     GoogleAnalytics('page01')
+     
+     GoogleAnalyticsEvent('Register Contact')
+
+     React.useEffect(() => {
+
+       
+     },[props]);
+
        return(
 
         <React.Fragment >
-             <div id="Page01">
-         
+          <div id="Page01">
 
-        <section  style={ {  background:'#FDF7EB', padding:'0px'  } } id='sectionA'>
-             
-             <Header />
+               <section  style={ {  background:'#FDF7EB', padding:'0px'  } } id='sectionA'>
+                    <Header />
+                    <CubeForm   />
+               </section>
 
-             <CubeForm   />
-        </section>
-
-        <section  style={ { paddingTop:'100px', paddingBottom:'40px'  } } id='sectionB'>
-                  { storage.features.map((item,index) => 
-                    <CubeModule {...item } key={ index } />  )
-                  }  
-        </section>
+               <section  style={ { paddingTop:'100px', paddingBottom:'40px'  } } id='sectionB'>
+                         { storage.features.map((item,index) => 
+                              <CubeModule {...item } key={ index } />  )
+                         }  
+               </section>
      
-        <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'0px'  } } id='sectionC'>
-             <CubeAbout />
-             <Footer   />
-        </section>
+               <section  style={ {  background:'#FFF',  paddingTop:'100px', paddingBottom:'0px'  } } id='sectionC'>
+                    <CubeAbout />
+                    <Footer   />
+               </section>
+                       
           
-    
-                  
-</div>
+     </div>
+     
         </React.Fragment>
        )  
-  }
-        
 }
 
-export default Page02
+export default Page01

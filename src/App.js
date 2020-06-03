@@ -18,11 +18,13 @@ const App = () => (
          <CookiesProvider>
             <Switch>
                 
+                <Route exact path="/practicas-chamanicas/oferta02" component={shamanic01} />
                 <Route exact path="/practicas-chamanicas/oferta01" component={shamanic01} />
                 <Route exact path="/gabriel" component={shamanic01} />
                 
 
                 <Route exact path="/practicas-chamanicas/intro01" component={shamanic02} />
+                <Route exact path="/practicas-chamanicas/intro02" component={shamanic02} />
                 <Route exact path="/gabriel-intro" component={shamanic02} />
 
 
