@@ -63,7 +63,7 @@ const ContactForm = (props) => {
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
                
                   if(document.location.pathname===storage.version01.oferta_url){  
-                      GoogleAnalyticsEvent('Register Contact Oferta01')
+                     GoogleAnalyticsEvent('Register Contact Oferta01')
                       props.history.push(storage.version01.intro_url)
                   }else if(document.location.pathname===storage.version02.oferta_url){ 
                       GoogleAnalyticsEvent('Register Contact Oferta02') 
@@ -71,7 +71,9 @@ const ContactForm = (props) => {
                   }else if(document.location.pathname===storage.gabriel.oferta_url){
                       GoogleAnalyticsEvent('Register Contact Gabriel') 
                       props.history.push(storage.gabriel.url_sales_pages)
-                  }
+                  }else {
+                    props.history.push(storage.version01.intro_url)
+                }
 
 
             }catch(error){
