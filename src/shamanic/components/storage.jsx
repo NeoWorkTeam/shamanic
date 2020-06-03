@@ -28,7 +28,7 @@ function Storage(){
         version01:{
             cta01: "Empieza tu Experiencia Sanadora",
             cta01_loading_message:"Redirigiendo",
-            cta02:"Regístrate Ahora?",
+            cta02:"Regístrate Ahora",
             cta02_loading_message:"Cargando",
             oferta_url: "/practicas-chamanicas/oferta01",
             intro_url: "/practicas-chamanicas/intro01"
