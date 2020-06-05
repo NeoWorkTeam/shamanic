@@ -18,4 +18,4 @@ const firebaseConfig = {
 const db = fire.firestore()
 const auth = fire.auth()
 
-export { db , auth }
+export { db , auth , fire }

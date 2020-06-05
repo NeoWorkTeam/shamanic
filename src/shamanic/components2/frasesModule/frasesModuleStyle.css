@@ -1,0 +1,38 @@
+.FrasesModule img{
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.FrasesModule h2{
+    text-align: left;
+    max-width: 500px;
+    margin-top: 15px;
+
+ }
+
+.FrasesModule p{
+   text-align: left;
+   max-width: 500px;
+
+}
+
+.FrasesModule {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+.FrasesModule img{
+max-width: 300px;
+}
+
+.FrasesModule p {
+    text-align: center;
+}
+
+.FrasesModule h2{
+    text-align: center;
+ }
+}

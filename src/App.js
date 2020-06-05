@@ -3,6 +3,10 @@ import { Provider } from 'react-redux'
 import { BrowserRouter,Route, Switch } from 'react-router-dom'
 import shamanic01 from './shamanic/page01'
 import shamanic02 from './shamanic/page02'
+import shamanic03 from './shamanic/page03'
+import shamanic04 from './shamanic/page04'
+
+
 import store from './store'
 import { CookiesProvider } from 'react-cookie';
 
@@ -22,6 +26,9 @@ const App = () => (
                 <Route exact path="/practicas-chamanicas/oferta01" component={shamanic01} />
                 <Route exact path="/gabriel" component={shamanic01} />
                 
+                <Route exact path="/practicas-chamanicas/oferta11" component={shamanic03} />
+                <Route exact path="/practicas-chamanicas/intro11" component={shamanic04} />
+
 
                 <Route exact path="/practicas-chamanicas/intro01" component={shamanic02} />
                 <Route exact path="/practicas-chamanicas/intro02" component={shamanic02} />

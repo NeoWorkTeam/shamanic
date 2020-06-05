@@ -356,14 +356,7 @@ max-width: 100%;
 }
 
 
-    #Page01 #sectionA{
-        background-image: url('./img/banner.png') !important;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        min-height: 900px;
-        background-size: cover !important;
-        background-position: center !important;
-    }
+ 
 
 
 @media only screen and (max-width: 1000px) {
@@ -401,22 +394,14 @@ max-width: 100%;
 }
 
 
-
-
-
-
-
-
 #Page01 #sectionA {
-    background-image: url(/static/media/banner.dfa31c61.png) !important;
+    background-image: url('./img/lp2/banner.png') !important;
     padding-top: 200px;
     padding-bottom: 200px;
-    min-height: 900px;
+    min-height: 700px;
     background-size: cover !important;
     background-position: center !important;
 }
-
-
 
 
 .footer svg{
@@ -468,6 +453,12 @@ color: #fff;
 }
 
 
+.moduloA002 .icon{
+    position: relative;
+    top: 70px;
+    width: 300px;
+}
+
 .moduloA002 h2{
     text-align: center;
     font-size: .9rem !important;
@@ -482,6 +473,7 @@ color: #fff;
 
 .moduloA002 {
     padding: 70px 10px;
+    background-color: linear-gradient(359.23deg, rgba(224, 241, 251, 0.0198) 0.55%, rgba(210, 235, 249, 0.22) 18.19%, rgba(90, 181, 233, 0.0286) 99.38%);
 }
 
 
@@ -513,7 +505,7 @@ color: #fff;
 
 .moduloA004 h3{
     text-align: left;
-    font-size: .9rem !important;
+    font-size: .7rem !important;
     line-height: 1.2rem;
     font-weight: 600;
 }
@@ -521,9 +513,9 @@ color: #fff;
 
 .moduloA004 p{
     text-align: left;
-    font-size: .8rem !important;
+    font-size: .7rem !important;
     line-height: 1.2rem;
-    padding-bottom: 50px ;
+    padding-bottom: 0px ;
   }
 
 .moduloA004 img{
@@ -540,7 +532,9 @@ color: #fff;
 
 
 .moduloA005{
-    padding: 100px 20px;
+    padding: 100px 20px 0px;
+    padding-bottom: 300px;
+
 }
 
 .moduloA005 img{
@@ -551,11 +545,14 @@ color: #fff;
     padding: 30px 10px;
    text-align: center;
    font-weight: 500;
+   color:#A46152;
+
 }
 
 .moduloA005 h2{
     padding: 40px 10px 10px;
    text-align: center;
+   color:#A46152;
 }
 
 .moduloA005 p{
@@ -611,6 +608,13 @@ color: #fff;
 .moduloA006 .wrapper{
     max-width: 350px;
     margin: auto;
+    background: #E0F1FB;
+    position: absolute;
+    margin: auto;
+    display: block;
+    left: 20%;
+    top:-200px;
+   
 }
 
 .moduloA006 h4{
@@ -620,3 +624,188 @@ color: #fff;
     text-align: center;
     font-weight: 600;
 }
+
+
+.bannerBottom{
+    background-image: url('./img/lp2/bottom.svg') !important;
+    min-height: 700px;
+    background-size: cover !important;
+    background-position: center !important;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.moduloAB001{
+    padding: 70px 20px;
+}
+
+
+.moduloAB001 h2{
+    color:#A46152;
+    font-size:1rem !important;
+    line-height:1.5rem
+}
+
+.moduloAB001 p{
+    font-size:.7rem !important;
+    line-height:1.2rem;
+    display: block;
+    margin: center;
+}
+
+
+.moduloAB002 h2{
+    color:#A934F5;
+    font-size:1rem !important;
+    line-height:1.5rem;
+    text-align:center;
+    padding-bottom: 40px
+}
+
+.moduloAB002 ul{
+    list-style-type: disc !important;
+ 
+}
+
+.moduloAB002 li{
+    font-size:.7rem !important;
+    line-height:1.2rem;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.moduloAB003{
+        padding: 70px 10px;
+}
+
+
+.moduloAB003 h2{
+  text-align: center;
+   font-size: 1rem !important;
+   margin-bottom: 0px;
+}
+
+.moduloAB003 h3{
+    text-align: center;
+     font-size: .8rem !important;
+     margin-top: 1px;
+     padding: 0px;
+}
+
+.moduloAB003 p{
+    font-size:.7rem !important;
+    line-height:1.2rem;
+    max-width: 600px;
+    display: block;
+    margin: center;
+    text-align: center;
+    margin-top: 50px;
+    height: 70px;
+}
+
+
+.moduloAB003 img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.moduloAB004 img{
+ width: 60px;
+ position: relative;
+ top:-10px;
+ left: -10px;
+}
+
+.moduloAB004 img.icon1{
+   width: 50px !important;
+}
+
+.moduloAB004 .icon2{
+    width: 70px !important;
+}
+
+.moduloAB004 .icon3{
+    width: 80px !important;
+    left: -20px;
+}
+
+
+.moduloAB004 .icon4{
+    width: 80px !important;
+}
+
+
+.moduloAB004 h2{
+ color:#A46152; 
+ font-size: 1rem !important;
+ padding-left: 20px;
+}
+
+.moduloAB004 p{
+    font-size:.7rem !important;
+    line-height:1.2rem;
+}
+
+.moduloAB005{
+    padding: 50px 10px;
+    background-image: url('./img/lp2/bottom2.png') !important;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 700px;
+    background-size: cover !important;
+    background-position: center !important;
+    max-width: 100%;
+
+}
+
+
+.moduloAB005 .wrapper{
+max-width: 950px;
+display: block;
+margin:auto
+}
+
+.moduloAB005 .card{
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    background-color: #E0F1FB;
+    padding-bottom: 0px;
+    margin-top: 100px;
+
+}
+
+.moduloAB005 li{
+    max-width: 300px;
+    padding-bottom: 20px;
+    font-size: .7rem;
+}
+
+.moduloAB005 h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.7rem !important;
+}
+
+.moduloAB005 p{
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.moduloAB005 .card h4{
+    background-color: #BE64F9;
+    color: #fff;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem !important;
+}
+
+.moduloAB005 h2{
+  color:#fff;
+  max-width:400px;
+  line-height: 2.2rem;
+}
+
