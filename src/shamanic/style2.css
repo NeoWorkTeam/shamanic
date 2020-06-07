@@ -394,7 +394,7 @@ max-width: 100%;
 }
 
 
-#Page01 #sectionA {
+#Page03 #sectionA {
     background-image: url('./img/lp2/banner.png') !important;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -403,6 +403,37 @@ max-width: 100%;
     background-position: center !important;
 }
 
+#Page03 .bannerBottom {
+    background-image: url(/static/media/bottom.8cd80b17.svg) !important;
+    min-height: 600px;
+    background-size: cover !important;
+    background-position: center !important;
+    max-width: 100%;
+    z-index: -1;
+}
+
+#Page03 .bannerBottom {
+   position: relative;
+   top:0px
+}
+#Page03 .bannerBottom svg{
+    color:#6F6B5B !important
+}
+
+#Page03 .footer{
+    padding-top: 500px;
+}
+
+
+#Page03 .btn-primary {
+    color: #fff;
+    background-color: #5AB5E9;
+    border-color: #5AB5E9;
+}
+
+#Page03 .bannerBottom p{
+    color:#6F6B5B !important
+}
 
 .footer svg{
     font-size: 60px;
@@ -448,27 +479,70 @@ color: #fff;
 .moduloA001 h2{
         padding: 100px 20px;
         text-align: center;
-        font-size: .9rem !important;
-        line-height: 1.5rem;
+        font-size: 1.5rem !important;
+        line-height: 2rem;
+        padding-bottom: 10px;
+        max-width: 800px;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+
 }
+
+.moduloA001 .line {
+    position: relative;
+    top: 150px;
+    left: -240px;
+    width: 300px;
+}
+
+.moduloA001 .rectangule {
+    position: relative;
+    top: 130px;
+    left: 30px;
+}
+
+.moduloA001 .line2 {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    width: 300px;
+}
+
+.moduloA001 .rectangule2 {
+    position: relative;
+    top: 130px;
+    left: -30px;
+}
+
+.fondo001{
+    background-color: #F6FBfe !important;
+}
+
 
 
 .moduloA002 .icon{
     position: relative;
     top: 70px;
     width: 300px;
+    left: -100px;
 }
+
+
 
 .moduloA002 h2{
     text-align: center;
-    font-size: .9rem !important;
+    font-size: 1.2rem !important;
     line-height: 1.5rem;
 }
 
 .moduloA002 p{
-    text-align: left;
-    font-size: .8rem !important;
+    text-align: center;
+    font-size: .9rem !important;
     line-height: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
 }
 
 .moduloA002 {
@@ -479,16 +553,24 @@ color: #fff;
 
 .moduloA003 h2{
     text-align: center;
-    font-size: .9rem !important;
-    line-height: 1.5rem;
-    padding-bottom: 10px ;
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .moduloA003 p{
-    text-align: center;
-    font-size: .8rem !important;
-    line-height: 1.2rem;
-    padding-bottom: 50px ;
+    padding: 50px 20px;
+        text-align: center;
+        font-size: 1.2rem !important;
+        line-height: 2rem;
+        padding-bottom: 10px;
+        max-width: 1200px;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+
 }
 
 .moduloA003  {
@@ -498,14 +580,15 @@ color: #fff;
 
 .moduloA004 h2{
     text-align: center;
-    font-size: 1.2rem !important;
+    font-size: 1.7rem !important;
     line-height: 1.5rem;
     padding-top: 50px;
+    font-family: Montserrat;
 }
 
 .moduloA004 h3{
     text-align: left;
-    font-size: .7rem !important;
+    font-size: 1rem !important;
     line-height: 1.2rem;
     font-weight: 600;
 }
@@ -513,9 +596,10 @@ color: #fff;
 
 .moduloA004 p{
     text-align: left;
-    font-size: .7rem !important;
+    font-size: .9rem !important;
     line-height: 1.2rem;
-    padding-bottom: 0px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
 
 .moduloA004 img{
@@ -544,8 +628,10 @@ color: #fff;
 .moduloA005 h3{
     padding: 30px 10px;
    text-align: center;
-   font-weight: 500;
+   font-weight: 300 !important;
    color:#A46152;
+   font-size: 2rem !important;
+   font-family: Merriweather;
 
 }
 
@@ -553,12 +639,81 @@ color: #fff;
     padding: 40px 10px 10px;
    text-align: center;
    color:#A46152;
+   font-family: Montserrat;
+
+}
+
+.cardLeft{
+    position: absolute;
+    top: -202.563px;
+    left: 70px;
+    width: 20px;
+    height: 55px;
+}
+
+.cardRight{
+    position: absolute;
+    width: 20px;
+    top: -204px;
+    left: 447px;
+    height: 55px;
+}
+.topCard{
+    width: 430px;
+    position: absolute;
+    z-index: 99;
+    top: -200px;
+    left: 60px;
+}
+
+.pricingCard{
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    left: 20%;
+}
+
+
+
+
+@media only screen and (max-width: 769px) {
+
+    .pricingCard{
+        left: 0%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    .pricingCard{
+        margin: auto;
+        display: inline-block;
+        position: relative;
+        width: 350px;
+        left: 0%;
+    }
+
+    .topCard{
+        top: -210px;
+        left: 37px;
+        width: 345px;
+    }
+
 }
 
 .moduloA005 p{
     padding: 4px 20px;
-   text-align: left;
-   font-size: .8rem !important;
+    text-align: left;
+    font-size: 1rem !important;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
 }
 
 
@@ -567,19 +722,53 @@ color: #fff;
 }
 
 .moduloA006 h3{
-    background-color: #be64f9;
+    background: rgba(189,100,249,1);
+    background: -moz-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,100,249,1)), color-stop(100%, rgba(179,70,248,1)));
+    background: -webkit-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -o-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -ms-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: linear-gradient(to right, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd64f9', endColorstr='#b346f8', GradientType=1 );
     color: #fff;
     font-size: .8rem !important;
     text-align: center;
     font-weight: 400;
+    font-family: 'Merriweather', serif;
+
 }
 
 .moduloA006 h2{
-    font-size: 1.6rem !important;
+    font-size: 2rem !important;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     padding: 20px 10px;
+    font-family: Montserrat;
+
 }
+
+.moduloA006 .cardSubtitleLeft{
+    font-size: .8rem !important;
+    color:#A46152;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    float:left
+}
+
+.moduloA006 .cardSubtitleRight{
+    float:right;
+    font-size: 1rem !important;
+    font-family: 'Montserrat' sans-serif;
+
+}
+
+.moduloA006 p{
+    margin-bottom: 20px;
+    height: 50px;
+    max-width: 300px;
+    margin: auto;
+}
+
 
 .moduloA006 ul{
     padding: 10px 3px;
@@ -623,6 +812,8 @@ color: #fff;
     font-size: .8rem !important;
     text-align: center;
     font-weight: 600;
+    margin: 0;
+    cursor:pointer
 }
 
 
@@ -635,31 +826,61 @@ color: #fff;
     z-index: -1;
 }
 
+
+
+
+#Page04 .btn-primary {
+    color: #fff;
+    background-color: #5AB5E9;
+    border-color: #5AB5E9;
+}
+
+
 .moduloAB001{
     padding: 70px 20px;
 }
 
 
 .moduloAB001 h2{
-    color:#A46152;
-    font-size:1rem !important;
-    line-height:1.5rem
+    color: #A46152;
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    max-width: 1100px;
 }
 
 .moduloAB001 p{
-    font-size:.7rem !important;
-    line-height:1.2rem;
-    display: block;
-    margin: center;
+    padding: 4px 20px;
+    text-align: left;
+    font-size: 1rem !important;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
 }
+
+.moduloAB001 .parrafoBottom{
+max-width: 220px;
+margin:auto;
+display: block;
+position: relative;
+top:10px;
+margin-bottom: 30px;
+margin-top: 10px;
+
+}
+
+
 
 
 .moduloAB002 h2{
     color:#A934F5;
-    font-size:1rem !important;
+    font-size:1.4rem !important;
     line-height:1.5rem;
     text-align:center;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    padding-top:100px;
 }
 
 .moduloAB002 ul{
@@ -667,11 +888,20 @@ color: #fff;
  
 }
 
+.moduloAB002  ul {
+    list-style-image: url('./img/lp2/elipse.png');
+    list-style-position: outside;
+
+  }
+
 .moduloAB002 li{
-    font-size:.7rem !important;
-    line-height:1.2rem;
+    font-size: .9rem !important;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     max-width: 900px;
     margin-bottom: 30px;
+    padding-left: 30px;
 }
 
 .moduloAB003{
@@ -681,32 +911,58 @@ color: #fff;
 
 .moduloAB003 h2{
   text-align: center;
-   font-size: 1rem !important;
+   font-size: 1.3rem !important;
    margin-bottom: 0px;
+   font-family: 'Merriweather' sans-serif;
+   font-weight: 100;
 }
 
 .moduloAB003 h3{
     text-align: center;
-     font-size: .8rem !important;
+     font-size: 1rem !important;
+     font-family: 'Merriweather' sans-serif;
      margin-top: 1px;
      padding: 0px;
 }
 
 .moduloAB003 p{
-    font-size:.7rem !important;
-    line-height:1.2rem;
+    font-size: .9rem !important;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     max-width: 600px;
     display: block;
     margin: center;
     text-align: center;
     margin-top: 50px;
-    height: 70px;
+    height: 90px;
 }
 
 
 .moduloAB003 img{
     width: 100%;
     max-width: 300px;
+}
+
+
+.line1{
+    position: relative;
+    left: -260px;
+    width: 400px !important;
+    height: 1px;
+    top: 20px;
+}
+
+.line2{
+    position: relative;
+    left: 260px;
+    width: 400px !important;
+    height: 1px;
+    top: -19px;
+}
+
+.moduloAB004{
+    margin-top: 50px;
 }
 
 .moduloAB004 img{
@@ -742,16 +998,19 @@ color: #fff;
 }
 
 .moduloAB004 p{
-    font-size:.7rem !important;
-    line-height:1.2rem;
+    font-size: .9rem !important;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 70px;
 }
 
 .moduloAB005{
     padding: 50px 10px;
     background-image: url('./img/lp2/bottom2.png') !important;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    min-height: 700px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    min-height: 600px;
     background-size: cover !important;
     background-position: center !important;
     max-width: 100%;
@@ -776,20 +1035,23 @@ margin:auto
 }
 
 .moduloAB005 li{
-    max-width: 300px;
+    max-width: 400px;
     padding-bottom: 20px;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .moduloAB005 h3{
     text-align: center;
     padding: 20px;
-    font-size: 1.7rem !important;
+    font-size: 2rem !important;
+    font-family: 'Montserrat' sans-serif;
+
 }
 
 .moduloAB005 p{
     text-align: left;
     padding-left: 20px;
+    height: 60px;
 }
 
 
@@ -798,14 +1060,30 @@ margin:auto
     color: #fff;
     margin-bottom: 0px;
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    font-size: 1rem !important;
+    cursor: pointer;
+    font-size: 1.2rem !important;
 }
 
 .moduloAB005 h2{
   color:#fff;
-  max-width:400px;
+  max-width:500px;
   line-height: 2.2rem;
 }
 
+
+.moduloAB005 .cardSubtitleLeft{
+    font-size: 1rem !important;
+    color:#A46152;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    float:left
+}
+
+.moduloAB005 .cardSubtitleRight{
+    float:right;
+    font-size: 1.5rem !important;
+    font-family: 'Montserrat' sans-serif;
+    margin-right: 40px;
+}

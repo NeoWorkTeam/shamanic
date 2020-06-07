@@ -20,8 +20,10 @@ import icon1 from './img/lp2/icon1.svg'
 import icon2 from './img/lp2/icon2.svg'
 import icon3 from './img/lp2/icon3.svg'
 import icon4 from './img/lp2/icon4.svg'
+import parrafoBottom from './img/lp2/parrafoBottom.png'
 
-
+import Line from './img/lp2/Line01.png'
+import Rectangle from './img/lp2/Rectangle15.png'
 
 function getCookie(cname) {
      var name = cname + "=";
@@ -57,13 +59,13 @@ function Page02( props ) {
      return ( 
       <React.Fragment>
 
-     <div style={ {  overflow:'hidden' } } id="page02">
+     <div style={ {  overflow:'hidden' } } id="Page04">
 
-        <section className="Header">
+        <section className="Header" style={ {  background:'#f7ecfe'   } }>
              <Header />
         </section>
        
-        <section  style={ {  background:'#FDF7EB', padding:'10px'  } } id='sectionD'>
+        <section  style={ {  background:'#f7ecfe', padding:'10px'  } } id='sectionD'>
              <CubeBanner />
         </section>
 
@@ -78,14 +80,18 @@ function Page02( props ) {
                <p>
                ¿Estos tiempos sin precedentes te están suscitando sentimientos de ansiedad, incertidumbre, preocupación profunda, o incluso emociones que no puedes nombrar?
                </p>
+               <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>
                No estás solo ... De las cosas más difíciles de estos tiempos turbulentos de enfermedad, aislamiento social y confusión es que nos tomaron por sorpresa a muchos de nosotros ...Sin embargo, según la perspectiva chamánica, el virus al que todos nos enfrentamos y el caos que lo acompaña no surgió de la nada. Eso está lejos de la realidad. Ya estábamos lidiando, por ejemplo, con la increíble pena de perder tantos seres en los incendios forestales de Australia. Nuestro planeta contaminado. Profunda avaricia. La inestabilidad política.
                </p>
+               <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>Y las formas de pensamiento negativas inundan el colectivo ... Mirando nuestro mundo a través de un lente chamánico, en realidad no es ninguna sorpresa que este nivel de dolor colectivo eventualmente se convierta en un virus. Entonces, ¿qué puede hacer un buscador chamánico como tú ahora, a diario, en estos tiempos de incertidumbre, especialmente si te sientes impotente?
                </p>
+               <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>
                Según la venerada maestra chamánica Sandra Ingerman, puedes descansar con la seguridad de que tus antepasados, tanto pasados ​​como futuros, ya te han dejado pistas ... sabiduría poderosa y herramientas espirituales efectivas para ayudarte a navegar estos días históricos.
                </p>
+               <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>
                De hecho, durante decenas de miles de años, las antiguas tradiciones nos han estado enseñando a todos cómo superar este momento exacto. Su sabiduría chamánica curativa nos llega a través de cantos, canciones, historias, palabras sabias, prácticas indígenas y más.
                </p>
@@ -127,9 +133,13 @@ function Page02( props ) {
           </ul>
 
      
+     <img src={Line} className="line1" alt="line"></img>
+     <img src={Rectangle} alt="line"></img>
+     <img src={Line} className="line2" alt="line"></img>
+
           </Container>
 
-          <Container className="moduloAB003">
+        <Container className="moduloAB003">
                
                <h2> Bonus del programa </h2>
                <h3> (Valorado en $100.00) </h3>
@@ -148,8 +158,8 @@ function Page02( props ) {
                      <Col xs={12} md={6} >
                    
                      <p>
-                         <br></br>
-                    Extractos del Libro de Ceremonia
+                       
+                    Extractos del Libro <br></br> de Ceremonia
                     </p>
 
                      <img src={bonus2} alt="title"></img>
@@ -159,8 +169,7 @@ function Page02( props ) {
                
           </Container>
 
-
-          <Container className="moduloAB004">
+        <Container className="moduloAB004">
           
                  <Row>
                     <Col xs={12} md={1} > 
@@ -238,11 +247,9 @@ function Page02( props ) {
                
           </Container>
 
-          <Container className="moduloAB005">
+        <Container className="moduloAB005">
 
 <div className="wrapper">
-
-     
 
           <h2>
           Si está listo para dar el siguiente paso en tu propia evolución, únete a nuestra comunidad para la curación personal y colectiva.
@@ -250,9 +257,10 @@ function Page02( props ) {
 
           <div className="card">
                <h3> $147 USD </h3>
-              <p>
-                    Precio Regular   $297 USD
-              </p>
+               <p>
+                    <span className="cardSubtitleLeft">Precio Regular</span>
+                    <span className="cardSubtitleRight"><s>$297</s>USD</span>
+               </p>
                <ul>
                     <li>
                     Siete Sesiones de Clases Grabadas
@@ -274,12 +282,10 @@ function Page02( props ) {
 
           </div>
           </div>
-
+          <Footer pages='2'   />
            </Container>    
           
-        <section className="Footer">
-             <Footer pages='2'   />
-        </section>
+     
         </div>
         </React.Fragment> 
 

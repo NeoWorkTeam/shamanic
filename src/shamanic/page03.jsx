@@ -7,6 +7,7 @@ import { Container,Row,Col } from 'react-bootstrap'
 import './style2.css'
 import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
+import Footer from './components/footer'
 
 
 import module1 from './img/lp2/modulo1.png'
@@ -16,6 +17,16 @@ import module4 from './img/lp2/modulo4.png'
 import module5 from './img/lp2/modulo5.png'
 import module6 from './img/lp2/modulo6.png'
 import module7 from './img/lp2/modulo7.png'
+
+import Line from './img/lp2/Line01.png'
+import Rectangle from './img/lp2/Rectangle15.png'
+
+import left from './img/lp2/left.png'
+import right from './img/lp2/right.png'
+
+import topCard from './img/lp2/topCard.png'
+
+
 
 import avatar from './img/lp2/sandra.png'
 import pin from './img/lp2/pin.svg'
@@ -37,16 +48,24 @@ function Page03 ( props ) {
 
        return(
         <React.Fragment >
-            <div id="Page01">
+            <div id="Page03">
 
                <section  style={ {  padding:'100px'  } } id='sectionA'>
                     <CubeForm   />
                </section>
 
+
+<div className="fondo001">
                 <Container className="moduloA001" >
                     <Row>
-                            <Col xs={12} md={2} >
-                            </Col>
+                           
+                    <Col xs={12} md={2} >
+
+            <img src={Line } alt='cuadrado' className="line" ></img>
+            <img src={Rectangle} alt='rentagulo' className="rectangule" ></img>
+
+                    </Col>
+
                                 <Col xs={12} md={8} >
                                         <h2>
                                         El chamanismo es la práctica espiritual más antigua
@@ -54,26 +73,32 @@ function Page03 ( props ) {
 
                                         </h2>
                                 </Col>
-                            <Col xs={12} md={2} >
-                            </Col>
+                           
+                    <Col xs={12} md={2} >
+
+                    <img src={Line } alt='cuadrado' className="line2" ></img>
+            <img src={Rectangle} alt='rentagulo' className="rectangule2" ></img>
+
+
+                    </Col>
                     </Row>
                 </Container>
 
                 <Container className="moduloA002" >
                 
                     <Row>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={5} >
                         <h2> Fortalece tu Corazón </h2>
                         <p>
                         Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos. 
                         </p>        
                     </Col>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={2} >
 
                         <img src={pin} className="icon" alt="avatar" />
 
                     </Col>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={5} >
                         <h2> Consolida tu Comunidad 
                         </h2>
                         <p>
@@ -84,15 +109,15 @@ function Page03 ( props ) {
 
 
                     <Row>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={5} >
                         <h2> Cambia tu Mentalidad
                         </h2>
                         <p>
                         Explora las muchas razones por las que las prácticas chamánicas pueden darte sabiduría esencial para navegar y afrontar distintas crisis. 
                         </p>
                     </Col>
-                    <Col xs={12} md={4} ></Col>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={2} ></Col>
+                    <Col xs={12} md={5} >
                         <h2> Obtén Experiencias Sanadoras </h2>
                         <p>
                         Obtén herramientas útiles para proyectar luz hacia los demás y atraer energía positiva a tu vida y a la de los demás.  
@@ -101,21 +126,21 @@ function Page03 ( props ) {
                     </Row>
 
                 </Container>
-                
+ </div>               
+
                 <Container className="moduloA003" >
             
                 <Row>
-                            <Col xs={12} md={2} >
-                            </Col>
-                                <Col xs={12} md={8} >
+                            
+                                <Col xs={12} md={12} >
                                         <h2>
-                                        Lo que descubrirás en el curso transformador virtual de 7 partes de Sandra                                </h2>
+                                        Lo que descubrirás en el curso transformador virtual de 7 partes de Sandra        
+                                        </h2>
                                         <p>
                                         En este curso intensivo de transformación de 7 semanas, Sandra te guiará a través de las habilidades y competencias fundamentales cuerpo-mente-espíritu que necesitarás para fortalecer tu salud, cambiar tu mentalidad y empoderar a tu comunidad.
                                         </p>
                                 </Col>
-                            <Col xs={12} md={2} >
-                            </Col>
+                           
                     </Row>
 
                 </Container>      
@@ -123,6 +148,10 @@ function Page03 ( props ) {
                 <Container className="moduloA004" >
 
                     <Row>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module1 } alt="1" />
+                    </Col>
+
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 1   </h2>
                         <h3> Re-tejiendo la historia de tu creación para la salud </h3>
@@ -130,15 +159,11 @@ function Page03 ( props ) {
                         Explora cómo los chamanes interactúan directamente con los espíritus para abordar los aspectos espirituales de la enfermedad, realizar recuperaciones de almas, información divina y mucho más. 
                         </p>
                     </Col>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module1 } alt="1" />
-                    </Col>
+                
                     </Row>
                 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module2 } alt="1" />
-                    </Col>
+                  
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 2   </h2>
                         <h3> Transfiguración y viendo el mundo a través de los ojos del espíritu </h3>
@@ -146,9 +171,15 @@ function Page03 ( props ) {
                         Conocerás al espíritu de la tierra donde vives, para que puedas construir una relación sólida con él.
                         </p>
                     </Col>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module2 } alt="1" />
+                    </Col>
                     </Row>
 
                     <Row>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module3 } alt="1" />
+                    </Col>
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 3   </h2>
                         <h3> Invocando sueños de sanidad y cambiando tu realidad diurna</h3>
@@ -156,15 +187,11 @@ function Page03 ( props ) {
                         Viaje de varios pasos para identificar el espíritu que se ofrece como voluntario para trabajar contigo y discernir qué tipo de poder tienen.
                         </p>
                     </Col>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module3 } alt="1" />
-                    </Col>
+                    
                     </Row>
                 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module4 } alt="1" />
-                    </Col>
+                   
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 4   </h2>
                         <h3> Sanando pensamientos tóxicos: cómo transmutar y desmembrar el miedo, la ira, el dolor y la traición.</h3>
@@ -174,11 +201,17 @@ function Page03 ( props ) {
 
                         </p>
                     </Col>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module4 } alt="1" />
+                    </Col>
                     </Row>
 
 
 
                     <Row>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module5 } alt="1" />
+                    </Col>
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 5   </h2>
                         <h3> Trabajando con la luna y los cristales: como transmitir energías sanadoras en la ceremonia </h3>
@@ -187,15 +220,11 @@ function Page03 ( props ) {
 
                         </p>
                     </Col>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module5 } alt="1" />
-                    </Col>
+                    
                     </Row>
                 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module6 }  alt="1" />
-                    </Col>
+                
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 6   </h2>
                         <h3> Aprovechando los elementos: Fusión y construcción de conexiones. </h3>
@@ -204,9 +233,15 @@ function Page03 ( props ) {
 
                         </p>
                     </Col>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module6 }  alt="1" />
+                    </Col>
                     </Row>
 
                     <Row>
+                    <Col xs={12} md={6} className="marco" >
+                    <img src={ module7 }  alt="1" />
+                    </Col>
                     <Col xs={12} md={6}  className="parrafo">
                         <h2> Módulo 7   </h2>
                         <h3> Viajando al futuro y de vuelta a los ancestros: Accediendo a la sabiduría para sobrevivir a la crisis actual.  </h3>
@@ -215,9 +250,7 @@ function Page03 ( props ) {
                                 También compartirá un método de curación simple pero poderoso para el que te sentirás completamente preparado.
                         </p>
                     </Col>
-                    <Col xs={12} md={6} className="marco" >
-                    <img src={ module7 }  alt="1" />
-                    </Col>
+                
                     </Row>
                 
                 
@@ -252,31 +285,40 @@ function Page03 ( props ) {
                 <Container className="moduloA006">
                        <Row>   
                            
-                       <Col xs={12} md={3} >
+                    
+                       <Col xs={12} md={12}  >
 
+                        <div className="pricingCard">
+                        <img src={topCard} alt="title" className="topCard" ></img>
 
-                       </Col>
-                       <Col xs={12} md={6} >
-                        <div className="wrapper">
-                                <h3>50% de Descuento</h3>
-                                <h2>$147 USD</h2>
-                                <p>Precio Regular $297 USD</p>
-                                <ul>
-                                    <li>Siete Sesiones de Clases Grabadas </li>
-                                    <li>Siete Transcriptiones de las Sesiones </li>
-                                    <li>Extractos del Libro de Ceremonia</li>
-                                    <li> Introducción al Viaje Chamánico  </li>
-                                    <li>Grupo de Facebook con un chamán experto para responder tus preguntas</li>
-                                </ul>
-                                <h4> Obtén tu Curso </h4>
+                            <div className="wrapper">
+
+                                    <h3>50% de Descuento</h3>
+                                    <h2>$147 USD</h2>
+                                    <p>
+                                        <span className="cardSubtitleLeft">Precio Regular</span>
+                                        <span className="cardSubtitleRight"><s>$297</s>USD</span>
+                                        </p>
+                                    <ul>
+                                        <li>Siete Sesiones de Clases Grabadas </li>
+                                        <li>Siete Transcriptiones de las Sesiones </li>
+                                        <li>Extractos del Libro de Ceremonia</li>
+                                        <li> Introducción al Viaje Chamánico  </li>
+                                        <li>Grupo de Facebook con un chamán experto para responder tus preguntas</li>
+                                    </ul>
+                                    <h4> Obtén tu Curso </h4>
+                            </div>
                         </div>
+
                        </Col>
-                       <Col xs={12} md={3} ></Col>
+
                        </Row>
 
                        </Container>
                 
                 <Container className="bannerBottom">
+                                 <Footer pages='3'   />
+
                 </Container> 
 
             </div>
