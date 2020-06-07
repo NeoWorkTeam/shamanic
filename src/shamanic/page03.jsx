@@ -8,7 +8,7 @@ import './style2.css'
 import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
-
+import Carrusel from './components2/carrusel'
 
 import module1 from './img/lp2/modulo1.png'
 import module2 from './img/lp2/modulo2.png'
@@ -57,6 +57,21 @@ function Page03 ( props ) {
 
 <div className="fondo001">
                 <Container className="moduloA001" >
+
+                <Row className="mobile">   
+                           
+                    
+                           <Col xs={12} md={12}  >
+    
+                       
+                       <PrincingCard></PrincingCard>
+                                      
+    
+                           </Col>
+    
+                           </Row>
+
+
                     <Row>
 
                     <Col xs={12} md={2} >
@@ -82,8 +97,17 @@ function Page03 ( props ) {
                 </Container>
 
                 <Container className="moduloA002" >
+
+                    <Row  className="mobile">
+
+                    <Col xs={12} md={12} >
+                   <Carrusel></Carrusel>
+                    </Col>
+                    </Row>
                 
-                    <Row>
+
+                    <div className="noMobile">
+                    <Row >
                     <Col xs={12} md={5} >
                         <h2> Fortalece tu Corazón </h2>
                         <p>
@@ -119,7 +143,7 @@ function Page03 ( props ) {
                         </p>
                     </Col>
                     </Row>
-
+                </div>  
                 </Container>
  </div>               
 
@@ -308,9 +332,9 @@ function Page03 ( props ) {
                 
                 <Container className="bannerBottom">
                   {
-                      /*
+                      
                        <Footer pages='3'   />
-                       */
+                       
                   }
                    
                 </Container> 

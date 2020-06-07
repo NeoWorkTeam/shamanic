@@ -7,10 +7,9 @@ const Card = () => {
 
     return    (
         <div className="pricingCard">
-        <img src={topCard} alt="title" className="topCard" ></img>
 
             <div className="wrapper">
-
+                    <h3>50% de Descuento</h3>
                     <h2>$147 USD</h2>
                     <p>
                         <span className="cardSubtitleLeft">Precio Regular</span>

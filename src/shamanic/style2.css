@@ -610,12 +610,56 @@ color: #fff;
   width: 100%;
 }
 
+
 .moduloA004 .marco{
     padding: 0px;
 }
 
 .moduloA004 .parrafo{
     padding: 10px 40px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    .moduloA004 h2{
+        font-size: 1.5rem !important;
+        padding-top: 10px;
+    }
+
+    .moduloA004 .parrafo{
+        padding: 10px 20px;
+    }
+
+    .moduloA004 p {
+        font-size: .7rem !important;
+    } 
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .moduloA004 .parrafo{
+        padding: 30px 30px;
+    }
+
+    .moduloA004 img{
+      max-width: 400px;
+    }
+
+    .moduloA004 p {
+        font-size: .9rem !important;
+        padding: 10px 30px;
+    } 
+
+    .moduloA004 h3 {
+        padding: 10px 30px;
+    } 
+
+    .moduloA004 h2 {
+        padding: 10px 30px;
+    } 
+
 }
 
 
@@ -758,13 +802,13 @@ color: #fff;
 
 }
 
+
 .moduloA006 h2{
     font-size: 2rem !important;
     text-align: center;
     font-weight: 500;
     padding: 20px 10px;
     font-family: Montserrat;
-
 }
 
 .moduloA006 .cardSubtitleLeft{
@@ -847,7 +891,17 @@ color: #fff;
 }
 
 
+@media only screen and (max-width: 600px) {
+    #Page03 .bannerBottom{
+        background-image: url('./img/lp2/fondo002.svg') !important;
+        min-height: 400px;
+    }
 
+    .footer .logo {
+        max-width: 120px;
+    }
+
+}
 
 #Page04 .btn-primary {
     color: #fff;
@@ -1039,7 +1093,6 @@ margin-top: 10px;
 
 
 .pricingCard .wrapper{
-max-width: 950px;
 display: block;
 margin:auto
 }
@@ -1053,12 +1106,25 @@ margin:auto
     background-color: #E0F1FB;
     padding-bottom: 0px;
     margin-top: 100px;
-
+    left: -5%;
 }
+
+.moduloA001 .pricingCard{
+    left: 0%;
+}
+
+.pricingCard h2{
+    font-size: 2rem !important;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px 10px;
+    font-family: Montserrat;
+}
+
 
 .pricingCard li{
     max-width: 400px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: .9rem;
 }
 
@@ -1074,7 +1140,27 @@ margin:auto
     text-align: left;
     padding-left: 20px;
     height: 60px;
+    
 }
+
+
+.pricingCard h3{
+    background: rgba(189,100,249,1);
+    background: -moz-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,100,249,1)), color-stop(100%, rgba(179,70,248,1)));
+    background: -webkit-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -o-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: -ms-linear-gradient(left, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    background: linear-gradient(to right, rgba(189,100,249,1) 0%, rgba(179,70,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd64f9', endColorstr='#b346f8', GradientType=1 );
+    color: #fff;
+    font-size: 1rem !important;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+
+}
+
 
 
 .pricingCard h4{
@@ -1090,6 +1176,79 @@ margin:auto
 
 .pricingCard h2{
   color:#fff;
-  max-width:500px;
   line-height: 2.2rem;
+}
+
+.pricingCard .cardSubtitleLeft{
+    font-size: .8rem !important;
+    color:#A46152;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    float:left
+}
+
+.pricingCard .cardSubtitleRight{
+    float:right;
+    font-size: 1rem !important;
+    font-family: 'Montserrat' sans-serif;
+    margin-right: 20px;
+}
+
+.pricingCard p{
+    margin-bottom: 20px;
+    height: 50px;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+.pricingCard ul{
+    padding: 10px 3px;
+    margin: 0px;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    max-width: 350px;
+}
+.pricingCard li{
+    font-size: .7rem !important;
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 2px;
+}
+
+
+.carousel {
+    position: relative;
+    padding: 0px 100px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url('./img/lp2/left.png') !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url('./img/lp2/right.png') !important;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .carousel {
+        padding: 0px 40px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.CubeForm form {
+    max-width: 400px;
+    margin: auto;
+}
+
 }

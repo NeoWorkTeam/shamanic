@@ -16,14 +16,14 @@ const Footer = (props) => {
      
     return ( <Container className="footer">
     <Row>
-    <Col xs={12} md={6} >
+    <Col xs={4} md={6} >
           {
           props.pages === '2' ?  <img alt="title"   className="logo" src={ logo }/> : <img alt="title"   className="logo" src={ logoBlanco }/>
           }         
     </Col>
    
   
-    <Col xs={12} md={6} >
+    <Col xs={8} md={6} >
 
                <Row>
                <Col xs={12} md={12} >
