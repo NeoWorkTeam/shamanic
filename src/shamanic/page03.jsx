@@ -24,7 +24,7 @@ import Rectangle from './img/lp2/Rectangle15.png'
 import left from './img/lp2/left.png'
 import right from './img/lp2/right.png'
 
-import topCard from './img/lp2/topCard.png'
+import PrincingCard from './components2/pricingCard'
 
 
 
@@ -50,7 +50,7 @@ function Page03 ( props ) {
         <React.Fragment >
             <div id="Page03">
 
-               <section  style={ {  padding:'100px'  } } id='sectionA'>
+               <section  id='sectionA'>
                     <CubeForm   />
                </section>
 
@@ -58,11 +58,11 @@ function Page03 ( props ) {
 <div className="fondo001">
                 <Container className="moduloA001" >
                     <Row>
-                           
+
                     <Col xs={12} md={2} >
 
-            <img src={Line } alt='cuadrado' className="line" ></img>
-            <img src={Rectangle} alt='rentagulo' className="rectangule" ></img>
+            <img src={Line } alt='cuadrado' className="line noMobile" ></img>
+            <img src={Rectangle} alt='rentagulo' className="rectangule noMobile" ></img>
 
                     </Col>
 
@@ -75,11 +75,8 @@ function Page03 ( props ) {
                                 </Col>
                            
                     <Col xs={12} md={2} >
-
-                    <img src={Line } alt='cuadrado' className="line2" ></img>
-            <img src={Rectangle} alt='rentagulo' className="rectangule2" ></img>
-
-
+                      <img src={Line } alt='cuadrado' className="line2  noMobile" ></img>
+                      <img src={Rectangle} alt='rentagulo' className="rectangule2 noMobile" ></img>
                     </Col>
                     </Row>
                 </Container>
@@ -93,10 +90,8 @@ function Page03 ( props ) {
                         Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos. 
                         </p>        
                     </Col>
-                    <Col xs={12} md={2} >
-
+                    <Col xs={12} md={2} className="noMobile" >
                         <img src={pin} className="icon" alt="avatar" />
-
                     </Col>
                     <Col xs={12} md={5} >
                         <h2> Consolida tu Comunidad 
@@ -148,7 +143,7 @@ function Page03 ( props ) {
                 <Container className="moduloA004" >
 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
+                    <Col xs={12} md={6} className="marco noMobile"  >
                     <img src={ module1 } alt="1" />
                     </Col>
 
@@ -160,6 +155,11 @@ function Page03 ( props ) {
                         </p>
                     </Col>
                 
+                    <Col xs={12} md={6} className="marco mobile" >
+                    <img src={ module1 } alt="1" />
+                    </Col>
+
+
                     </Row>
                 
                     <Row>
@@ -177,7 +177,7 @@ function Page03 ( props ) {
                     </Row>
 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
+                    <Col xs={12} md={6} className="marco noMobile" >
                     <img src={ module3 } alt="1" />
                     </Col>
                     <Col xs={12} md={6}  className="parrafo">
@@ -186,6 +186,9 @@ function Page03 ( props ) {
                         <p>
                         Viaje de varios pasos para identificar el espíritu que se ofrece como voluntario para trabajar contigo y discernir qué tipo de poder tienen.
                         </p>
+                    </Col>
+                    <Col xs={12} md={6} className="marco mobile" >
+                    <img src={ module3 } alt="1" />
                     </Col>
                     
                     </Row>
@@ -209,7 +212,7 @@ function Page03 ( props ) {
 
 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
+                    <Col xs={12} md={6} className="marco noMobile" >
                     <img src={ module5 } alt="1" />
                     </Col>
                     <Col xs={12} md={6}  className="parrafo">
@@ -219,6 +222,9 @@ function Page03 ( props ) {
                         Sandra, compartirá algunas de sus más queridas herramientas y enseñanzas espirituales, incluyendo cómo trabajar con cristales sanadores.
 
                         </p>
+                    </Col>
+                    <Col xs={12} md={6} className="marco mobile" >
+                    <img src={ module5 } alt="1" />
                     </Col>
                     
                     </Row>
@@ -239,7 +245,7 @@ function Page03 ( props ) {
                     </Row>
 
                     <Row>
-                    <Col xs={12} md={6} className="marco" >
+                    <Col xs={12} md={6} className="marco noMobile" >
                     <img src={ module7 }  alt="1" />
                     </Col>
                     <Col xs={12} md={6}  className="parrafo">
@@ -250,7 +256,9 @@ function Page03 ( props ) {
                                 También compartirá un método de curación simple pero poderoso para el que te sentirás completamente preparado.
                         </p>
                     </Col>
-                
+                    <Col xs={12} md={6} className="marco mobile" >
+                    <img src={ module7 }  alt="1" />
+                    </Col>
                     </Row>
                 
                 
@@ -288,27 +296,9 @@ function Page03 ( props ) {
                     
                        <Col xs={12} md={12}  >
 
-                        <div className="pricingCard">
-                        <img src={topCard} alt="title" className="topCard" ></img>
-
-                            <div className="wrapper">
-
-                                    <h3>50% de Descuento</h3>
-                                    <h2>$147 USD</h2>
-                                    <p>
-                                        <span className="cardSubtitleLeft">Precio Regular</span>
-                                        <span className="cardSubtitleRight"><s>$297</s>USD</span>
-                                        </p>
-                                    <ul>
-                                        <li>Siete Sesiones de Clases Grabadas </li>
-                                        <li>Siete Transcriptiones de las Sesiones </li>
-                                        <li>Extractos del Libro de Ceremonia</li>
-                                        <li> Introducción al Viaje Chamánico  </li>
-                                        <li>Grupo de Facebook con un chamán experto para responder tus preguntas</li>
-                                    </ul>
-                                    <h4> Obtén tu Curso </h4>
-                            </div>
-                        </div>
+                   
+                   <PrincingCard></PrincingCard>
+                                  
 
                        </Col>
 
@@ -317,8 +307,12 @@ function Page03 ( props ) {
                        </Container>
                 
                 <Container className="bannerBottom">
-                                 <Footer pages='3'   />
-
+                  {
+                      /*
+                       <Footer pages='3'   />
+                       */
+                  }
+                   
                 </Container> 
 
             </div>

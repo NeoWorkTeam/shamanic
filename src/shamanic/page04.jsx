@@ -25,6 +25,8 @@ import parrafoBottom from './img/lp2/parrafoBottom.png'
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
 
+import PrincingCard from './components2/pricingCard'
+
 function getCookie(cname) {
      var name = cname + "=";
      var decodedCookie = decodeURIComponent(document.cookie);
