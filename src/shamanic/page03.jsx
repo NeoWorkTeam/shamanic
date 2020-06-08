@@ -21,8 +21,9 @@ import module7 from './img/lp2/modulo7.png'
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
 
-import left from './img/lp2/left.png'
-import right from './img/lp2/right.png'
+import circle1 from './img/lp2/circle1.png'
+import circle2 from './img/lp2/circle2.png'
+import rectangule1 from './img/lp2/fondo4.png'
 
 import PrincingCard from './components2/pricingCard'
 
@@ -307,6 +308,9 @@ function Page03 ( props ) {
 
                         </p>
                 
+                      
+                <img  className="rectangule1" src={rectangule1} alt="1"></img>
+
                     </Col>
                 
                     </Row>

@@ -496,8 +496,8 @@ color: #fff;
 .moduloA001 .line {
     position: relative;
     top: 150px;
-    left: -240px;
-    width: 300px;
+    left: -150px;
+    width: 200px;
 }
 
 .moduloA001 .rectangule {
@@ -510,8 +510,39 @@ color: #fff;
     position: relative;
     top: 150px;
     left: 100px;
-    width: 300px;
+    width: 200px !important;
 }
+
+@media only screen and (max-width: 1400px){
+
+    .moduloA001 .line {
+        left: -100px;
+        width: 100px;
+    }
+    
+    .moduloA001 .line2 {
+        width: 100px !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1250px){
+
+    .moduloA001 .line {
+       display: none !important
+    }
+    
+    .moduloA001 .line2 {
+        display: none !important
+     }
+     
+
+}
+
+
+
 
 .moduloA001 .rectangule2 {
     position: relative;
@@ -563,6 +594,18 @@ color: #fff;
     max-width: 900px;
     margin: auto;
 }
+
+
+@media only screen and (max-width: 1250px){
+
+    .moduloA003 h2{
+        max-width: 300px;
+        line-height: 2.2rem;
+    }
+
+}
+
+
 
 .moduloA003 p{
     padding: 50px 20px;
@@ -661,6 +704,18 @@ color: #fff;
     } 
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .moduloA004 h2{
+        font-weight: bold;
+        font-size: 1.7rem !important;
+        margin-top: 30px;
+    }
+}
+
+ 
 
 
 .moduloA005{
@@ -780,6 +835,16 @@ color: #fff;
     margin-top: 40px;
 }
 
+
+
+.rectangule1{
+    position: absolute;
+    right: 0px;
+    bottom: -400px;
+    border-radius: 0% !important;
+    z-index: -1;
+    height: 500px;
+}
 
 .moduloA006{
     padding: 20px 20px;
@@ -922,6 +987,13 @@ color: #fff;
     max-width: 1100px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .moduloAB001 h2{
+        text-align: center;
+    }
+}
+
 .moduloAB001 p{
     padding: 4px 20px;
     text-align: left;
@@ -991,6 +1063,16 @@ margin-top: 10px;
    font-weight: 100;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .moduloAB002 h2{
+       max-width: 250px !important;
+       display: block;
+       margin: auto;
+       line-height: 2rem;
+    }
+}
+
 .moduloAB003 h3{
     text-align: center;
      font-size: 1rem !important;
@@ -1012,6 +1094,14 @@ margin-top: 10px;
     height: 90px;
 }
 
+@media only screen and (max-width: 600px) {
+
+.moduloAB003 p{
+    font-size: 1.4rem !important;
+    line-height: 2rem;
+    height: 100px;
+}
+}
 
 .moduloAB003 img{
     width: 100%;
@@ -1022,7 +1112,7 @@ margin-top: 10px;
 .line1{
     position: relative;
     left: -260px;
-    width: 400px !important;
+    width: 200px !important;
     height: 1px;
     top: 20px;
 }
@@ -1030,14 +1120,21 @@ margin-top: 10px;
 .line2{
     position: relative;
     left: 260px;
-    width: 400px !important;
+    width: 200px !important;
     height: 1px;
     top: -19px;
+}
+
+@media only screen and (max-width: 400px) {
+
+
+
 }
 
 .moduloAB004{
     margin-top: 50px;
 }
+
 
 .moduloAB004 img{
  width: 60px;
@@ -1071,6 +1168,25 @@ margin-top: 10px;
  padding-left: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .moduloAB004 h2{
+        font-size: 1.3rem !important;
+        line-height: 2rem;
+        max-width: 90%;
+        
+        }
+
+        .moduloAB004 p{
+      
+            max-width: 90%;
+            padding-left: 15px;
+            
+            }
+
+    }
+
+
 .moduloAB004 p{
     font-size: .9rem !important;
     line-height: 1.7rem;
@@ -1092,9 +1208,24 @@ margin-top: 10px;
 }
 
 
+.moduloAB005 h2{
+  color:#fff !important;
+  line-height: 2rem;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+.moduloAB005 .pricingCard  h2{
+    color:#000 !important;
+    line-height: 2rem;
+  }
+   
 .pricingCard .wrapper{
-display: block;
-margin:auto
+    display: block;
+    margin:auto
 }
 
 
@@ -1106,7 +1237,7 @@ margin:auto
     background-color: #E0F1FB;
     padding-bottom: 0px;
     margin-top: 100px;
-    left: -5%;
+    left: 0%;
 }
 
 .moduloA001 .pricingCard{
@@ -1246,9 +1377,9 @@ margin:auto
 
 @media only screen and (max-width: 600px) {
 
-.CubeForm form {
-    max-width: 400px;
-    margin: auto;
-}
+        .CubeForm form {
+            max-width: 400px;
+            margin: auto;
+        }
 
 }

@@ -43,9 +43,9 @@ function Storage(){
                 intro_url: "/practicas-chamanicas/intro02"
         },
          version11:{
-                cta01: "Empieza tu Experiencia Sanadora Gratis",
+                cta01: "Empieza tu Experiencia Sanadora",
                 cta01_loading_message:"Redirigiendo",
-                cta02:"Registrate por sólo $147",
+                cta02:"Registrate ahora",
                 cta02_loading_message:"Cargando",
                 descuento: '$297',
                 oferta_url: "/practicas-chamanicas/oferta11",

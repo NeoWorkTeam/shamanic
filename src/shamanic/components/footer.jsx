@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import logo from '../img/logo.png';
-import logoBlanco from '../img/logo_blanco.png';
+import logoBlanco from '../img/lp2/logo.png';
 
 import {  FaFacebookSquare } from 'react-icons/fa';
 

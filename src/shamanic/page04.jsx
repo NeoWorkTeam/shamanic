@@ -50,11 +50,7 @@ function Page02( props ) {
 
      React.useEffect(() => {
           
-          if(document.location.pathname==='/gabriel-intro'){
-               // No ejecuta Track por ahora
-          }else{
-          
-          }
+      
 
 },[props]);
 
@@ -135,9 +131,9 @@ function Page02( props ) {
           </ul>
 
      
-     <img src={Line} className="line1" alt="line"></img>
-     <img src={Rectangle} alt="line"></img>
-     <img src={Line} className="line2" alt="line"></img>
+     <img src={Line} className="line1 noMobile" alt="line" ></img>
+     <img src={Rectangle} alt="line " className="noMobile"></img>
+     <img src={Line} className="line2 noMobile" alt="line"></img>
 
           </Container>
 
@@ -257,32 +253,8 @@ function Page02( props ) {
           Si está listo para dar el siguiente paso en tu propia evolución, únete a nuestra comunidad para la curación personal y colectiva.
           </h2>
 
-          <div className="card">
-               <h3> $147 USD </h3>
-               <p>
-                    <span className="cardSubtitleLeft">Precio Regular</span>
-                    <span className="cardSubtitleRight"><s>$297</s>USD</span>
-               </p>
-               <ul>
-                    <li>
-                    Siete Sesiones de Clases Grabadas
-                    </li>
-                    <li>
-                    Siete Transcriptiones de las Sesiones
-                    </li>
-                    <li>
-                    Introducción al Viaje Chamánico                   
-                      </li>
-                    <li>
-                    Extractos del Libro de Ceremonia
-                    </li>
-                    <li>
-                    Grupo de Facebook con un chamán experto para responder tus preguntas
-                    </li>
-               </ul>
-               <h4>Obten Curso</h4>
+          <PrincingCard />
 
-          </div>
           </div>
           <Footer pages='2'   />
            </Container>    
