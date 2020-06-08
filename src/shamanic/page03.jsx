@@ -53,6 +53,9 @@ function Page03 ( props ) {
 
                <section  id='sectionA'>
                     <CubeForm   />
+                    <div className="miniForm noMobile" >
+                    <PrincingCard></PrincingCard>
+                    </div>
                </section>
 
 
