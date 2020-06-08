@@ -309,7 +309,6 @@ function Page03 ( props ) {
                         </p>
                 
                       
-                <img  className="rectangule1" src={rectangule1} alt="1"></img>
 
                     </Col>
                 
@@ -318,7 +317,7 @@ function Page03 ( props ) {
 
                 </Container>
 
-                <Container >
+                <Container className="bannerBottom">
                        <Row>   
                            
                     
@@ -326,22 +325,20 @@ function Page03 ( props ) {
 
                    
                    <PrincingCard></PrincingCard>
-                                  
+
+                          <Footer pages='3'   />        
 
                        </Col>
 
+               
+
                        </Row>
+
+                      
 
                        </Container>
                 
-                <Container className="bannerBottom">
-                  {
-                      
-                       <Footer pages='3'   />
-                       
-                  }
-                   
-                </Container> 
+                
 
             </div>
         </React.Fragment>

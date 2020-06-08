@@ -408,7 +408,7 @@ max-width: 100%;
 }
 
 #Page03 .bannerBottom {
-    background-image: url(/static/media/bottom.8cd80b17.svg) !important;
+    background-image: url('./img/lp2/bannerBottom2.png') !important;
     min-height: 600px;
     background-size: cover !important;
     background-position: center !important;
@@ -425,7 +425,7 @@ max-width: 100%;
 }
 
 #Page03 .footer{
-    padding-top: 500px;
+    padding-top: 100px;
 }
 
 
@@ -720,7 +720,7 @@ color: #fff;
 
 .moduloA005{
     padding: 100px 20px 0px;
-    padding-bottom: 300px;
+    padding-bottom: 10px;
 
 }
 
@@ -947,7 +947,7 @@ color: #fff;
 
 
 .bannerBottom{
-    background-image: url('./img/lp2/bottom.svg') !important;
+    background-image: url('./img/lp2/bannerBottom2.png') !important;
     min-height: 700px;
     background-size: cover !important;
     background-position: center !important;
@@ -1017,7 +1017,9 @@ margin-top: 10px;
 
 }
 
-
+.moduloAB002{
+    position: relative;
+}
 
 
 .moduloAB002 h2{
@@ -1269,9 +1271,8 @@ margin-top: 10px;
 
 .pricingCard p{
     text-align: left;
-    padding-left: 20px;
+    padding-left: 0px;
     height: 60px;
-    
 }
 
 
@@ -1291,7 +1292,6 @@ margin-top: 10px;
     font-family: 'Merriweather', serif;
 
 }
-
 
 
 .pricingCard h4{
@@ -1322,13 +1322,13 @@ margin-top: 10px;
     float:right;
     font-size: 1rem !important;
     font-family: 'Montserrat' sans-serif;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .pricingCard p{
     margin-bottom: 20px;
     height: 50px;
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -1339,10 +1339,10 @@ margin-top: 10px;
     list-style: none;
     padding-left: 20px;
     padding-bottom: 30px;
-    max-width: 350px;
+    max-width: 90%;
 }
 .pricingCard li{
-    font-size: .7rem !important;
+    font-size: .9rem !important;
     text-align: left;
     font-weight: 400;
     padding: 5px 2px;
@@ -1365,12 +1365,29 @@ margin-top: 10px;
     background-image: url('./img/lp2/right.png') !important;
 }
 
+.horizontal1{
+    position: absolute;
+    width: 400px;
+    left: -300px;
+    opacity: .2;
+    top: -150px;
+}
+
+
+.horizontal2{
+    position: absolute;
+    width: 400px;
+    right: -300px;
+    opacity: .2;
+    top: -150px;
+}
 
 @media only screen and (max-width: 400px) {
 
     .carousel {
         padding: 0px 40px;
     }
+    
 
 }
 
@@ -1381,5 +1398,21 @@ margin-top: 10px;
             max-width: 400px;
             margin: auto;
         }
+
+        .pricingCard p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+.horizontal1{
+    left: -250px;
+}
+
+
+.horizontal2{
+    right: -250px;
+}
 
 }

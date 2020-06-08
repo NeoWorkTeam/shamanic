@@ -24,6 +24,7 @@ import parrafoBottom from './img/lp2/parrafoBottom.png'
 
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
+import horizontal from './img/horizontal.svg'
 
 import PrincingCard from './components2/pricingCard'
 
@@ -98,6 +99,9 @@ function Page02( props ) {
         </Container>
 
         <Container className="moduloAB002">
+
+          <img src={horizontal} alt="Sandra"  className="horizontal1" ></img>
+          <img src={horizontal} alt="Sandra"  className="horizontal2" ></img>
 
           <h2>
           Lo que descubrirás en este curso 

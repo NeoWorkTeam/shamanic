@@ -1,7 +1,14 @@
 
 import React from 'react'
 import topCard from '../img/lp2/topCard.png'
+import Storage from '../components/storage'
 
+const storage = Storage()
+
+
+const gotoSales = () => {
+    document.location.href = storage.url_start_program
+}
 
 const Card = () => {
 
@@ -22,7 +29,7 @@ const Card = () => {
                         <li> Introducción al Viaje Chamánico  </li>
                         <li>Grupo de Facebook con un chamán experto para responder tus preguntas</li>
                     </ul>
-                    <h4> Obtén tu Curso </h4>
+                    <h4 onClick={ () => gotoSales()}> Obtén tu Curso </h4>
             </div>
         </div>
     )
