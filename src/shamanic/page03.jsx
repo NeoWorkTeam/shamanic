@@ -324,7 +324,8 @@ function Page03 ( props ) {
                        <Col xs={12} md={12}  >
 
                    
-                   <PrincingCard></PrincingCard>
+                       <PrincingCard />
+
 
                           <Footer pages='3'   />        
 

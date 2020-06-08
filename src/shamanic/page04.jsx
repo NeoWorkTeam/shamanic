@@ -259,7 +259,7 @@ function Page02( props ) {
 
           <PrincingCard />
 
-          </div>
+          </div> 
           <Footer pages='2'   />
            </Container>    
           
