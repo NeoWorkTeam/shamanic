@@ -43,7 +43,7 @@ function Page03 ( props ) {
      
      GoogleAnalyticsEvent('Register Contact')
 
-     hotjar.initialize(1840193,6)
+     hotjar.initialize('1840193',6)
 
 
      React.useEffect(() => {

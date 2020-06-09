@@ -16,7 +16,7 @@ function Page01 ( props ) {
      GoogleAnalytics('page01')
      
    
-     hotjar.initialize(1840193,6)
+     hotjar.initialize('1840193',6)
 
 
      GoogleAnalyticsEvent('Register Contact')

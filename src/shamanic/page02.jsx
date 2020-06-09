@@ -34,7 +34,7 @@ function Page02( props ) {
 
      GoogleAnalytics('page02')
 
-     hotjar.initialize(1840193,6)
+     hotjar.initialize('1840193',6)
 
      React.useEffect(() => {
           
