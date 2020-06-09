@@ -479,6 +479,9 @@ color: #fff;
 }
 
 
+#Page03  .CubeForm form input {
+    background-color: #E2E8E9;
+}
 
 .moduloA001 h2{
         padding: 100px 20px;
@@ -630,7 +633,8 @@ color: #fff;
     font-size: 1.7rem !important;
     line-height: 1.5rem;
     padding-top: 50px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .moduloA004 h3{
@@ -638,6 +642,7 @@ color: #fff;
     font-size: 1rem !important;
     line-height: 1.2rem;
     font-weight: 600;
+    font-family: 'Merriweather', sans-serif;
 }
 
 
@@ -1114,17 +1119,17 @@ margin-top: 10px;
 .line1{
     position: relative;
     left: -260px;
-    width: 200px !important;
+    width: 300px !important;
     height: 1px;
-    top: 20px;
+    top: 25px;
 }
 
 .line2{
     position: relative;
     left: 260px;
-    width: 200px !important;
+    width: 300px !important;
     height: 1px;
-    top: -19px;
+    top: -26px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -1166,8 +1171,9 @@ margin-top: 10px;
 
 .moduloAB004 h2{
  color:#A46152; 
- font-size: 1rem !important;
- padding-left: 20px;
+ font-size: 1.2rem !important;
+  padding-left: 20px;
+ letter-spacing: .1rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1176,6 +1182,7 @@ margin-top: 10px;
         font-size: 1.3rem !important;
         line-height: 2rem;
         max-width: 90%;
+        letter-spacing: 0rem;
         
         }
 
@@ -1210,12 +1217,13 @@ margin-top: 10px;
 }
 
 
-.moduloAB005 h2{
-  color:#fff !important;
-  line-height: 2rem;
-  max-width: 800px;
-  text-align: center;
-  margin: auto;
+.moduloAB005 h2 {
+    color: #fff !important;
+    line-height: 2.6rem;
+    max-width: 800px;
+    text-align: center;
+    padding-left: 10%;
+    font-size: 2rem !important;
 }
 
 
@@ -1311,17 +1319,17 @@ margin-top: 10px;
 }
 
 .pricingCard .cardSubtitleLeft{
-    font-size: .8rem !important;
-    color:#A46152;
+    font-size: 1rem !important;
+    color: #A46152;
     font-family: 'Merriweather', serif;
     font-weight: 200;
-    float:left
+    float: left;
 }
 
 .pricingCard .cardSubtitleRight{
-    float:right;
-    font-size: 1rem !important;
-    font-family: 'Montserrat' sans-serif;
+    float: right;
+    font-size: 1.2rem !important;
+    font-family: 'Montserrat', sans-serif;
     margin-right: 0px;
 }
 
@@ -1437,4 +1445,25 @@ margin-top: 10px;
     right: -250px;
 }
 
+}
+
+
+.ctaVersion11{
+    background: #5AB5E9;
+    padding: 20px 40px;
+    color: #fff  !important;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-decoration: none !important;
+}
+
+.ctaVersion11:hover{
+    color: #fff !important;
+    text-decoration: none !important;
 }

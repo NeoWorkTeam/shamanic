@@ -23,10 +23,10 @@ const Card = () => {
                         <span className="cardSubtitleRight"><s>$297</s>USD</span>
                         </p>
                     <ul>
-                        <li>Siete Sesiones de Clases Grabadas </li>
-                        <li>Siete Transcriptiones de las Sesiones </li>
+                        <li>Siete Sesiones de Clases Grabadas</li>
+                        <li>Siete Transcripciones de las Sesiones</li>
                         <li>Extractos del Libro de Ceremonia</li>
-                        <li> Introducción al Viaje Chamánico  </li>
+                        <li>Introducción al Viaje Chamánico</li>
                         <li>Grupo de Facebook con un chamán experto para responder tus preguntas</li>
                     </ul>
                     <h4 onClick={ () => gotoSales()}> Obtén tu Curso </h4>

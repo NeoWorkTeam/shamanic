@@ -119,7 +119,7 @@ function Page03 ( props ) {
                     <Col xs={12} md={5} >
                         <h2> Fortalece tu Corazón </h2>
                         <p>
-                        Recibe una ceremonia sanadora y prácticas chamánicas para calmar tu miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos. 
+                        Recibe una ceremonia sanadora y prácticas chamánicas para calmar tus miedos, mejorar tu salud y fuerza, además de irradiar luz espiritual para el beneficio de todos. 
                         </p>        
                     </Col>
                     <Col xs={12} md={2} className="noMobile" >
@@ -285,7 +285,7 @@ function Page03 ( props ) {
                         <h3> Viajando al futuro y de vuelta a los ancestros: Accediendo a la sabiduría para sobrevivir a la crisis actual.  </h3>
                         <p>
                                 Sandra explicará las formas únicas en que los chamanes perciben las enfermedades físicas y emocionales.
-                                También compartirá un método de curación simple pero poderoso para el que te sentirás completamente preparado.
+                                También compartirá un método de sanacionuración simple pero poderoso para el que te sentirás completamente preparado.
                         </p>
                     </Col>
                     <Col xs={12} md={6} className="marco mobile" >

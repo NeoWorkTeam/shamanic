@@ -1,8 +1,5 @@
 import React, { useEffect }  from 'react'
 import CubeBanner from './components/cubeBanner/cubeBanner'
-import CubeAbout2 from './components/cubeAbout2/cubeAbout2'
-import CubeBonuses from './components/cubeBonuses/cubeBonuses'
-import CubeIncludes from './components/cubeIncludes/cubeIncludes'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
@@ -10,9 +7,7 @@ import { GoogleAnalytics }  from './analytics'
 import { hotjar } from 'react-hotjar';
 
 import './style.css'
-import CubeCourses from './components/cubeCourses/cubeCourses'
 import { Container,Row,Col } from 'react-bootstrap'
-
 
 import bonus1 from './img/lp2/bonus1.png'
 import bonus2 from './img/lp2/bonus2.png'
@@ -25,9 +20,13 @@ import parrafoBottom from './img/lp2/parrafoBottom.png'
 
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
+import Rectangle2 from './img/lp2/Rectangle23.png'
 import horizontal from './img/horizontal.svg'
 
 import PrincingCard from './components2/pricingCard'
+import Storage from './components/storage'
+
+const storage = Storage()
 
 function getCookie(cname) {
      var name = cname + "=";
@@ -91,7 +90,7 @@ function Page02( props ) {
                </p>
                <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>
-               Según la venerada maestra chamánica Sandra Ingerman, puedes descansar con la seguridad de que tus antepasados, tanto pasados ​​como futuros, ya te han dejado pistas ... sabiduría poderosa y herramientas espirituales efectivas para ayudarte a navegar estos días históricos.
+               Según la venerada maestra chamánica Sandra Ingerman, puedes descansar con la seguridad de que tus antepasados y descendientes ya te han dejado pistas ... sabiduría poderosa y herramientas espirituales efectivas para ayudarte a navegar estos días históricos.
                </p>
                <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
                <p>
@@ -139,7 +138,7 @@ function Page02( props ) {
 
      
      <img src={Line} className="line1 noMobile" alt="line" ></img>
-     <img src={Rectangle} alt="line " className="noMobile"></img>
+     <img src={Rectangle2} alt="line " className="noMobile"></img>
      <img src={Line} className="line2 noMobile" alt="line"></img>
 
           </Container>
@@ -189,7 +188,7 @@ function Page02( props ) {
                  
                     <Col xs={12} md={12} > 
                     <p>
-                    Después de cada clase, el video estará disponible para que lo descargues o lo transmitas en formato de alta calidad. Nunca tendrás que preocuparte por perder una sesión, y puedes mirar en cualquier momento y en cualquier lugar, en cualquier dispositivo conectado y a tu conveniencia.
+                    Después de cada clase, el video estará disponible para que lo descargues o lo transmitas en formato de alta calidad. Nunca tendrás que preocuparte por perder una sesión, y puedes mirarla en cualquier momento y en cualquier lugar, en cualquier dispositivo conectado y a tu conveniencia.
                    </p> 
                     </Col>
              
@@ -201,15 +200,15 @@ function Page02( props ) {
                           <img className="icon2"  style={{ width:30 }} src={icon2} alt="title"></img>
                     </Col>
                     <Col xs={12} md={11} > 
-                   <h2>
-                   Siete grabaciones de audio de sesiones de clase
-                        </h2>
+                         <h2>
+                           Siete grabaciones de audio de sesiones de clase
+                         </h2>
                     </Col>         
 
                     <Col xs={12} md={12} > 
-                   <p>
-                Después de cada clase, el audio estará disponible para que lo descargues en formato MP3 de alta calidad. Nunca tendrás que preocuparte por perder una sesión, y puedes escuchar en cualquier momento y en cualquier lugar, en cualquier dispositivo conectado y a tu conveniencia.
-                   </p>
+                         <p>
+                           Después de cada clase, el audio estará disponible para que lo descargues en formato MP3 de alta calidad. Nunca tendrás que preocuparte por perder una sesión, y puedes escucharla en cualquier momento y en cualquier lugar, en cualquier dispositivo conectado y a tu conveniencia.
+                         </p>
                     </Col>
 
                </Row>       
@@ -248,8 +247,16 @@ function Page02( props ) {
                     </p>
                     </Col>
 
-               </Row>                  
+               </Row>   
+               <Row>
+                         <img src={Line} className="line1 noMobile" alt="line" ></img>
+                         <img src={Rectangle2} alt="line " className="noMobile"></img>
+                         <img src={Line} className="line2 noMobile" alt="line"></img>
                
+                         <Col xs={12} md={12} > 
+                              <a href={ storage.url_start_program }  title="Sandra" className="ctaVersion11" > { storage.version11.cta02 } </a>
+                         </Col>    
+              </Row>    
           </Container>
 
         <Container className="moduloAB005">
@@ -257,13 +264,13 @@ function Page02( props ) {
 <div className="wrapper">
 
           <h2>
-          Si está listo para dar el siguiente paso en tu propia evolución, únete a nuestra comunidad para la curación personal y colectiva.
+          Si está listo para dar el siguiente paso en tu propia evolución, únete a nuestra comunidad para la sanación personal y colectiva.
           </h2>
 
           <PrincingCard />
 
           </div> 
-          <Footer pages='2'   />
+          <Footer pages='1'   />
            </Container>    
           
      
