@@ -1467,3 +1467,8 @@ margin-top: 10px;
     color: #fff !important;
     text-decoration: none !important;
 }
+
+#Page04 .facebookInfo{
+    display:none
+}
+

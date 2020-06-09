@@ -23,9 +23,9 @@ const Footer = (props) => {
     </Col>
    
   
-    <Col xs={8} md={6} >
+    <Col xs={8} md={6}  className="facebookInfo">
 
-               <Row>
+               <Row >
                <Col xs={12} md={12} >
                          <a href={storage.facebook}  target="blank">
                          <FaFacebookSquare />
