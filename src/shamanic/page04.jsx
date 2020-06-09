@@ -7,6 +7,7 @@ import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
 import { GoogleAnalytics }  from './analytics'
+import { hotjar } from 'react-hotjar';
 
 import './style.css'
 import CubeCourses from './components/cubeCourses/cubeCourses'
@@ -48,10 +49,12 @@ function getCookie(cname) {
 function Page02( props ) {
 
      GoogleAnalytics('page02')
-
+     hotjar.initialize(1840193,6)
+     
      React.useEffect(() => {
           
-      
+        
+
 
 },[props]);
 

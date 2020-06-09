@@ -3,6 +3,7 @@ import CubeForm from './components2/cubeForm/cubeForm'
 import CubeAbout from './components2/cubeAbout/cubeAbout'
 import CubeModule from './components2/cubeModule/cubeModule'
 import { Container,Row,Col } from 'react-bootstrap'
+import { hotjar } from 'react-hotjar';
 
 import './style2.css'
 import Storage from './components/storage'
@@ -41,6 +42,9 @@ function Page03 ( props ) {
      GoogleAnalytics('page01')
      
      GoogleAnalyticsEvent('Register Contact')
+
+     hotjar.initialize(1840193,6)
+
 
      React.useEffect(() => {
 

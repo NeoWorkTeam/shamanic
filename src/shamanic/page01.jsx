@@ -7,6 +7,7 @@ import Header from './components/header'
 import './style.css'
 import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
+import { hotjar } from 'react-hotjar';
 
 const storage = Storage()
 
@@ -14,6 +15,10 @@ function Page01 ( props ) {
 
      GoogleAnalytics('page01')
      
+   
+     hotjar.initialize(1840193,6)
+
+
      GoogleAnalyticsEvent('Register Contact')
 
      React.useEffect(() => {
