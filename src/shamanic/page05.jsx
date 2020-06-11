@@ -75,7 +75,7 @@ function Page02( props ) {
 
         function handlePlay(e){
           
-             setInterval(function(){ load(player.getCurrentTime()) }, 5000)
+             setInterval(function(){ load(player.getCurrentTime()) }, 3000)
      
          
      
@@ -86,7 +86,7 @@ function Page02( props ) {
        // 
 
        function load(x){
-          if(x>5){
+          if(x>4750){
                setLoader(true) 
           }
 
