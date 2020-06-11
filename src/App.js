@@ -5,6 +5,7 @@ import shamanic01 from './shamanic/page01'
 import shamanic02 from './shamanic/page02'
 import shamanic03 from './shamanic/page03'
 import shamanic04 from './shamanic/page04'
+import shamanic05 from './shamanic/page05'
 
 
 import store from './store'
@@ -28,6 +29,7 @@ const App = () => (
                 
                 <Route exact path="/practicas-chamanicas/oferta11" component={shamanic03} />
                 <Route exact path="/practicas-chamanicas/intro11" component={shamanic04} />
+                <Route exact path="/practicas-chamanicas/intro12" component={shamanic05} />
 
 
                 <Route exact path="/practicas-chamanicas/intro01" component={shamanic02} />

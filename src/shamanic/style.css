@@ -620,3 +620,8 @@ color: #fff;
     text-align: center;
     font-weight: 600;
 }
+
+
+.ytp-hide-controls .ytp-watermark {
+display: none !important
+}
