@@ -78,7 +78,7 @@ function Page02( props ) {
         function handlePlay(e){
              setInterval(function(){ load(player.getCurrentTime()) }, 3000)
              setInterval(function(){ loadScroll() }, 1000)
-          }
+        }
 
        // 
 
@@ -92,16 +92,17 @@ function Page02( props ) {
 
           if(x>4750){
                setLoader(true) 
+               setFixvideo(true)           
           }
+
+          
 
        }
 
 
        function loadScroll(x){
           if(window.pageYOffset>500){
-               setFixvideo(true) 
-          }else{
-               setFixvideo(false) 
+             //  setFixvideo(true)           
           }
        }
 
@@ -155,13 +156,9 @@ function Dios(e){
         </section>
        
         <section  style={ {  background:'#f7ecfe', padding:'10px'  } } id='sectionD'>
-       {/* 
-        <YouTube videoId="i_nxKoHSl7A" opts={opts} onReady={onReady} />
-       */}
+   
 
-
-
-               <div className={`player-wrapper ${fixvideo ? "fixVideo" : ""}`} > }
+               <div className={`player-wrapper ${fixvideo ? "fixVideo" : ""}`} > 
                                    
                          <ReactPlayer  
                          url="https://vimeo.com/421621071/0a61d44f59"
@@ -175,18 +172,14 @@ function Dios(e){
                          width="100%"
                          height="100%"
                          />
-               </div>
-        
-
-                      
-    
+               </div> 
         </section>
 
 
-        { loader &&  <div>
-        <Container className="moduloAB001">
+        { loader &&  <div >
+        <Container className="moduloAB001 fixmobil " >
 
-             <h2>
+             <h2 style={{ paddingTop:'300px !important'}}>
              Une las manos (enérgicamente) con tu comunidad chamánica mientras 
               dominas las prácticas para protegerte de las enfermedades,
               nutrir tu espíritu e inundar el mundo con amor y luz sanadores...
@@ -375,7 +368,7 @@ function Dios(e){
 
         <Container className="moduloAB005">
 
-<div className="wrapper">
+          <div className="wrapper">
 
           <h2>
           Si está listo para dar el siguiente paso en tu propia evolución, únete a nuestra comunidad para la sanación personal y colectiva.
@@ -387,7 +380,7 @@ function Dios(e){
           <Footer pages='1'   />
            </Container>    
           
-        </div> }
+         </div> }
      
         </div>
         </React.Fragment> 
