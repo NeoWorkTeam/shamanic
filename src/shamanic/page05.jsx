@@ -57,7 +57,9 @@ function Page02( props ) {
      
      const [player,setPlayer] = React.useState('')
      const [loader,setLoader] = React.useState(false)
+     const [fixvideo,setFixvideo] = React.useState(false)
 
+     const [scroll,setScroll] = React.useState(window.pageYOffset)
 
      const myRef = play => {
           setPlayer(play)
@@ -74,24 +76,34 @@ function Page02( props ) {
         }
 
         function handlePlay(e){
-          
              setInterval(function(){ load(player.getCurrentTime()) }, 3000)
-     
-         
-     
-
-
+             setInterval(function(){ loadScroll() }, 1000)
           }
 
        // 
 
        function load(x){
+
+          if(window.pageYOffset>500){
+               setFixvideo(true) 
+          }else{
+               setFixvideo(false) 
+          }
+
           if(x>4750){
                setLoader(true) 
           }
 
        }
 
+
+       function loadScroll(x){
+          if(window.pageYOffset>500){
+               setFixvideo(true) 
+          }else{
+               setFixvideo(false) 
+          }
+       }
 
 
 
@@ -113,6 +125,7 @@ function Dios(e){
          console.log(x)
         }  
 
+
      const opts = {
           height: '390',
           width: '640',
@@ -128,7 +141,7 @@ function Dios(e){
 
      React.useEffect(() => {
           
-
+          
      
 },[]);
 
@@ -145,7 +158,11 @@ function Dios(e){
        {/* 
         <YouTube videoId="i_nxKoHSl7A" opts={opts} onReady={onReady} />
        */}
-          <div className='player-wrapper'>
+
+
+
+               <div className={`player-wrapper ${fixvideo ? "fixVideo" : ""}`} > }
+                                   
                          <ReactPlayer  
                          url="https://vimeo.com/421621071/0a61d44f59"
                          controls={true}
@@ -158,7 +175,11 @@ function Dios(e){
                          width="100%"
                          height="100%"
                          />
-          </div>
+               </div>
+        
+
+                      
+    
         </section>
 
 
