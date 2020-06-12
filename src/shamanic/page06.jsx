@@ -83,7 +83,7 @@ function Page02( props ) {
        // 
 
        function load(x){
-           if(x>4750){
+           if(x>4718){
                setLoader(true) 
            }
        }
