@@ -102,7 +102,9 @@ function Page02( props ) {
 
        function loadScroll(x){
           if(window.pageYOffset>500){
-             //  setFixvideo(true)           
+              setFixvideo(true)           
+          }else{
+               setFixvideo(false)           
           }
        }
 
@@ -176,7 +178,7 @@ function Dios(e){
         </section>
 
 
-        { loader &&  <div >
+        { loader &&  <div style={{ transition: "all 1.5s 1s ease"}} >
         <Container className="moduloAB001 fixmobil " >
 
              <h2 style={{ paddingTop:'300px !important'}}>
