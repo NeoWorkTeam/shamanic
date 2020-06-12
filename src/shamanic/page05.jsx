@@ -83,20 +83,9 @@ function Page02( props ) {
        // 
 
        function load(x){
-
-          if(window.pageYOffset>500){
-               setFixvideo(true) 
-          }else{
-               setFixvideo(false) 
-          }
-
-          if(x>4750){
+           if(x>4750){
                setLoader(true) 
-               setFixvideo(true)           
-          }
-
-          
-
+           }
        }
 
 
