@@ -95,10 +95,8 @@ function Page02( props ) {
      React.useEffect(() => {
           
           if((timeVideo>4717)&&(timeVideo<4720)){
-               if(inicio){
-                    setInicio(false)
-                    window.pageYOffset=1000
-               }
+              
+          
                setInicio(false)
                setLoader(true) 
           }
@@ -107,10 +105,7 @@ function Page02( props ) {
                setLoader(true) 
           }
 
-          if(window.pageYOffset<=10){
-               setFixvideo(false)          
-          }
-         
+
      
      },[timeVideo]);
 
