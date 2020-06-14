@@ -12,7 +12,7 @@ import shamanic06 from './shamanic/page06'
 import store from './store'
 import { CookiesProvider } from 'react-cookie';
 
-console.log(document.location.pathname)
+//console.log(document.location.pathname)
 
 
 const App = () => (

@@ -448,22 +448,35 @@ color: #fff;
 .moduloA004 h3{
     text-align: left;
     font-size: 1rem !important;
-    line-height: 1.2rem;
-    font-weight: 600;
+    line-height: 1.5rem;
+    font-weight: 400;
     font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding-bottom: 40px;
+    
 }
 
+.moduloA004.container{
+    width: 100%;
+    max-width: 100%;
+}
 
 .moduloA004 p{
     text-align: left;
     font-size: .9rem !important;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    max-width: 900px;
+    margin: auto;
   }
 
 .moduloA004 img{
   width: 100%;
+  max-width: 500px;
+  margin-top: 40px;
 }
 
 
@@ -474,6 +487,12 @@ color: #fff;
 .moduloA004 .parrafo{
     padding: 10px 40px;
 }
+
+
+.moduloA004 .parrafo.header{
+    background-color: #D9DBFE;
+}
+
 
 
 @media only screen and (max-width: 1100px) {
@@ -865,6 +884,7 @@ margin-top: 10px;
     padding-left: 30px;
 }
 
+
 .moduloAB003{
         padding: 70px 10px;
 }
@@ -908,6 +928,28 @@ margin-top: 10px;
     margin-top: 50px;
     height: 90px;
 }
+
+
+.intro12 .moduloAB003  p.title{
+    max-width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.intro12 .moduloAB003 p{ 
+    margin-top: 5px;
+    height: auto !important;
+    text-align: center;
+
+}
+
+
+
+.intro12 .moduloAB003 img{
+    margin-top: 40px;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -956,6 +998,19 @@ margin-top: 10px;
  position: relative;
  top:-10px;
  left: -10px;
+}
+
+.moduloAB004.graduados  img.stars {
+    width: 250px;
+     position: initial; 
+    padding-bottom: 30px;
+}
+
+.moduloAB004.graduados h2 {
+    color: #565454;
+    font-size: 1rem !important;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .moduloAB004 img.icon1{
@@ -1281,6 +1336,7 @@ margin-top: 10px;
 }
 
 
+
 .ytp-hide-controls .ytp-watermark {
     display: none !important
     }
@@ -1295,6 +1351,40 @@ margin-top: 10px;
     top: 0;
     left: 0;
 }  
+
+
+.intro12 .moduloAB005{
+    padding: 50px 10px;
+    background-image: url('./img/background.jpg') !important;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    min-height: 600px;
+    background-size: cover !important;
+    background-position: center !important;
+    max-width: 100%;
+}
+
+.intro12 .graduados h2{
+    line-height: 1.7rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.intro12 .graduados p{
+  font-weight: 100;
+font-size: .7rem !important;
+color:gray;
+font-style: italic;
+
+}
+
+.shoppingCard{
+    float:left;
+    position: relative;
+    left: 80px;
+    top:-5px
+}
 
 .fixVideo{
     position: fixed;
@@ -1369,4 +1459,5 @@ margin-top: 10px;
         padding-top: 200px !important;
     } 
 }
+
 

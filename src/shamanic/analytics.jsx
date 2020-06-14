@@ -10,7 +10,7 @@ export const GoogleAnalytics = (props) => {
                 if(document.location.host.indexOf("theshiftnetwork.com.mx")>=0){
                     ReactGA.pageview(window.location.pathname + window.location.search)
                 } else {
-                    console.log(props)
+                   // console.log(props)
                 }
 }
 

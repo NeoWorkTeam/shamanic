@@ -58,29 +58,20 @@ function Page02( props ) {
      const [player,setPlayer] = React.useState('')
      const [loader,setLoader] = React.useState(false)
      const [fixvideo,setFixvideo] = React.useState(false)
-
      const [scroll,setScroll] = React.useState(window.pageYOffset)
 
-     const myRef = play => {
+      const myRef = play => {
           setPlayer(play)
         }
 
-     function onReady(event){
-
+       function onReady(event){
           event.target.pauseVideo();
-
-          console.log(event.target)
-
-     
-          
         }
 
         function handlePlay(e){
              setInterval(function(){ load(player.getCurrentTime()) }, 3000)
              setInterval(function(){ loadScroll() }, 1000)
         }
-
-       // 
 
        function load(x){
            if(x>4718){
@@ -99,9 +90,9 @@ function Page02( props ) {
 
 
 
-function Dios(e){
-     setInterval(function(){ listo(e) }, 4000);
-}
+     function Dios(e){
+               setInterval(function(){ listo(e) }, 4000);
+     }
 
         function handleProgress(e){
          //console.log(e.target) 
@@ -109,12 +100,10 @@ function Dios(e){
 
 
       function handleVolumeChange(e) {
-          console.log('ok')
-           console.log(e.target)
+           //console.log(e.target)
         }
 
         function listo(x){
-         console.log(x)
         }  
 
 
