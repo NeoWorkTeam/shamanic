@@ -94,7 +94,7 @@ function Page02( props ) {
 
      React.useEffect(() => {
           
-          if((timeVideo>4717)&&(timeVideo<4720)){
+          if((timeVideo>4765)&&(timeVideo<4775)){
           
                scroller.scrollTo('scroll-to-element', {
                     duration: 800,
@@ -106,7 +106,7 @@ function Page02( props ) {
                setLoader(true) 
           }
 
-          if((timeVideo>4717)){
+          if((timeVideo>4765)){
                setLoader(true) 
           }
 
@@ -135,6 +135,7 @@ function Page02( props ) {
                          className="videogame"
                          width="100%"
                          height="100%"
+                         allowfullscreen={true}
                          />
                </div> 
         </section>
