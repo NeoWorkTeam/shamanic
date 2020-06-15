@@ -138,7 +138,6 @@ function Page02( props ) {
                          allowfullscreen={true}
                          />
                </div> 
-               <Element name="scroll-to-element" className="element" ></Element>
 
         </section>
 
@@ -152,6 +151,7 @@ function Page02( props ) {
               dominas las prácticas para protegerte de las enfermedades,
               nutrir tu espíritu e inundar el mundo con amor y luz sanadores...
              </h2>
+             <Element name="scroll-to-element" className="element" ></Element>
 
                <p>
                ¿Estos tiempos sin precedentes te están suscitando sentimientos de ansiedad, incertidumbre, preocupación profunda, o incluso emociones que no puedes nombrar?
