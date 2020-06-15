@@ -1458,6 +1458,10 @@ font-style: italic;
     .fixVideo{
         padding-top: 200px !important;
     } 
+
+    #Page03 .btn-primary {
+        font-size: 14px !important;
+    }
 }
 
 
