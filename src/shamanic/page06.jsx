@@ -64,15 +64,9 @@ function Page03 ( props ) {
        
                 <Container className="moduloA002" >
 
-                    <Row  className="mobile">
+              
 
-                    <Col xs={12} md={12} >
-                   <Carrusel></Carrusel>
-                    </Col>
-                    </Row>
-                
-
-                    <div className="noMobile">
+                    <div className="">
                     <Row >
                     <Col xs={12} md={5} >
                         <h2> Fortalece tu Corazón </h2>

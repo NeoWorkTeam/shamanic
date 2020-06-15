@@ -1462,4 +1462,9 @@ font-style: italic;
     #Page03 .btn-primary {
         font-size: 14px !important;
     }
+
+    .shoppingCard {
+        left: 0px !important;
+        top: -10px !important;
+    }
 }

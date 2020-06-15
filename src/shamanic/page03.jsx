@@ -10,6 +10,7 @@ import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import Carrusel from './components2/carrusel'
+
 import module1 from './img/lp2/modulo1.png'
 import module2 from './img/lp2/modulo2.png'
 import module3 from './img/lp2/modulo3.png'
@@ -17,9 +18,18 @@ import module4 from './img/lp2/modulo4.png'
 import module5 from './img/lp2/modulo5.png'
 import module6 from './img/lp2/modulo6.png'
 import module7 from './img/lp2/modulo7.png'
+
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
+
+import circle1 from './img/lp2/circle1.png'
+import circle2 from './img/lp2/circle2.png'
+import rectangule1 from './img/lp2/fondo4.png'
+
 import PrincingCard from './components2/pricingCard'
+
+
+
 import avatar from './img/lp2/sandra.png'
 import pin from './img/lp2/pin.svg'
 import bannerBottom from './img/lp2/bottom.svg'
@@ -45,7 +55,7 @@ function Page03 ( props ) {
         <React.Fragment >
             <div id="Page03">
 
-               <section className="sectionA"  id='sectionA' style={{  paddingBottom:'0px'  }}>
+               <section  id='sectionA'>
                     <CubeForm   />
                     <div className="miniForm noMobile" >
                     <PrincingCard></PrincingCard>
@@ -55,26 +65,37 @@ function Page03 ( props ) {
 
 <div className="fondo001">
                 <Container className="moduloA001" >
-                    <Row className="mobile">   
+
+                <Row className="mobile">   
+                           
+                    
                            <Col xs={12} md={12}  >
-                                    <PrincingCard></PrincingCard>
+    
+                       
+                       <PrincingCard></PrincingCard>
+                                      
+    
                            </Col>
-                    </Row>
+    
+                           </Row>
+
 
                     <Row>
 
                     <Col xs={12} md={2} >
-                            <img src={Line } alt='cuadrado' className="line noMobile" ></img>
-                            <img src={Rectangle} alt='rentagulo' className="rectangule noMobile" ></img>
+
+            <img src={Line } alt='cuadrado' className="line noMobile" ></img>
+            <img src={Rectangle} alt='rentagulo' className="rectangule noMobile" ></img>
+
                     </Col>
 
-                     <Col xs={12} md={8} >
+                                <Col xs={12} md={8} >
                                         <h2>
                                         El chamanismo es la práctica espiritual más antigua
                                         del mundo y la necesitamos más que nunca...
 
                                         </h2>
-                     </Col>
+                                </Col>
                            
                     <Col xs={12} md={2} >
                       <img src={Line } alt='cuadrado' className="line2  noMobile" ></img>
