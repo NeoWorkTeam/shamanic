@@ -151,7 +151,6 @@ function Page02( props ) {
               dominas las prácticas para protegerte de las enfermedades,
               nutrir tu espíritu e inundar el mundo con amor y luz sanadores...
              </h2>
-             <Element name="scroll-to-element" className="element" ></Element>
 
                <p>
                ¿Estos tiempos sin precedentes te están suscitando sentimientos de ansiedad, incertidumbre, preocupación profunda, o incluso emociones que no puedes nombrar?
@@ -161,6 +160,7 @@ function Page02( props ) {
                No estás solo ... De las cosas más difíciles de estos tiempos turbulentos de enfermedad, aislamiento social y confusión es que nos tomaron por sorpresa a muchos de nosotros ...Sin embargo, según la perspectiva chamánica, el virus al que todos nos enfrentamos y el caos que lo acompaña no surgió de la nada. Eso está lejos de la realidad. Ya estábamos lidiando, por ejemplo, con la increíble pena de perder tantos seres en los incendios forestales de Australia. Nuestro planeta contaminado. Profunda avaricia. La inestabilidad política.
                </p>
                <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
+            
 
                <p>Y las formas de pensamiento negativas inundan el colectivo ... Mirando nuestro mundo a través de un lente chamánico, en realidad no es ninguna sorpresa que este nivel de dolor colectivo eventualmente se convierta en un virus. Entonces, ¿qué puede hacer un buscador chamánico como tú ahora, a diario, en estos tiempos de incertidumbre, especialmente si te sientes impotente?
                </p>
@@ -176,7 +176,7 @@ function Page02( props ) {
         </Container>
 
 
-       
+        <Element name="scroll-to-element" className="element" ></Element>
                <Container className="moduloAB002" id="scroll-container">
                          <img src={horizontal} alt="Sandra"  className="horizontal1" ></img>
                          <img src={horizontal} alt="Sandra"  className="horizontal2" ></img>
