@@ -109,9 +109,7 @@ function Page02( props ) {
           if((timeVideo>4765)){
                setLoader(true) 
           }
-
-
-     
+          
      },[timeVideo]);
 
      return ( 
