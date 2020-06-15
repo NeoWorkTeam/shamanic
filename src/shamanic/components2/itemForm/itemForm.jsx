@@ -34,11 +34,8 @@ const ContactForm = (props) => {
             try{
 
                 setMode(true)
-
                 const db = firebase.firestore()
-  
                 GoogleAnalyticsEvent('Register Contact Oferta11')
-
                 const newContact = {
                     name:  name,
                     email: email,
@@ -58,9 +55,7 @@ const ContactForm = (props) => {
               props.history.push(storage.version11.intro_url)
           }
 
-               
-
-
+        
 
             }catch(error){
 

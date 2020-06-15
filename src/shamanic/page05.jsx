@@ -4,7 +4,7 @@ import Header from './components/header'
 import { withRouter } from "react-router-dom"
 import { GoogleAnalytics }  from './analytics'
 import { hotjar } from 'react-hotjar';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll , scroller, Element} from "react-scroll";
 
 
 import ReactPlayer from "react-player"
@@ -95,7 +95,12 @@ function Page02( props ) {
      React.useEffect(() => {
           
           if((timeVideo>4717)&&(timeVideo<4720)){
-              
+          
+               scroller.scrollTo('scroll-to-element', {
+                    duration: 800,
+                    delay: 0,
+                    smooth: 'easeInOutQuart'
+                  })
           
                setInicio(false)
                setLoader(true) 
@@ -135,7 +140,8 @@ function Page02( props ) {
         </section>
       
 
-{ loader &&   <div style={{ transition: "all 1.5s 1s ease"}} >
+{ loader &&   <div >
+
         <Container className="moduloAB001 fixmobil " >
 
              <h2 style={{ paddingTop:'300px !important'}}>
@@ -152,6 +158,8 @@ function Page02( props ) {
                No estás solo ... De las cosas más difíciles de estos tiempos turbulentos de enfermedad, aislamiento social y confusión es que nos tomaron por sorpresa a muchos de nosotros ...Sin embargo, según la perspectiva chamánica, el virus al que todos nos enfrentamos y el caos que lo acompaña no surgió de la nada. Eso está lejos de la realidad. Ya estábamos lidiando, por ejemplo, con la increíble pena de perder tantos seres en los incendios forestales de Australia. Nuestro planeta contaminado. Profunda avaricia. La inestabilidad política.
                </p>
                <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
+               <Element name="scroll-to-element" className="element" ></Element>
+
                <p>Y las formas de pensamiento negativas inundan el colectivo ... Mirando nuestro mundo a través de un lente chamánico, en realidad no es ninguna sorpresa que este nivel de dolor colectivo eventualmente se convierta en un virus. Entonces, ¿qué puede hacer un buscador chamánico como tú ahora, a diario, en estos tiempos de incertidumbre, especialmente si te sientes impotente?
                </p>
                <img className="parrafoBottom" src={parrafoBottom} alt="parrafo"></img>
@@ -162,12 +170,11 @@ function Page02( props ) {
                <p>
                De hecho, durante decenas de miles de años, las antiguas tradiciones nos han estado enseñando a todos cómo superar este momento exacto. Su sabiduría chamánica curativa nos llega a través de cantos, canciones, historias, palabras sabias, prácticas indígenas y más.
                </p>
-        
 
         </Container>
 
 
-        <Element name="scroll-to-element" className="element" >
+       
                <Container className="moduloAB002" id="scroll-container">
                          <img src={horizontal} alt="Sandra"  className="horizontal1" ></img>
                          <img src={horizontal} alt="Sandra"  className="horizontal2" ></img>
@@ -179,7 +186,7 @@ function Page02( props ) {
                          <br></br> <br></br>
                          </p>    
                </Container>
-          </Element>
+        
           
           <Container className="moduloA004" >
 
