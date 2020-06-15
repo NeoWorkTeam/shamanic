@@ -50,7 +50,15 @@ function Storage(){
                 descuento: '$297',
                 oferta_url: "/practicas-chamanicas/oferta11",
                 intro_url: "/practicas-chamanicas/intro11"
-        },
+        }, version12:{
+            cta01: "Empieza tu Experiencia Sanadora",
+            cta01_loading_message:"Redirigiendo",
+            cta02:"Registrate ahora",
+            cta02_loading_message:"Cargando",
+            descuento: '$297',
+            oferta_url: "/practicas-chamanicas/oferta12",
+            intro_url: "/practicas-chamanicas/intro12"
+    },
         gabriel:{  
                 url_start_program:"https://shiftnetwork.infusionsoft.com/app/orderForms/f4bfe6f9-7f14-4bb7-80ed-f36157171439",
                 url_sales_pages:"/gabriel-intro",

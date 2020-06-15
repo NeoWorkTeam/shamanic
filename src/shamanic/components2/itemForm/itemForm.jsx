@@ -50,8 +50,17 @@ const ContactForm = (props) => {
                 setCookie('idSession',  data.id , { path: '/' });
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))
 
-                props.history.push(storage.version11.intro_url)
-                
+          if(document.location.pathname===storage.version12.oferta_url){
+                GoogleAnalyticsEvent('Register Oferta Version 12') 
+                props.history.push(storage.version12.intro_url)
+           }else {
+              GoogleAnalyticsEvent('Register Oferta Version 11') 
+              props.history.push(storage.version11.intro_url)
+          }
+
+               
+
+
 
             }catch(error){
 
