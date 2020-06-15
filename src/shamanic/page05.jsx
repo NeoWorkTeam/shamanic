@@ -110,6 +110,7 @@ function Page02( props ) {
                setLoader(true) 
           }
 
+          
      },[timeVideo]);
 
      return ( 
