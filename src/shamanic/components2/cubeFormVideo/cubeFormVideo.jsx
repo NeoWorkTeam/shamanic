@@ -2,15 +2,25 @@ import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap'
 import ItemForm from '../itemForm/itemForm'
 import Storage from '../../components/storage'
-
-import './cubeFormStyle.css'
+import video from '../../img/banner.mp4'
+import './cubeFormVideoStyle.css'
 
 
 const storage = Storage()
 
 const CubeForm = () => {
      
-        return (<Container className='CubeForm'>
+        return (
+        
+        
+        
+        <Container className='CubeForm'>
+<video autoPlay="autoplay" loop="loop" muted className="Video" >
+                <source src={video} type="video/mp4" />
+                
+            </video>
+<div className="ContainerVideo" >
+            
             <Row>
             
             <Col xs={12} md={12} >
@@ -28,6 +38,8 @@ const CubeForm = () => {
             </Col>
             
             </Row>
+        </div>
+           
         </Container>)
 
 }

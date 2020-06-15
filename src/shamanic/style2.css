@@ -211,7 +211,7 @@ img{
 #Page03 #sectionA {
     background-image: url('./img/lp2/banner.png') !important;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
     min-height: 700px;
     background-size: cover !important;
     background-position: center !important;
@@ -1463,5 +1463,3 @@ font-style: italic;
         font-size: 14px !important;
     }
 }
-
-

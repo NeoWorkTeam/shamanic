@@ -1,7 +1,6 @@
 import React ,{ Component } from 'react'
 import CubeForm from './components2/cubeForm/cubeForm'
-import CubeAbout from './components2/cubeAbout/cubeAbout'
-import CubeModule from './components2/cubeModule/cubeModule'
+import CubeFormVideo from './components2/cubeFormVideo/cubeFormVideo'
 import { Container,Row,Col } from 'react-bootstrap'
 import { hotjar } from 'react-hotjar';
 
@@ -56,7 +55,7 @@ function Page03 ( props ) {
             <div id="Page03">
 
                <section  id='sectionA'>
-                    <CubeForm   />
+                    <CubeFormVideo   />
                  
                </section>
 

@@ -45,7 +45,7 @@ function Page03 ( props ) {
         <React.Fragment >
             <div id="Page03">
 
-               <section  id='sectionA'>
+               <section className="sectionA"  id='sectionA' style={{  paddingBottom:'0px'  }}>
                     <CubeForm   />
                     <div className="miniForm noMobile" >
                     <PrincingCard></PrincingCard>
