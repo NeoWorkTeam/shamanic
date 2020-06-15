@@ -11,36 +11,36 @@ const storage = Storage()
 const CubeForm = () => {
      
         return (
-        
-        
-        
-        <Container className='CubeForm'>
-<video autoPlay="autoplay" loop="loop" muted className="Video" >
-                <source src={video} type="video/mp4" />
-                
-            </video>
-<div className="ContainerVideo" >
-            
-            <Row>
-            
-            <Col xs={12} md={12} >
-               <h1 className="text-center">
-                        <span className="h1">
-                                 { storage.banner.title01 }
-                                  <br></br>
-                                 { storage.banner.title02 } </span> 
-                        <span className="especial" > { storage.banner.title03 } </span> 
-               </h1>
-            </Col>
+        <div>
+        <video autoPlay="autoplay" loop="loop" muted className="Video noMobile" >
+                <source src={video} type="video/mp4" />     
+        </video>
+        <Container className='CubeForm'>   
 
-            <Col xs={12} md={12}>
-                    <ItemForm />
-            </Col>
-            
-            </Row>
-        </div>
-           
-        </Container>)
+               
+
+                <div className="ContainerVideo" >    
+                        <Row>
+                        
+                        <Col xs={12} md={12} >
+                        <h1 className="text-center">
+                                        <span className="h1">
+                                                { storage.banner.title01 }
+                                                <br></br>
+                                                { storage.banner.title02 } </span> 
+                                        <span className="especial" > { storage.banner.title03 } </span> 
+                        </h1>
+                        </Col>
+
+                        <Col xs={12} md={12}>
+                                <ItemForm />
+                        </Col>
+                        
+                        </Row>
+                </div>
+
+        </Container>
+        </div>)
 
 }
 

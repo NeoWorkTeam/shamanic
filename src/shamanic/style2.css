@@ -1232,14 +1232,13 @@ margin-top: 10px;
 
 
 @media only screen and (max-width: 1300px) {
-
-.miniForm{
-    transform: scale(0.4);
-    position: absolute;
-    top: 400px;
-    left: -100px;
-    z-index: 999;
-}
+    .miniForm{
+        transform: scale(0.4);
+        position: absolute;
+        top: 400px;
+        left: -100px;
+        z-index: 999;
+    }
 }
 
 .carousel {
@@ -1297,17 +1296,14 @@ margin-top: 10px;
             padding-right: 10px;
         }
 
+        .horizontal1{
+            left: -250px;
+        }
 
 
-.horizontal1{
-    left: -250px;
-}
-
-
-.horizontal2{
-    right: -250px;
-}
-
+        .horizontal2{
+            right: -250px;
+        }
 }
 
 
@@ -1336,17 +1332,16 @@ margin-top: 10px;
 }
 
 
-
 .ytp-hide-controls .ytp-watermark {
     display: none !important
     }
 
-  .player-wrapper{
+.player-wrapper{
     position: relative;
     padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
   }  
 
-  .player-wrapper iframe{
+.player-wrapper iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -1395,36 +1390,51 @@ font-style: italic;
     z-index: 99999;
 }
 
-@media only screen and (max-width: 1600px) {
+#Page03.oferta12 .frase{
+    padding-bottom: 150px;
+}
 
+@media only screen and (max-width: 1600px) {
     .fixVideo{
         top: -200px;
     }
-   
 }
 
-
 @media only screen and (max-width: 1300px) {
-
     .fixVideo{
         top: -100px;
     }
-   
 }
 
 @media only screen and (max-width: 769px) {
-
         .fixVideo{
             top: 0px;
         }
 }
 
+/* new version */
 .fixVideo{
     padding-top: 930px !important;
 }
 
 .fixmobil{
     padding-top:300px !important;
+}
+/* new version */
+
+@media only screen and (min-width: 1850px) {
+    #Page03.oferta12 .ContainerVideo {
+        min-height: 1600px !important;
+        margin-top: 200px;
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #Page03.oferta12 .ContainerVideo {
+        min-height: 1000px !important;
+        margin-top: 80px;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -1433,6 +1443,18 @@ font-style: italic;
     }
 }
 
+@media only screen and (min-width: 1300px) {
+  
+    #Page03.oferta12 .Video{
+        height: auto !important;
+    } 
+
+    #Page03.oferta12 .ContainerVideo {
+        height: 700px;
+        margin-top: -50px
+    }
+
+}
 
 @media only screen and (max-width: 1301px) {
     .fixVideo{
@@ -1445,6 +1467,7 @@ font-style: italic;
         padding-top: 530px !important;
     } 
 }
+
 @media only screen and (max-width: 770px) {
     .fixVideo{
         padding-top: 330px !important;
@@ -1468,3 +1491,143 @@ font-style: italic;
         top: -10px !important;
     }
 }
+
+/* new version */
+#Page03.oferta12  {
+    background-image: none !important;
+    background:#F6FBFE !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 700px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+/* new version */
+
+
+@media only screen and (max-width: 1100px) {
+
+    #Page03.oferta12 .ContainerVideo .h1{
+        font-size: 1.5rem !important;
+    }
+    
+    #Page03.oferta12 .ContainerVideo .especial{
+        font-size: 1.2rem !important;
+    }
+   
+    
+    #Page03.oferta12 .ContainerVideo {
+        max-height: 600px;
+        padding-top: 30px;
+    }
+
+}  
+
+@media only screen and (max-width: 940px) {
+
+    #Page03.oferta12 .ContainerVideo .h1{
+        font-size: 1.1rem !important;
+        line-height: 1.5rem;
+    }
+    
+    #Page03.oferta12 .ContainerVideo .especial{
+        font-size: 1rem !important;
+        line-height: 1rem;
+    }
+   
+    
+    #Page03.oferta12 .banner .ContainerVideo {
+        max-height: 600px;
+        padding-top: 30px;
+        min-height: 500px;
+    }
+
+    .Video {
+        height: 600px;
+    }
+
+    #Page03.oferta12 .banner  .CubeForm {
+        max-width: 400px;
+    }
+
+    #Page03.oferta12 .banner .CubeForm  .btn-primary{
+      font-size: .8rem !important
+    }
+
+   
+}  
+
+@media only screen and (max-width: 769px){
+
+
+    #Page03.oferta12  form input {
+        font-size: .7rem !important;
+    }
+
+    .Video {
+        height: 400px;
+    }
+
+#Page03.oferta12 .banner .ContainerVideo {
+    min-height: 0px;
+    padding: 30px;
+    margin-top: 20px;
+    background: #ebe5ead4;
+    border-radius: 30px;
+    padding-top: 10px !important;
+    position: relative;
+    top: -350px;
+}
+#Page03.oferta12 .banner .CubeForm {
+    max-width: 400px;
+    height: 150px;
+    }
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #Page03.oferta12 .ContainerVideo .h1{
+        font-size: 1.5rem !important;
+        line-height: 1.8rem;
+    }
+    
+    #Page03.oferta12 .ContainerVideo .especial{
+        font-size: 1.3rem !important;
+        line-height: 1rem;
+    }
+
+    #Page03.oferta12 .banner .CubeForm {
+    max-width: 400px;
+    height: 100px;
+    }
+  
+
+    #Page03.oferta12 .banner .ContainerVideo {
+        min-height: 0px;
+        padding: 30px;
+        margin-top: 20px;
+        background: #ebe5ead4;
+        border-radius: 30px;
+        padding-top: 10px !important;
+        position: relative;
+        top: -200px;
+    }
+
+    #Page03.oferta12 .frase{
+        max-width: 400px;
+        margin: auto;
+        font-size: 1.5rem !important;
+        line-height: 2.4rem;
+        padding-bottom: 50px;
+
+    }
+    
+}
+
+
+
