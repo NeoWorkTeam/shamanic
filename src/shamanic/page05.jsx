@@ -81,7 +81,7 @@ function Page02( props ) {
 
 
      function loadScroll(x){
-          if(window.pageYOffset>500){
+          if(window.pageYOffset>100){
               setFixvideo(true)           
           }else{
                setFixvideo(false)           
@@ -138,11 +138,12 @@ function Page02( props ) {
                          allowfullscreen={true}
                          />
                </div> 
+               <Element name="scroll-to-element" className="element" ></Element>
+
         </section>
-      
+
 
 { loader &&   <div >
-        <Element name="scroll-to-element" className="element" ></Element>
 
         <Container className="moduloAB001 fixmobil " >
 
