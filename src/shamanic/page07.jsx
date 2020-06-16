@@ -32,9 +32,7 @@ function Page03 ( props ) {
             
                     <section  id='sectionA' className='section01' >
                     <Header></Header>
-                    <div style={{width:'100%', maxWidth:'480px',padding:'15px',height:'900px', margin:'auto', marginTop:'0px' }}>
-                        <iframe title="joinnow" style={{width:'100%', height:'100%', border:'0'}} src="https://joinnow.live/embed/s/WbpiBJ?layout=styled-1"></iframe>
-                        </div>
+                    <CubeForm  form={true} />
                     </section>
                     
             
@@ -103,7 +101,7 @@ function Page03 ( props ) {
                 </div>               
 
                 <section  id='sectionA' style={{ paddingBottom:'100px !important'}}>
-                        <CubeForm   /><br></br><br></br><br></br><br></br><br></br>
+                        <CubeForm form={false}   /><br></br><br></br><br></br><br></br><br></br>
                         <Footer pages='3'   />  
                 </section>
 
