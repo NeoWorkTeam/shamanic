@@ -79,12 +79,12 @@ function Page02( props ) {
 
      React.useEffect(() => {
           
-          if((timeVideo>4765)&&(timeVideo<4775)){
-          
+          if((timeVideo>4765)&&(timeVideo<4767)){
+               
                scroller.scrollTo('scroll-to-element', {
                     duration: 300,
                     delay: 0
-                                 })
+               })
           
                setInicio(false)
                setLoader(true) 
