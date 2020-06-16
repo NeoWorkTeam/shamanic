@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React  from 'react'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
@@ -47,10 +47,7 @@ function Page02( props ) {
           setPlayer(play)
      }
 
-     function onReady(event){
-          event.target.pauseVideo();
-     }
-
+   
      function handlePlay(e){
              setInterval(function(){ load(player.getCurrentTime()) }, 1000)
              setInterval(function(){ loadScroll() }, 1000)

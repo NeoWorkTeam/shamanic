@@ -1,6 +1,5 @@
 import React,{ useState } from 'react';
 import { withRouter } from "react-router-dom";
-import { useCookies } from 'react-cookie'
 import { Spinner,Button  } from 'react-bootstrap'
 import { GoogleAnalyticsEvent }  from '../../analytics'
 

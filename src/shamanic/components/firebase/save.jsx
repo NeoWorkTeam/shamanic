@@ -1,5 +1,3 @@
-import { firebase } from "../firebase"
-
 
 let response = 404
 
