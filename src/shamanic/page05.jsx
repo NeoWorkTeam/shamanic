@@ -4,24 +4,19 @@ import Header from './components/header'
 import { withRouter } from "react-router-dom"
 import { GoogleAnalytics }  from './analytics'
 import { hotjar } from 'react-hotjar';
-import { Link, animateScroll as scroll , scroller, Element} from "react-scroll";
-
-
+import { scroller, Element} from "react-scroll";
+import PrincingCard from './components2/pricingCard'
 import ReactPlayer from "react-player"
-import avatar from './img/lp2/sandra.png'
-
 import './style.css'
 import { Container,Row,Col } from 'react-bootstrap'
 
 import bonus1 from './img/lp2/bonus1.png'
 import bonus2 from './img/lp2/bonus2.png'
-
 import icon1 from './img/lp2/icon1.svg'
 import icon2 from './img/lp2/icon2.svg'
 import icon3 from './img/lp2/icon3.svg'
 import icon4 from './img/lp2/icon4.svg'
 import parrafoBottom from './img/lp2/parrafoBottom.png'
-
 import module1 from './img/lp2/modulo1.png'
 import module2 from './img/lp2/modulo2.png'
 import module3 from './img/lp2/modulo3.png'
@@ -29,24 +24,15 @@ import module4 from './img/lp2/modulo4.png'
 import module5 from './img/lp2/modulo5.png'
 import module6 from './img/lp2/modulo6.png'
 import module7 from './img/lp2/modulo7.png'
-
 import stars from './img/lp2/stars.png'
 import Shopping from './img/Shopping-Cart.png'
-
-
-
 import Line from './img/lp2/Line01.png'
 import Rectangle2 from './img/lp2/Rectangle23.png'
 import horizontal from './img/horizontal.svg'
+import avatar from './img/lp2/sandra.png'
 
-import PrincingCard from './components2/pricingCard'
-import Storage from './components/storage'
-
-const storage = Storage()
 
 function Page02( props ) {
-
-
 
      GoogleAnalytics('page02')
      hotjar.initialize('1840193',6)

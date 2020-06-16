@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React  from 'react'
 import CubeBanner from './components/cubeBanner/cubeBanner'
 import Footer from './components/footer'
 import Header from './components/header'
@@ -19,7 +19,6 @@ import icon4 from './img/lp2/icon4.svg'
 import parrafoBottom from './img/lp2/parrafoBottom.png'
 
 import Line from './img/lp2/Line01.png'
-import Rectangle from './img/lp2/Rectangle15.png'
 import Rectangle2 from './img/lp2/Rectangle23.png'
 import horizontal from './img/horizontal.svg'
 

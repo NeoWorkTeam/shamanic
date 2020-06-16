@@ -1,12 +1,9 @@
-import React ,{ Component } from 'react'
+import React from 'react'
 import CubeForm from './components2/cubeForm/cubeForm'
-import CubeAbout from './components2/cubeAbout/cubeAbout'
-import CubeModule from './components2/cubeModule/cubeModule'
 import { Container,Row,Col } from 'react-bootstrap'
 import { hotjar } from 'react-hotjar';
 
 import './style2.css'
-import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import Carrusel from './components2/carrusel'
@@ -22,9 +19,6 @@ import module7 from './img/lp2/modulo7.png'
 import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
 
-import circle1 from './img/lp2/circle1.png'
-import circle2 from './img/lp2/circle2.png'
-import rectangule1 from './img/lp2/fondo4.png'
 
 import PrincingCard from './components2/pricingCard'
 
@@ -32,10 +26,9 @@ import PrincingCard from './components2/pricingCard'
 
 import avatar from './img/lp2/sandra.png'
 import pin from './img/lp2/pin.svg'
-import bannerBottom from './img/lp2/bottom.svg'
 
 
-const storage = Storage()
+
 
 function Page03 ( props ) {
 

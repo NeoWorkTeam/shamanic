@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React  from 'react'
 import CubeBanner from './components/cubeBanner/cubeBanner'
 import CubeAbout2 from './components/cubeAbout2/cubeAbout2'
 import CubeBonuses from './components/cubeBonuses/cubeBonuses'

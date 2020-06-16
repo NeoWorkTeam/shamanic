@@ -1,39 +1,15 @@
-import React ,{ Component } from 'react'
+import React  from 'react'
 import CubeForm from './components2/cubeForm/cubeForm'
 import CubeFormVideo from './components2/cubeFormVideo/cubeFormVideo'
 import { Container,Row,Col } from 'react-bootstrap'
 import { hotjar } from 'react-hotjar';
-
-import './style2.css'
 import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import video from './img/banner.mp4'
-
-import Carrusel from './components2/carrusel'
-
-import module1 from './img/lp2/modulo1.png'
-import module2 from './img/lp2/modulo2.png'
-import module3 from './img/lp2/modulo3.png'
-import module4 from './img/lp2/modulo4.png'
-import module5 from './img/lp2/modulo5.png'
-import module6 from './img/lp2/modulo6.png'
-import module7 from './img/lp2/modulo7.png'
-
-import Line from './img/lp2/Line01.png'
 import Rectangle from './img/lp2/Rectangle15.png'
-
-import circle1 from './img/lp2/circle1.png'
-import circle2 from './img/lp2/circle2.png'
-import rectangule1 from './img/lp2/fondo4.png'
-
-import PrincingCard from './components2/pricingCard'
-
-
-
-import avatar from './img/lp2/sandra.png'
 import pin from './img/lp2/pin.svg'
-import bannerBottom from './img/lp2/bottom.svg'
+import './style2.css'
 
 
 const storage = Storage()

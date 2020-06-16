@@ -7,18 +7,11 @@ import shamanic03 from './shamanic/page03'
 import shamanic04 from './shamanic/page04'
 import shamanic05 from './shamanic/page05'
 import shamanic06 from './shamanic/page06'
-
-
 import store from './store'
 import { CookiesProvider } from 'react-cookie';
 
-//console.log(document.location.pathname)
-
-
 const App = () => (
     
- 
-
         <BrowserRouter>
          <Provider store={store}>
          <CookiesProvider>
@@ -48,7 +41,3 @@ const App = () => (
     )
 
 export default App
-
-
-
-
