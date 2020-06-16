@@ -16,7 +16,6 @@ const ContactForm = (props) => {
     const [name,setName] = React.useState('')
     const [email,setEmail] = React.useState('')
     const [mode,setMode] = React.useState(false)
-    const [emailValid,setEmailValid] = React.useState(false)
     
     const  [cta,setCta] = React.useState(storage.cta02)
 
@@ -35,6 +34,7 @@ const ContactForm = (props) => {
 
                 setMode(true)
                 const db = firebase.firestore()
+                console.log(cookies)
                 GoogleAnalyticsEvent('Register Contact Oferta11')
                 const newContact = {
                     name:  name,
@@ -43,6 +43,7 @@ const ContactForm = (props) => {
                     contact:true
                 }
             
+               
                 const data = await db.collection('Contacts').add(newContact)
                 setCookie('idSession',  data.id , { path: '/' });
                 sessionStorage.setItem('session', JSON.stringify({...newContact,id: data.id }))

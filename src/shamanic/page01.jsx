@@ -1,4 +1,4 @@
-import React ,{ Component } from 'react'
+import React  from 'react'
 import CubeForm from './components/cubeForm/cubeForm'
 import CubeAbout from './components/cubeAbout/cubeAbout'
 import CubeModule from './components/cubeModule/cubeModule'
