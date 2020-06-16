@@ -1,0 +1,34 @@
+.CubeForm {
+    max-width: 800px;
+}
+
+.CubeForm form{
+    max-width: 500px;
+    margin: auto;
+}
+
+.CubeForm form input{
+    background-color:#ECE2C2;
+    border: 2px solid #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.CubeForm form .btn{
+    border: 2px solid #fff !important;
+    border-radius: 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .CubeAbout form {
+      max-width: 300px;
+      float: right;
+      width: 300px !important;
+  }
+
+    .CubeAbout form input{
+    height: 50px !important
+    }
+
+}
