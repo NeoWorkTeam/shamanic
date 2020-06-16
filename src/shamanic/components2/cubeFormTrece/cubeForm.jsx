@@ -24,7 +24,7 @@ const CubeForm = (props) => {
             </Col>
 
            { props.form && <div style={{width:'100%', maxWidth:'480px',padding:'15px',height:'900px', margin:'auto', marginTop:'0px' }}>
-                        <iframe title="joinnow" style={{width:'100%', height:'100%', border:'0'}} src="https://joinnow.live/embed/s/WbpiBJ?layout=styled-1"></iframe>
+                        <iframe title="joinnow" style={{width:'100%', height:'100%', border:'0'}} src="https://joinnow.live/embed/s/Fe2iP9?layout=styled-1"></iframe>
 </div> }
             
             </Row>
