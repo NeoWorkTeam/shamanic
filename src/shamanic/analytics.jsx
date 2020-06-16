@@ -14,6 +14,14 @@ export const GoogleAnalytics = (props) => {
                 }
 }
 
+
+export const GoogleAnalyticsEventConversion = () => {
+   // ReactGA.gtag('event', 'conversion', {'send_to': 'AW-640361169/2wqsCMW9-dEBENHFrLEC'});
+    ReactGA.ga('event', 'conversion', {'send_to': 'AW-640361169/2wqsCMW9-dEBENHFrLEC'});
+}
+
+
+
 export const GoogleAnalyticsEvent = (props) => {
 
     if(document.location.host.indexOf("theshiftnetwork.com.mx")>=0){  

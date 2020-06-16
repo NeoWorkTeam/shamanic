@@ -8,6 +8,7 @@ import './style.css'
 import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import { hotjar } from 'react-hotjar';
+import Conversion from './img/conversion'
 
 const storage = Storage()
 
@@ -23,7 +24,11 @@ function Page01 ( props ) {
 
      React.useEffect(() => {
 
-       
+          const script = document.createElement("script");
+          script.src = Conversion;
+          script.async = true;
+          document.body.appendChild(script);
+
      },[props]);
 
        return(

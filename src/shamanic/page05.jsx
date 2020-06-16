@@ -2,7 +2,7 @@ import React  from 'react'
 import Footer from './components/footer'
 import Header from './components/header'
 import { withRouter } from "react-router-dom"
-import { GoogleAnalytics }  from './analytics'
+import { GoogleAnalytics,GoogleAnalyticsEventConversion }  from './analytics'
 import { hotjar } from 'react-hotjar';
 import { scroller, Element} from "react-scroll";
 import PrincingCard from './components2/pricingCard'
@@ -34,9 +34,11 @@ import avatar from './img/lp2/sandra.png'
 
 function Page02( props ) {
 
+     
      GoogleAnalytics('Intro 12')
      hotjar.initialize('1840193',6)
-     
+     GoogleAnalyticsEventConversion()
+
      const [player,setPlayer]      = React.useState('')
      const [loader,setLoader]      = React.useState(false)
      const [fixvideo,setFixvideo]  = React.useState(false)
