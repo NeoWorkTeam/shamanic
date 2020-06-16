@@ -28,16 +28,16 @@ function Page03 ( props ) {
        return(
         <React.Fragment >
 
-            <video autoPlay="autoplay" loop="loop" muted style={{ position:'relative', width: '100%'}}  className="mobile" >
-            <source src={video} type="video/mp4" />
-            </video>
-
-            <div id="Page03" className="oferta12" style={{ background:'#f6fbfe !important' }} >   
-                <Header></Header>
-                <div className="banner" style={{ background:'#f6fbfe !important' }}>
-                <div style={{width:'100%', maxWidth:'480px', height:'900px', margin:'auto', marginTop:'20px' }}>
-                    <iframe title="joinnow" style={{width:'100%', height:'100%', border:'0'}} src="https://joinnow.live/embed/s/WbpiBJ?layout=styled-1"></iframe></div>
-                </div>
+            <div id="Page03" className="oferta12 oferta13" style={{ background:'#f6fbfe !important' }} >   
+            
+                    <section  id='sectionA' className='section01' >
+                    <Header></Header>
+                    <div style={{width:'100%', maxWidth:'480px',padding:'15px',height:'900px', margin:'auto', marginTop:'0px' }}>
+                        <iframe title="joinnow" style={{width:'100%', height:'100%', border:'0'}} src="https://joinnow.live/embed/s/WbpiBJ?layout=styled-1"></iframe>
+                        </div>
+                    </section>
+                    
+            
 
                 <div className="fondo001">
                         <Container className="moduloA002"  >

@@ -1630,4 +1630,7 @@ font-style: italic;
 }
 
 
-
+.oferta13 #sectionA.section01{
+    padding-top:20px !important;
+    padding-bottom: 40px !important;
+}
