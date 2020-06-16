@@ -1,10 +1,6 @@
 import React from 'react';
-import { Container,Row,Col } from 'react-bootstrap'
-
+import { Container } from 'react-bootstrap'
 import sandra from '../../img/sandra.svg'
-import fondo from '../../img/AboutBackground.svg'
-
-
 import './cubeAbout2Style.css'
 
 import Storage from '../storage'

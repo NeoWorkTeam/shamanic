@@ -1,6 +1,3 @@
-import React,{ useState } from 'react'
-import { firebase } from "../components/firebase"
-
 
 import module1 from '../img/module1.jpg'
 import module2 from '../img/moduel2.jpg'

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Provider } from 'react-redux'
 import { BrowserRouter,Route, Switch } from 'react-router-dom'
 import shamanic01 from './shamanic/page01'
 import shamanic02 from './shamanic/page02'
@@ -7,13 +6,11 @@ import shamanic03 from './shamanic/page03'
 import shamanic04 from './shamanic/page04'
 import shamanic05 from './shamanic/page05'
 import shamanic06 from './shamanic/page06'
-import store from './store'
 import { CookiesProvider } from 'react-cookie';
 
 const App = () => (
     
         <BrowserRouter>
-         <Provider store={store}>
          <CookiesProvider>
             <Switch>
                 
@@ -34,7 +31,6 @@ const App = () => (
                 <Route component={shamanic01} />            
             </Switch>
             </CookiesProvider>
-            </Provider>
         </BrowserRouter>
         
        

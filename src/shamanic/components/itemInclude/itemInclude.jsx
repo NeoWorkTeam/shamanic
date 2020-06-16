@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row,Col } from 'react-bootstrap'
-import {  BsCheckCircle } from 'react-icons/bs';
 
 import check from '../../img/check.svg'
 

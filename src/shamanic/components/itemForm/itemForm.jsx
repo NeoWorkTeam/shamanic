@@ -2,8 +2,6 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import { Spinner,Button ,InputGroup } from 'react-bootstrap'
 import SimpleReactValidator from 'simple-react-validator';
-import {  AiOutlineMail,AiOutlineUser } from 'react-icons/ai';
-import swal from 'sweetalert'
 import { useCookies } from 'react-cookie';
 import { firebase } from '../firebase'
 import Storage from '../storage'
@@ -18,7 +16,6 @@ const ContactForm = (props) => {
     const [name,setName] = React.useState('')
     const [email,setEmail] = React.useState('')
     const [mode,setMode] = React.useState(false)
-    const [emailValid,setEmailValid] = React.useState(false)
     
     const  [cta,setCta] = React.useState(storage.cta02)
 

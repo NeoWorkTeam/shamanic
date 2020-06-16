@@ -3,16 +3,12 @@ import CubeForm from './components2/cubeForm/cubeForm'
 import CubeFormVideo from './components2/cubeFormVideo/cubeFormVideo'
 import { Container,Row,Col } from 'react-bootstrap'
 import { hotjar } from 'react-hotjar';
-import Storage from './components/storage'
 import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import video from './img/banner.mp4'
 import Rectangle from './img/lp2/Rectangle15.png'
 import pin from './img/lp2/pin.svg'
 import './style2.css'
-
-
-const storage = Storage()
 
 function Page03 ( props ) {
 

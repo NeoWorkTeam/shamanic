@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'nuka-carousel';
 import ItemCourses from "../itemCourses/itemCouses"
-import { IoIosArrowBack,IoIosArrowForward }from 'react-icons/io';
 
 
 import './itemCarouselStyles.css'

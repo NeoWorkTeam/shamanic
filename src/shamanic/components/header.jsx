@@ -2,12 +2,6 @@ import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import logo from '../img/logo.png';
 
-
-
-
-import Storage from './storage'
-const storage = Storage()
-
 const Header = () => (
 
     <Container className="header">

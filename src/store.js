@@ -1,5 +1,4 @@
 import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import logger from 'redux-logger'
 
 const initialState = {
@@ -20,7 +19,6 @@ const initialState = {
     suplentes:[]
 
 }
-
 
 const reducerEntrenador = ( state = initialState , action  ) => {
   
@@ -57,13 +55,7 @@ const reducerEntrenador = ( state = initialState , action  ) => {
         }
     }
 
-
-    
-    
-
-
-  
     return state
 }
 
-export default createStore(reducerEntrenador, composeWithDevTools(applyMiddleware(logger)))
+export default createStore(reducerEntrenador(applyMiddleware(logger)))

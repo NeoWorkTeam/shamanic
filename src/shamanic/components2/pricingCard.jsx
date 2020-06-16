@@ -1,6 +1,5 @@
 
 import React from 'react'
-import topCard from '../img/lp2/topCard.png'
 import Storage from '../components/storage'
 import Shopping from '../img/Shopping-Cart.png'
 
