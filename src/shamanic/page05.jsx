@@ -34,7 +34,7 @@ import avatar from './img/lp2/sandra.png'
 
 function Page02( props ) {
 
-     GoogleAnalytics('page02')
+     GoogleAnalytics('Intro 12')
      hotjar.initialize('1840193',6)
      
      const [player,setPlayer]      = React.useState('')

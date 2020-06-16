@@ -12,10 +12,8 @@ import './style2.css'
 
 function Page03 ( props ) {
 
-     GoogleAnalytics('page01')
-     
-     GoogleAnalyticsEvent('Register Contact')
-
+     GoogleAnalytics('Oferta 13')
+     GoogleAnalyticsEvent('Register Webinar')
      hotjar.initialize('1840193',6)
 
 
