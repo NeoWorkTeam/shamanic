@@ -66,11 +66,11 @@ function Page02( props ) {
      }
 
 
-     function loadScroll(x){
-          if(window.pageYOffset>100){
-              setFixvideo(true)           
+     function loadScroll(){
+          if(window.pageYOffset>600){
+             setFixvideo(true)           
           }else{
-               setFixvideo(false)           
+             setFixvideo(false)           
           }
      }
 
@@ -83,10 +83,9 @@ function Page02( props ) {
           if((timeVideo>4765)&&(timeVideo<4775)){
           
                scroller.scrollTo('scroll-to-element', {
-                    duration: 800,
-                    delay: 0,
-                    smooth: 'easeInOutQuart'
-                  })
+                    duration: 300,
+                    delay: 0
+                                 })
           
                setInicio(false)
                setLoader(true) 
@@ -108,7 +107,8 @@ function Page02( props ) {
              <Header />
         </section>
 
-        <section  style={ {  background:'#f7ecfe', padding:'10px'  } } id='sectionD'>
+<div style={{ background:'rgb(247, 236, 254)' }}>
+        <section  style={ {  background:'#f7ecfe', padding:'10px', maxWidth:'1200px', margin:'auto'  } } id='sectionD'>
                <div className={`player-wrapper ${fixvideo ? "fixVideo" : ""}`} > 
                          <ReactPlayer  
                          url="https://vimeo.com/421621071/0a61d44f59"
@@ -118,14 +118,13 @@ function Page02( props ) {
                          ref={myRef}
                          onPlay={handlePlay}
                          className="videogame"
-                         width="100%"
-                         height="100%"
-                         allowfullscreen={true}
+                         width="90%"
+                         height="90%"
                          />
                </div> 
 
         </section>
-
+</div>
 
 { loader &&   <div >
 
