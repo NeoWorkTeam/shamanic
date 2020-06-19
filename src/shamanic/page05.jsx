@@ -813,6 +813,24 @@ En estos extractos, Sandra te mostrará cómo diseñar ceremonias de curación y
              </Row>   
          </Container>
 
+         <Container className="moduloAB002" >
+         <img src={Line} className="line1 noMobile" alt="line" ></img>
+<img src={Rectangle2} alt="line " className="noMobile"></img>
+<img src={Line} className="line2 noMobile" alt="line"></img>
+
+                         <p> <br></br><br></br>
+                         Desde su fundación en 2010, la misión de <b>The Shift Network</b> ha sido siempre despertar  a cada persona a su potencial pleno. <br></br><br></br>
+         <b>The Shift Network</b> es la marca #1 en Estados Unidos en Transformación Personal, poniendo a tu alcance la sabiduría de maestros reconocidos
+          a nivel mundial, con cursos virtuales dinámicos y de fácil acceso.<br></br> <br></br> Shift ofrece la sabiduría y el conocimiento dado por grandes maestros 
+          cómo Deepak Chopra, Marianne Williamson, Sandra Ingerman, Don Miguel Ruiz y Gregg Braden entre muchos otros.<br></br> <br></br>
+El curso inaugural de <b>Sandra Ingerman</b>, titulado <b>Prácticas chamánicas de inmunidad espiritual</b>, ha sido traducido al español para el público latinoamericano
+ y ya ha transformado las vidas de más de <b>2000 estudiantes</b> en este 2020 con sus enseñanzas sobre protección espiritual, tan apropiadas para estos tiempos difíciles.
+                         <br></br> <br></br>
+                         </p>    
+               </Container>
+
+
+
         <Container className="moduloAB005">
 
           <div className="wrapper">
