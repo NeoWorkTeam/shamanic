@@ -235,6 +235,20 @@ function Page02( props ) {
                          <Col xs={12} md={12} > 
                               <a href={ storage.url_start_program }  title="Sandra" className="ctaVersion11" > { storage.version11.cta02 } </a>
                          </Col>    
+
+                         <Container className="moduloAB002" >
+        
+
+        <p> <br></br><br></br>
+        Desde su fundación en 2010, la misión de <b>The Shift Network</b> ha sido siempre despertar  a cada persona a su potencial pleno. <br></br><br></br>
+<b>The Shift Network</b> es la marca #1 en Estados Unidos en Transformación Personal, poniendo a tu alcance la sabiduría de maestros reconocidos
+a nivel mundial, con cursos virtuales dinámicos y de fácil acceso.<br></br> <br></br> Shift ofrece la sabiduría y el conocimiento dado por grandes maestros 
+cómo Deepak Chopra, Marianne Williamson, Sandra Ingerman, Don Miguel Ruiz y Gregg Braden entre muchos otros.<br></br> <br></br>
+El curso inaugural de <b>Sandra Ingerman</b>, titulado <b>Prácticas chamánicas de inmunidad espiritual</b>, ha sido traducido al español para el público latinoamericano
+y ya ha transformado las vidas de más de <b>2000 estudiantes</b> en este 2020 con sus enseñanzas sobre protección espiritual, tan apropiadas para estos tiempos difíciles.
+        <br></br> <br></br>
+        </p>    
+</Container>
               </Row>    
           </Container>
 
