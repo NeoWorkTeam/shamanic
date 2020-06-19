@@ -208,7 +208,6 @@ img{
 }
 
 
-
 #Page03 #sectionA {
     background-image: url('./img/lp2/banner.png') !important;
     padding-top: 200px;
@@ -226,12 +225,6 @@ img{
     max-width: 100%;
     z-index: 999;
 }
-
-@media only screen and (max-width: 600px) {
-    #Page03 #sectionA {
-    background-image: url('./img/lp2/minibanner.jpg') !important;
-    }
-} 
 
 #Page03 .bannerBottom {
    position: relative;

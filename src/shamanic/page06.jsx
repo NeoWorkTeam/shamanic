@@ -1,26 +1,22 @@
 import React  from 'react'
-import loadable from '@loadable/component'
+import CubeForm from './components2/cubeForm/cubeForm'
+import CubeFormVideo from './components2/cubeFormVideo/cubeFormVideo'
 import { Container,Row,Col } from 'react-bootstrap'
-//import { hotjar } from 'react-hotjar';
-//import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
+import { hotjar } from 'react-hotjar';
+import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import video from './img/banner.mp4'
 import Rectangle from './img/lp2/Rectangle15.png'
 import pin from './img/lp2/pin.svg'
 import './style2.css'
 
-
-const CubeForm = loadable(() => import('./components2/cubeForm/cubeForm'))
-const CubeFormVideo = loadable(() => import('./components2/cubeFormVideo/cubeFormVideo'))
-
-
 function Page03 ( props ) {
 
-    // GoogleAnalytics('Oferta 12')
+     GoogleAnalytics('Oferta 12')
      
-  //   GoogleAnalyticsEvent('Register Contact Oferta12')
+     GoogleAnalyticsEvent('Register Contact Oferta12')
 
-//     hotjar.initialize('1840193',6)
+     hotjar.initialize('1840193',6)
 
 
      React.useEffect(() => {
