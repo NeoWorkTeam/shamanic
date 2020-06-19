@@ -1,8 +1,8 @@
 import React  from 'react'
 import loadable from '@loadable/component'
 import { Container,Row,Col } from 'react-bootstrap'
-import { hotjar } from 'react-hotjar';
-import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
+//import { hotjar } from 'react-hotjar';
+//import { GoogleAnalytics,GoogleAnalyticsEvent }  from './analytics'
 import Footer from './components/footer'
 import video from './img/banner.mp4'
 import Rectangle from './img/lp2/Rectangle15.png'
@@ -16,11 +16,11 @@ const CubeFormVideo = loadable(() => import('./components2/cubeFormVideo/cubeFor
 
 function Page03 ( props ) {
 
-     GoogleAnalytics('Oferta 12')
+    // GoogleAnalytics('Oferta 12')
      
-     GoogleAnalyticsEvent('Register Contact Oferta12')
+  //   GoogleAnalyticsEvent('Register Contact Oferta12')
 
-     hotjar.initialize('1840193',6)
+//     hotjar.initialize('1840193',6)
 
 
      React.useEffect(() => {
