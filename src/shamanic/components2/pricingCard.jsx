@@ -16,8 +16,8 @@ const Card = () => {
         <div className="pricingCard">
 
             <div className="wrapper">
-                    <h3> 50% de Descuento</h3>
-                    <h2>$147 USD</h2>
+                    <h3> 80% de Descuento</h3>
+                    <h2>$59 USD</h2>
                     <p>
                         <span className="cardSubtitleLeft">Precio Regular</span>
                         <span className="cardSubtitleRight"><s>$297</s>USD</span>
