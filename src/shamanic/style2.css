@@ -1069,7 +1069,7 @@ margin-top: 10px;
 
 .moduloAB005{
     padding: 50px 10px;
-    background-image: url('./img/lp2/bottom2.png') !important;
+    background-image: url('./img/background.jpg') !important;
     padding-top: 100px;
     padding-bottom: 20px;
     min-height: 600px;
@@ -1081,7 +1081,7 @@ margin-top: 10px;
 
 
 .moduloAB005 h2 {
-    color: #fff !important;
+    color: #676767 !important;
     line-height: 2.6rem;
     max-width: 800px;
     text-align: center;

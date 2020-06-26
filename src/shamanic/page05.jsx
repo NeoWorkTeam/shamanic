@@ -30,6 +30,9 @@ import Line from './img/lp2/Line01.png'
 import Rectangle2 from './img/lp2/Rectangle23.png'
 import horizontal from './img/horizontal.svg'
 import avatar from './img/lp2/sandra.png'
+import Cta01 from "./components/itemCta/itemCta"
+
+
 
 
 function Page02( props ) {
@@ -169,6 +172,9 @@ function Page02( props ) {
                          En este curso intensivo de transformación de 7 semanas, Sandra te guiará a través de las habilidades y competencias fundamentales cuerpo-mente-espíritu que necesitarás para fortalecer tu salud, cambiar tu mentalidad y empoderar a tu comunidad.
                          <br></br> <br></br>
                          </p>    
+                         <div style={{ maxWidth:'600px', margin:'auto',paddingTop:'50px',paddingBottom:'100px'}}>
+          <Cta01></Cta01>
+          </div>
                </Container>
         
           
@@ -597,8 +603,10 @@ En estos extractos, Sandra te mostrará cómo diseñar ceremonias de curación y
  </Col>
            </Row>     
 
-                  
-               
+          <div style={{ maxWidth:'600px', margin:'auto',paddingTop:'100px'}}>
+          <Cta01></Cta01>
+          </div>
+                 
           </Container>
 
           <Container className="moduloA005" >
